@@ -127,7 +127,10 @@ incorrect.](./media/image6.png)
 1.  打開瀏覽器，導航到地址欄，輸入或粘貼以下URL：+++<https://app.fabric.microsoft.com/+++>
     ,按下**Enter**鍵，並用你的憑證登錄
 
-[TABLE]
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
 2.  Fabric主页，选择 **+New workspace** 瓷砖。
 
@@ -137,7 +140,12 @@ generated](./media/image7.png)
 3.  在右侧的**Create a
     workspace** 面板中，输入以下细节，然后点击**“Apply**”按钮。
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++Fabric agent@lab.LabInstance.Id+++  |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image8.png)
 >
