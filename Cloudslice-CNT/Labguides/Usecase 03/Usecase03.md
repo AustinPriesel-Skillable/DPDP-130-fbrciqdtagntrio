@@ -1,3 +1,5 @@
+## 用例03 - 在Microsoft Fabric中使用镜像Azure SQL Database构建Fabric Data Agent
+
 **简介**
 
 现代组织需要智能系统，能够快速分析运营
@@ -69,8 +71,12 @@ Database。你将部署 AdventureWorksLT
 
 1.  打開瀏覽器，進入+++https://portal.azure.com+++，並用下面的Cloud
     Slice賬號登錄。
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
-2.  在 Azure 門戶主頁，點擊 Microsoft Azure 命令欄左側的三個水平條表示的
+3.  在 Azure 門戶主頁，點擊 Microsoft Azure 命令欄左側的三個水平條表示的
     **Azure 門戶菜單**。选择SQL database
 
 ![A screenshot of a computer AI-generated content may be
@@ -83,7 +89,19 @@ incorrect.](./media/image6.png)
 4.  在**“Create a storage account**”窗口，**Basics**标签下
     输入以下信息创建存储账户，然后点击 **“Next:Networking**
 
-[TABLE]
+    | Setting | Value  |
+    |--------|----------------|
+    | Subscription | @lab.CloudSubscription.Name |
+    | Resource group | @lab.CloudResourceGroup(ResourceGroup1).Name |
+    | Database name | +++sqldatabase@lab.labinstance.id+++ |
+    | Server | Select **Create new** |
+    | Server name | +++sqlserver@lab.labinstance.id+++ |
+    | Location | @lab.CloudResourceGroup(ResourceGroup1).Location |
+    | Authentication Method | **Use SQL Authentication** |
+    | Server admin login | +++sqladmin+++ |
+    | Password | +++password321!+++ |
+    | Confirm password | +++password321!+++ |
+    | Action | Click **OK** |
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image8.png)
@@ -179,7 +197,10 @@ incorrect.](./media/image9.png)
 
 1.  打开浏览器，进入地址栏，输入或粘贴以下URL:+++https://app.fabric.microsoft.com/+++ 按下**Enter**键，并用你的凭证登录
 
-[TABLE]
+    |  |   |
+    |---|----|
+    |Username	|+++@lab.CloudPortalCredential(User1).Username+++|
+    |TAP	|+++@lab.CloudPortalCredential(User1).AccessToken+++|
 
 2.  Fabric主页，选择 **+New workspace**瓷砖。
 
@@ -189,7 +210,12 @@ incorrect.](./media/image9.png)
 3.  在**Create a
     workspace** 面板中，输入以下细节，然后点击**“Apply**”按钮。
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++FabricAgent-mirroringdatabase@lab.LabInstance.Id+++ |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image30.png)
 
@@ -226,7 +252,12 @@ data是否成功同步。
 
 3.  在Connection设置标签中输入以下详细信息，点击Connect按钮
 
-[TABLE]
+    | Field | Value |
+    |------|-------|
+    | Server | SQL server URL saved in **Task 2 → Step 15** |
+    | Database | +++sqldatabase@lab.labinstance.id+++ |
+    | Username | +++sqladmin+++ |
+    | Password | +++password321!+++ |
 
 ![](./media/image37.png)
 
