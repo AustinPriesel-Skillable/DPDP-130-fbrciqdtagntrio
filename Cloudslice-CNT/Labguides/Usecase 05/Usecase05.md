@@ -1,3 +1,5 @@
+## 用例 05 - 使用 Copilot Studio 将 Fabric Data Agent 与 Microsoft Teams 集成，以获得可操作的见解和代理间协作
+
 **简介**
 
 在当今竞争激烈的数字市场中，电子商务公司从客户交易、产品目录、网站互动和支付系统中生成大量数据。從這些數據中提取有意義的洞察對於提升客戶體驗、優化運營和增加收入至關重要。然而，沒有統一的分析平臺，管理和分析來自多個來源的大型數據集可能會很複雜。
@@ -52,7 +54,10 @@ Agents結合，Zava構建了一個可擴展且智能的電子商務分析平臺�
 1.  打開browser，進入地址欄，輸入或粘貼以下URL：+++https：//app.fabric.microsoft.com/+++
     按下**Enter**鍵，並用你的憑證登錄
 
-[TABLE]
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
 2.  Fabric主页，选择 **+New workspace** 瓷砖。
 
@@ -62,7 +67,12 @@ Agents結合，Zava構建了一個可擴展且智能的電子商務分析平臺�
 3.  在右侧的**Create a
     workspace** 面板中，输入以下细节，然后点击**“Apply**”按钮。
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++Fabric-Copilot-@lab.labinstance.id+++  |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image2.png)
 
