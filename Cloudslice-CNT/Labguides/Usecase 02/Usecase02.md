@@ -1,5 +1,6 @@
-**简介**
+## **用例02——使用 Fabric data agent构建 AdventureWorks dataset的销售分析**
 
+**简介**
 Contoso Analytics是一家零售洞察团队，正在将其报告工作流程转向
 **Microsoft Fabric**
 ，以提升分析师和业务经理的data可访问性。團隊希望支持自然語言data探索，使非技術用戶無需編寫SQL或瀏覽儀錶盤即可獲得洞察。
@@ -79,7 +80,10 @@ Agent。該工作區作為所有使用場景中所有資產的中央容器。
 2.  在 **Microsoft Fabric**
     窗口中，输入你的凭证，然后点击**Submit**按钮。
 
-[TABLE]
+    |  |   |
+    |---|----|
+    |Username	|+++@lab.CloudPortalCredential(User1).Username+++|
+    |TAP	|+++@lab.CloudPortalCredential(User1).AccessToken+++|
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image7.png)
@@ -104,7 +108,12 @@ incorrect.](./media/image7.png)
 7.  在右侧的**Create a
     workspace** 面板中，输入以下细节，然后点击**“Apply**”按钮。
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++Fabric Data agent-@lab.LabInstance.Id+++ |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 ![](./media/image11.png)
 
@@ -152,29 +161,23 @@ generated](./media/image12.png)
 6.  用以下代碼更新該**單元格**的代碼，並點擊“**▷ Run
     cell** **”**左側的單元格。
 
-> import pandas as pd
->
-> from tqdm.auto import tqdm
->
-> base =
-> "https://synapseaisolutionsa.z13.web.core.windows.net/data/AdventureWorks"
->
-> \# load list of tables
->
-> df_tables = pd.read_csv(f"{base}/adventureworks.csv",
-> names=\["table"\])
->
-> for table in (pbar := tqdm(df_tables\['table'\].values)):
->
-> pbar.set_description(f"Uploading {table} to lakehouse")
->
-> \# download
->
-> df = pd.read_parquet(f"{base}/{table}.parquet")
->
-> \# save as lakehouse table
->
-> spark.createDataFrame(df).write.mode('overwrite').saveAsTable(table)
+    ```
+    import pandas as pd
+    from tqdm.auto import tqdm
+    base = "https://synapseaisolutionsa.z13.web.core.windows.net/data/AdventureWorks"
+    
+    # load list of tables
+    df_tables = pd.read_csv(f"{base}/adventureworks.csv", names=["table"])
+    
+    for table in (pbar := tqdm(df_tables['table'].values)):
+        pbar.set_description(f"Uploading {table} to lakehouse")
+    
+        # download
+        df = pd.read_parquet(f"{base}/{table}.parquet")
+    
+        # save as lakehouse table
+        spark.createDataFrame(df).write.mode('overwrite').saveAsTable(table)
+    ```
 
 ![](./media/image21.png)
 
@@ -343,14 +346,12 @@ customer”沒有正式的定義。模型文本框備註中更多說明可能會
 
 10. 添加你保存在筆記本中的query1：
 
-> SELECT TOP 1 ProductKey, SUM(OrderQuantity) AS TotalQuantitySold
->
-> FROM \[dbo\].\[factinternetsales\]
->
-> GROUP BY ProductKey
->
-> ORDER BY TotalQuantitySold DESC
->
+    ```
+    SELECT TOP 1 ProductKey, SUM(OrderQuantity) AS TotalQuantitySold
+    FROM [dbo].[factinternetsales]
+    GROUP BY ProductKey
+    ORDER BY TotalQuantitySold DESC
+    ```
 > ![](./media/image52.png)
 
 11. 要添加新的查詢字段，請點擊 **+Add。**
@@ -365,47 +366,28 @@ customer”沒有正式的定義。模型文本框備註中更多說明可能會
 
 13. 把你保存在筆記本裡的query3添加進去：
 
-> SELECT
->
-> d.CalendarYear,
->
-> d.MonthNumberOfYear,
->
-> d.EnglishMonthName,
->
-> SUM(f.SalesAmount) AS TotalSales
->
-> FROM
->
-> dbo.factinternetsales f
->
-> INNER JOIN dbo.dimdate d ON f.OrderDateKey = d.DateKey
->
-> WHERE
->
-> d.CalendarYear = (
->
-> SELECT MAX(CalendarYear)
->
-> FROM dbo.dimdate
->
-> WHERE DateKey IN (SELECT DISTINCT OrderDateKey FROM
-> dbo.factinternetsales)
->
-> )
->
-> GROUP BY
->
-> d.CalendarYear,
->
-> d.MonthNumberOfYear,
->
-> d.EnglishMonthName
->
-> ORDER BY
->
-> d.MonthNumberOfYear
->
+    ```
+    SELECT
+        d.CalendarYear,
+        d.MonthNumberOfYear,
+        d.EnglishMonthName,
+        SUM(f.SalesAmount) AS TotalSales
+    FROM
+        dbo.factinternetsales f
+        INNER JOIN dbo.dimdate d ON f.OrderDateKey = d.DateKey
+    WHERE
+        d.CalendarYear = (
+            SELECT MAX(CalendarYear)
+            FROM dbo.dimdate
+            WHERE DateKey IN (SELECT DISTINCT OrderDateKey FROM dbo.factinternetsales)
+        )
+    GROUP BY
+        d.CalendarYear,
+        d.MonthNumberOfYear,
+        d.EnglishMonthName
+    ORDER BY
+        d.MonthNumberOfYear
+    ```
 > ![](./media/image55.png)
 
 14. 要添加新的query字段，請點擊 **+Add。**
@@ -420,28 +402,19 @@ customer”沒有正式的定義。模型文本框備註中更多說明可能會
 
 16. 把你保存在記事本裡的query4添加進去：
 
-> SELECT TOP 1
->
-> dp.ProductSubcategoryKey AS ProductCategory,
->
-> AVG(fis.UnitPrice) AS AverageSalesPrice
->
-> FROM
->
-> dbo.factinternetsales fis
->
-> INNER JOIN
->
-> dbo.dimproduct dp ON fis.ProductKey = dp.ProductKey
->
-> GROUP BY
->
-> dp.ProductSubcategoryKey
->
-> ORDER BY
->
-> AverageSalesPrice DESC
->
+    ```
+    SELECT TOP 1
+        dp.ProductSubcategoryKey AS ProductCategory,
+        AVG(fis.UnitPrice) AS AverageSalesPrice
+    FROM
+        dbo.factinternetsales fis
+    INNER JOIN
+        dbo.dimproduct dp ON fis.ProductKey = dp.ProductKey
+    GROUP BY
+        dp.ProductSubcategoryKey
+    ORDER BY
+        AverageSalesPrice DESC
+    ```
 > ![](./media/image58.png)
 
 17. 把你保存在Notepad的所有查询和SQL查询添加进去，然后点击“**Export
@@ -511,155 +484,91 @@ notebook中编程使用AI技能。用來判斷AI技能是否有已發佈的URL�
     Code** 圖標，向筆記本添加一個新的代碼單元格，輸入以下代碼並替換
     **URL**。點擊 **▷ Run** 按鈕，查看輸出結果
 
-> import requests
->
-> import json
->
-> import pprint
->
-> import typing as t
->
-> import time
->
-> import uuid
->
-> from openai import OpenAI
->
-> from openai.\_exceptions import APIStatusError
->
-> from openai.\_models import FinalRequestOptions
->
-> from openai.\_types import Omit
->
-> from openai.\_utils import is_given
->
-> from synapse.ml.mlflow import get_mlflow_env_config
->
-> from sempy.fabric.\_token_provider import SynapseTokenProvider
->
-> base_url = "https://\<generic published base URL value\>"
->
-> question = "What datasources do you have access to?"
->
-> configs = get_mlflow_env_config()
->
-> \# Create OpenAI Client
->
-> class FabricOpenAI(OpenAI):
->
-> def \_\_init\_\_(
->
-> self,
->
-> api_version: str ="2024-05-01-preview",
->
-> \*\*kwargs: t.Any,
->
-> ) -\> None:
->
-> self.api_version = api_version
->
-> default_query = kwargs.pop("default_query", {})
->
-> default_query\["api-version"\] = self.api_version
->
-> super().\_\_init\_\_(
->
-> api_key="",
->
-> base_url=base_url,
->
-> default_query=default_query,
->
-> \*\*kwargs,
->
-> )
->
-> def \_prepare_options(self, options: FinalRequestOptions) -\> None:
->
-> headers: dict\[str, str | Omit\] = (
->
-> {\*\*options.headers} if is_given(options.headers) else {}
->
-> )
->
-> options.headers = headers
->
-> headers\["Authorization"\] = f"Bearer {configs.driver_aad_token}"
->
-> if "Accept" not in headers:
->
-> headers\["Accept"\] = "application/json"
->
-> if "ActivityId" not in headers:
->
-> correlation_id = str(uuid.uuid4())
->
-> headers\["ActivityId"\] = correlation_id
->
-> return super().\_prepare_options(options)
->
-> \# Pretty printing helper
->
-> def pretty_print(messages):
->
-> print("---Conversation---")
->
-> for m in messages:
->
-> print(f"{m.role}: {m.content\[0\].text.value}")
->
-> print()
->
-> fabric_client = FabricOpenAI()
->
-> \# Create assistant
->
-> assistant = fabric_client.beta.assistants.create(model="not used")
->
-> \# Create thread
->
-> thread = fabric_client.beta.threads.create()
->
-> \# Create message on thread
->
-> message =
-> fabric_client.beta.threads.messages.create(thread_id=thread.id,
-> role="user", content=question)
->
-> \# Create run
->
-> run = fabric_client.beta.threads.runs.create(thread_id=thread.id,
-> assistant_id=assistant.id)
->
-> \# Wait for run to complete
->
-> while run.status == "queued" or run.status == "in_progress":
->
-> run = fabric_client.beta.threads.runs.retrieve(
->
-> thread_id=thread.id,
->
-> run_id=run.id,
->
-> )
->
-> print(run.status)
->
-> time.sleep(2)
->
-> \# Print messages
->
-> response =
-> fabric_client.beta.threads.messages.list(thread_id=thread.id,
-> order="asc")
->
-> pretty_print(response)
->
-> \# Delete thread
->
-> fabric_client.beta.threads.delete(thread_id=thread.id)
->
+    ```
+    import requests
+    import json
+    import pprint
+    import typing as t
+    import time
+    import uuid
+    
+    from openai import OpenAI
+    from openai._exceptions import APIStatusError
+    from openai._models import FinalRequestOptions
+    from openai._types import Omit
+    from openai._utils import is_given
+    from synapse.ml.mlflow import get_mlflow_env_config
+    from sempy.fabric._token_provider import SynapseTokenProvider
+     
+    base_url = "https://<generic published base URL value>"
+    question = "What datasources do you have access to?"
+    
+    configs = get_mlflow_env_config()
+    
+    # Create OpenAI Client
+    class FabricOpenAI(OpenAI):
+        def __init__(
+            self,
+            api_version: str ="2024-05-01-preview",
+            **kwargs: t.Any,
+        ) -> None:
+            self.api_version = api_version
+            default_query = kwargs.pop("default_query", {})
+            default_query["api-version"] = self.api_version
+            super().__init__(
+                api_key="",
+                base_url=base_url,
+                default_query=default_query,
+                **kwargs,
+            )
+        
+        def _prepare_options(self, options: FinalRequestOptions) -> None:
+            headers: dict[str, str | Omit] = (
+                {**options.headers} if is_given(options.headers) else {}
+            )
+            options.headers = headers
+            headers["Authorization"] = f"Bearer {configs.driver_aad_token}"
+            if "Accept" not in headers:
+                headers["Accept"] = "application/json"
+            if "ActivityId" not in headers:
+                correlation_id = str(uuid.uuid4())
+                headers["ActivityId"] = correlation_id
+    
+            return super()._prepare_options(options)
+    
+    # Pretty printing helper
+    def pretty_print(messages):
+        print("---Conversation---")
+        for m in messages:
+            print(f"{m.role}: {m.content[0].text.value}")
+        print()
+    
+    fabric_client = FabricOpenAI()
+    # Create assistant
+    assistant = fabric_client.beta.assistants.create(model="not used")
+    # Create thread
+    thread = fabric_client.beta.threads.create()
+    # Create message on thread
+    message = fabric_client.beta.threads.messages.create(thread_id=thread.id, role="user", content=question)
+    # Create run
+    run = fabric_client.beta.threads.runs.create(thread_id=thread.id, assistant_id=assistant.id)
+    
+    # Wait for run to complete
+    while run.status == "queued" or run.status == "in_progress":
+        run = fabric_client.beta.threads.runs.retrieve(
+            thread_id=thread.id,
+            run_id=run.id,
+        )
+        print(run.status)
+        time.sleep(2)
+    
+    # Print messages
+    response = fabric_client.beta.threads.messages.list(thread_id=thread.id, order="asc")
+    pretty_print(response)
+    
+    # Delete thread
+    fabric_client.beta.threads.delete(thread_id=thread.id)
+    ```
 > ![](./media/image71.png)
 
 ![](./media/image72.png)
