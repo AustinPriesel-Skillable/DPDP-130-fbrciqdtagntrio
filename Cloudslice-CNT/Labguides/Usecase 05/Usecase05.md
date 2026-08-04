@@ -1,4 +1,4 @@
-## 用例 05 - 使用 Copilot Studio 将 Fabric Data Agent 与 Microsoft Teams 集成，以获得可操作的见解和代理间协作
+## **用例 05 - 使用 Copilot Studio 将 Fabric Data Agent 与 Microsoft Teams 集成，以获得可操作的见解和代理间协作**
 
 **简介**
 
