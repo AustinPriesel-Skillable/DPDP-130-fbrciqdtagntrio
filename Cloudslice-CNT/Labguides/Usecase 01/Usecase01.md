@@ -37,7 +37,10 @@ Retail**，在多个地点销售冰淇淋。通过示例数据，教程展示了
 
 1.  打开浏览器，进入地址栏，输入或粘贴以下URL：+++https://app.fabric.microsoft.com/+++，然后按下**Enter**键，用你的凭证登录
 
-[TABLE]
+| Credential | Value |
+|------------|-------|
+| Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+| Password | +++@lab.CloudPortalCredential(User1).Password+++ |
 
 2.  在工作区面板中，点击**+New workspace** 磁贴
 
@@ -47,7 +50,11 @@ Retail**，在多个地点销售冰淇淋。通过示例数据，教程展示了
 3.  在右侧的**Create a
     workspace** 面板中，输入以下细节，然后点击**“Apply**”按钮。
 
-[TABLE]
+| Setting | Value |
+|----------|----------|
+| Name | +++Fabric IQ OntologyXXXX+++ **(XXXX can be a unique number)** |
+| Advanced | Under **License mode**, select **Fabric capacity** |
+| Default storage format | **Small dataset storage format** |
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image2.png)
@@ -69,8 +76,7 @@ Retail**，在多个地点销售冰淇淋。通过示例数据，教程展示了
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image6.png)
 
-3.  在**“New lakehouse**”对话框中，在 名称字段输入 **+++IQ_Lakehouse
-    +++**，并**取消选择**lakehouse的模式。点击**“Create**”按钮，打开新的lakehouse。
+3.  在**“New lakehouse**”对话框中，在 名称字段输入 **+++IQ_Lakehouse+++**，并**取消选择**lakehouse的模式。点击**“Create**”按钮，打开新的lakehouse。
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image7.png)
@@ -358,7 +364,10 @@ incorrect.](./media/image22.png)
     ，创建下表中描述的entity类型。每个entity都有一个静态data
     binding，与其源表的默认列相关联。
 
-[TABLE]
+| Entity Type Name | Source Table in IQ_Lakehouse | Entity Type Key |
+|------------------|------------------------------|-----------------|
+| +++Products+++<br><br>**Note:** Use the plural form **Products** to avoid conflict with the GQL reserved word **PRODUCT**. | **dimproducts** | **ProductId** |
+| +++SaleEvent+++ | **factsales** | **SaleId** |
 
 ![](./media/image62.png)
 
@@ -495,7 +504,10 @@ incorrect.](./media/image22.png)
 2.  按照你在第一种关系类型中使用的相同步骤，从**SaleEvent**
     entity类型创建第二种关系，具体细节如下表所述。
 
-[TABLE]
+
+| Relationship Type Name | Origin Entity Type | Target Entity Type | Mapping Table | Matched SaleEvent: SaleId | Matched Products: ProductId |
+|------------------------|-------------------|-------------------|---------------|--------------------------|----------------------------|
+| `sold` | `SaleEvent` | `Products` | `factsales` | `SaleId` | `ProductId` |
 
 ![](./media/image98.png)
 
@@ -550,7 +562,12 @@ entity類型並為其添加屬性。屬性還沒有綁定到數據上。
 
 4.  添加以下屬性並選擇**Save**。
 
-[TABLE]
+| Name | Property Type |
+|------|---------------|
+| `FreezerId` | `String` |
+| `Model` | `String` |
+| `minSafeTempC` | `Double` |
+| `StoreId` | `String` |
 
 ![](./media/image109.png)
 
