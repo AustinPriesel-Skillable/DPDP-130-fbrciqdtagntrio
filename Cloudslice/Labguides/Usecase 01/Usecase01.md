@@ -14,10 +14,10 @@ In the scenario, a fictional company called **Lakeshore Retail**, which
 sells ice cream at multiple locations. Using sample data, the tutorial
 shows how to set up your environment and begin building an ontology that
 captures business concepts such as *Store*, *Products*, and *SaleEvent*.
-You’ll also connect streaming data (like freezer temperatures from
+You'll also connect streaming data (like freezer temperatures from
 Eventhouse) to these concepts so the ontology can support **cross-domain
-reasoning and queries**, for instance: *“Which stores have lower ice
-cream sales when freezer temperature rises above –18 °C?”*
+reasoning and queries**, for instance: *"Which stores have lower ice
+cream sales when freezer temperature rises above -18 °C?"*
 
 **Objectives**
 
@@ -51,7 +51,7 @@ reports.
 
 1.  Open your browser, navigate to the address bar, and type or paste
     the following URL: +++https://app.fabric.microsoft.com/+++
-    then press the **Enter** button and sign in with your credentials
+    then press the **Enter** button and sign in with your credentials
 
 | Credential | Value |
 |------------|-------|
@@ -60,17 +60,17 @@ reports.
 2. In the portal, switch to Fabric Mode before proceeding to create workspace.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/imga1.png)
-3.  In the Workspaces pane, click on **+New workspace** tile
+3.  In the Workspaces pane, click on **+New workspace** tile
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image1.png)
 
-3.  In the **Create a workspace** pane that appears on the right side,
-    enter the following details, and click on the **Apply** button.
+3.  In the **Create a workspace** pane that appears on the right side,
+    enter the following details, and click on the **Apply** button.
 
 | Setting | Value |
 |----------|----------|
-| Name | +++Fabric IQ OntologyXXXX+++ **(XXXX can be a unique number)** |
+| Name | +++Fabric IQ Ontology@lab.LabInstance.Id+++ **(XXXX can be a unique number)** |
 | Advanced | Under **License mode**, select **Fabric capacity** |
 | Default storage format | **Small dataset storage format** |
 
@@ -84,19 +84,19 @@ reports.
 
 ## Task 2: Create a lakehouse
 
-1.  Create a new lakehouse by clicking on the **+New item** button in
+1.  Create a new lakehouse by clicking on the **+New item** button in
     the navigation bar.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image5.png)
 
-2.  Filter by, and select, the **+++Lakehouse+++** tile.
+2.  Filter by, and select, the **+++Lakehouse+++** tile.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image6.png)
 
-3.  In the **New lakehouse** dialog box, enter **+++IQ_Lakehouse+++** in the **Name** field and **unselect** the lakehouses schemas.
-    Click on the **Create** button and open the new lakehouse.
+3.  In the **New lakehouse** dialog box, enter **+++IQ_Lakehouse+++** in the **Name** field and **unselect** the lakehouses schemas.
+    Click on the **Create** button and open the new lakehouse.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image7.png)
@@ -104,7 +104,7 @@ reports.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image8.png)
 
-4.  You will see a notification stating **Successfully created SQL
+4.  You will see a notification stating **Successfully created SQL
     endpoint**.
 
 > ![A screenshot of a computer AI-generated content may be
@@ -112,8 +112,8 @@ reports.
 
 ## Task 3: Ingest sample data
 
-1.  In the **IQ_Lakehouse** page, navigate to **Get data in your
-    lakehouse** section, and click on **Upload files as shown in the
+1.  In the **IQ_Lakehouse** page, navigate to **Get data in your
+    lakehouse** section, and click on **Upload files as shown in the
     below image.**
 
 > ![](./media/image10.png)
@@ -123,15 +123,15 @@ reports.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image11.png)
 
-3.  Browse to **C:\LabFiles\Lab1** on your VM, then
-    select **DimProducts.csv, DimStore.csv, FactSale.csv** and
-    **Freezer.csv** file and click on **Open** button.
+3.  Browse to **C:\LabFiles\Lab1** on your VM, then
+    select **DimProducts.csv, DimStore.csv, FactSale.csv** and
+    **Freezer.csv** file and click on **Open** button.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image12.png)
 
-4.  Then, click on the **Upload** button and close the **Upload
-    files** dialog by selecting the **X** icon for the dialog.
+4.  Then, click on the **Upload** button and close the **Upload
+    files** dialog by selecting the **X** icon for the dialog.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image13.png)
@@ -144,17 +144,17 @@ reports.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image15.png)
 
-6.  In the **Lakehouse** page, Under the Explorer pane select **Files**.
-    Now, hover your mouse over the **DimProducts.csv** file. Click on
-    the horizontal ellipses **(…)** beside **DimProducts.csv** .
-    Navigate and click on **Load Table**, then select **New table**.
+6.  In the **Lakehouse** page, Under the Explorer pane select **Files**.
+    Now, hover your mouse over the **DimProducts.csv** file. Click on
+    the horizontal ellipses **(…)** beside **DimProducts.csv** .
+    Navigate and click on **Load Table**, then select **New table**.
 
 > ![](./media/image16.png)
 >
 > ![](./media/image17.png)
 
-7.  In the **Load file to new table** dialog box, click on
-    the **Load** button.
+7.  In the **Load file to new table** dialog box, click on
+    the **Load** button.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image18.png)
@@ -164,9 +164,9 @@ reports.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image19.png)
 
-9.  Select the **DimProducts** table to preview the data.
+9.  Select the **DimProducts** table to preview the data.
 
-\[!note\]**Note**: You may need to select the **Refresh** button more
+\[!note\]**Note**: You may need to select the **Refresh** button more
 than once to preview the data.
 
 > ![A screenshot of a computer AI-generated content may be
@@ -193,7 +193,7 @@ incorrect.](./media/image22.png)
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image27.png)
 
-11. From the left navigation bar, select **Fabric IQ Ontology**.
+11. From the left navigation bar, select **Fabric IQ Ontology**.
 
 > ![](./media/image28.png)
 
@@ -202,14 +202,14 @@ incorrect.](./media/image22.png)
 Follow these steps to upload the device streaming data file to a KQL
 database in Eventhouse.
 
-1.  On the **Fabric IQ Ontology** home page, select **+New item** and
-    select **Eventhouse**. 
+1.  On the **Fabric IQ Ontology** home page, select **+New item** and
+    select **Eventhouse**. 
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image29.png)
 
 2.  Name the Eventhouse +++**TelemetryDataEH**+++ and click on
-    the **Create** button.
+    the **Create** button.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image30.png)
@@ -246,8 +246,8 @@ database in Eventhouse.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image37.png)
 
-8.  Browse to **C:\LabFiles\Lab1** on your VM, then
-    select ***FreezerTelemetry*.csv** file and click on **Open** button.
+8.  Browse to **C:\LabFiles\Lab1** on your VM, then
+    select ***FreezerTelemetry*.csv** file and click on **Open** button.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image38.png)
@@ -257,23 +257,23 @@ database in Eventhouse.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image39.png)
 
-10. Then click on the **Finish** button.
+10. Then click on the **Finish** button.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image40.png)
 
-11. Wait for the Data ingestion to be completed, and click **Close**.
+11. Wait for the Data ingestion to be completed, and click **Close**.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image41.png)
 
-12. The KQL database shows the **FreezerTelemetry** table when you're
+12. The KQL database shows the **FreezerTelemetry** table when you're
     done:
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image42.png)
 
-13. Select **Fabric IQ Ontology** in the left navigation pane.
+13. Select **Fabric IQ Ontology** in the left navigation pane.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image43.png)
@@ -282,14 +282,14 @@ database in Eventhouse.
 
 ## Task 1: Create ontology (preview) item
 
-1.  In your Fabric workspace, select **+ New item**. Search for and
-    select the **Ontology (preview)** item.
+1.  In your Fabric workspace, select **+ New item**. Search for and
+    select the **Ontology (preview)** item.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image44.png)
 
-2.  Enter +++**RetailSalesOntology+++** for the **Name** of your
-    ontology and select **Create**.
+2.  Enter +++**RetailSalesOntology+++** for the **Name** of your
+    ontology and select **Create**.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image45.png)
@@ -308,45 +308,45 @@ database in Eventhouse.
 ## Task 2: Create entity types and data bindings
 
 > First, create entity types. Entity types represent types of objects in
-> a business. This step has three entity types: *Store*, *Products*,
-> and *SaleEvent*. After you create the entity types, create their
+> a business. This step has three entity types: *Store*, *Products*,
+> and *SaleEvent*. After you create the entity types, create their
 > properties by binding source data columns in
-> the ***IQ_Lakehouse*** lakehouse tables.
+> the ***IQ_Lakehouse*** lakehouse tables.
 
 ### Add first entity type (Store)
 
 1.  From the top ribbon or the center of the configuration canvas,
-    select **Add entity type**.
+    select **Add entity type**.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image47.png)
 
-2.  Enter +++**Store+++ **for the name of your entity type and
-    select **Add Entity Type**.
+2.  Enter +++**Store+++ **for the name of your entity type and
+    select **Add Entity Type**.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image48.png)
 
-3.  The *Store* entity type is added to the configuration canvas, and
-    the **Entity type configuration** pane is visible.
+3.  The *Store* entity type is added to the configuration canvas, and
+    the **Entity type configuration** pane is visible.
 
 > ![](./media/image49.png)
 
-4.  On the configuration canvas, select **...** next to the entity name
-    and select **Bind data**.
+4.  On the configuration canvas, select **...** next to the entity name
+    and select **Bind data**.
 
 > ![](./media/image50.png)
 
-5.  Select **Add data binding \> Lakehouse table**.
+5.  Select **Add data binding \> Lakehouse table**.
 
 > ![](./media/image51.png)
 
-6.  Next, choose your data source.Select the **IQ_Lakehouse** lakehouse
-    and select **Next**.
+6.  Next, choose your data source.Select the **IQ_Lakehouse** lakehouse
+    and select **Next**.
 
 > ![](./media/image52.png)
 
-7.  Select the **dimstore** table and select **Select**.
+7.  Select the **dimstore** table and select **Select**.
 
 ![](./media/image53.png)
 
@@ -365,34 +365,34 @@ database in Eventhouse.
   key. Together, the columns you select uniquely identify a record.
 
 - **Properties**: Lists the columns from the source data that will be
-  represented as properties on the *Store* entity type. The **Source
-  column** side populates automatically with the columns from
-  the *dimstore* table, and the **Property name** side lists their
-  corresponding property names on the *Store* entity type within
+  represented as properties on the *Store* entity type. The **Source
+  column** side populates automatically with the columns from
+  the *dimstore* table, and the **Property name** side lists their
+  corresponding property names on the *Store* entity type within
   ontology. For this tutorial, keep the default property names.
 
 ![](./media/image54.png)
 
-9.  Select **Define entity type key** at the top of the configuration.
+9.  Select **Define entity type key** at the top of the configuration.
 
 ![](./media/image55.png)
 
-10. Select **StoreId** from the property list and select **Save**.
+10. Select **StoreId** from the property list and select **Save**.
 
 ![](./media/image56.png)
 
-11. **Save** the data binding.
+11. **Save** the data binding.
 
 ![](./media/image57.png)
 
 ![](./media/image58.png)
 
 12. Confirm that the entity type updated successfully, then
-    select **Cancel** to close the configuration options.
+    select **Cancel** to close the configuration options.
 
 ![](./media/image59.png)
 
-13. You see the **Configure** page of the entity type details. This page
+13. You see the **Configure** page of the entity type details. This page
     surfaces important information about the entity type, including its
     properties and data bindings. View your configured data bindings.
 
@@ -405,7 +405,7 @@ database in Eventhouse.
 
 ### Add other entity types (Products, SaleEvent)
 
-15. Follow the same steps that you used for the **Store **entity type to
+15. Follow the same steps that you used for the **Store **entity type to
     create the entity types described in the following table. Each
     entity has a static data binding with the default columns from its
     source table.
@@ -465,8 +465,8 @@ database in Eventhouse.
 >
 > ![](./media/image84.png)
 
-17. When you're done, you see these entity types listed in the **Entity
-    Types** pane.
+17. When you're done, you see these entity types listed in the **Entity
+    Types** pane.
 
 ![](./media/image85.png)
 
@@ -477,22 +477,22 @@ contextual connections in your data.
 
 ### SaleEvent from Store
 
-1.  Select the **SaleEvent** entity type from the Explorer.
+1.  Select the **SaleEvent** entity type from the Explorer.
 
 > ![](./media/image86.png)
 
-2.  Select **Add relationship** from the menu ribbon.
+2.  Select **Add relationship** from the menu ribbon.
 
 > ![](./media/image87.png)
 
-3.  Enter the following relationship type details and select **Add
+3.  Enter the following relationship type details and select **Add
     relationship type**.
 
-- **Relationship type name**: +++from+++
+- **Relationship type name**: +++from+++
 
-- **Source entity type**: **SaleEvent**
+- **Source entity type**: **SaleEvent**
 
-- **Target entity type**: **Store**
+- **Target entity type**: **Store**
 
 > ![](./media/image88.png)
 >
@@ -503,7 +503,7 @@ contextual connections in your data.
     configuration page:
 
 - **Origin entity type**: Lists details of the origin entity
-  (**SaleEvent** in this case).
+  (**SaleEvent** in this case).
 
 - **Relationship type**: Sets details of the relationship type.
 
@@ -518,34 +518,34 @@ contextual connections in your data.
 
 &nbsp;
 
-1.  **Mapping table**: **Browse available sources** and select
-    the **factsales** table. This table in the source data can
-    link *Store* and *SaleEvent* entities together, because it contains
+1.  **Mapping table**: **Browse available sources** and select
+    the **factsales** table. This table in the source data can
+    link *Store* and *SaleEvent* entities together, because it contains
     identifying information for both entity types. Each row in this
     table references a store and a sale event by ID.
 
 > ![](./media/image92.png)
 
-2.  **Matched SaleEvent: SaleId**: Select **SaleId**. This setting
+2.  **Matched SaleEvent: SaleId**: Select **SaleId**. This setting
     specifies the column in the relationship source data table whose
-    values match the key property defined on the *SaleEvent* entity. In
+    values match the key property defined on the *SaleEvent* entity. In
     this case, the relationship data source and the entity data source
-    both use the *factsales* table, so you're selecting the same column
+    both use the *factsales* table, so you're selecting the same column
     (SaleId).
 
-3.  **Matched Store: StoreId**: Select **StoreId**. This setting
+3.  **Matched Store: StoreId**: Select **StoreId**. This setting
     specifies the column in the relationship source data table
-    (*factsales \>* StoreId) whose values match the key property defined
-    on the *Store* entity (*dimstore \>* StoreId). In the tutorial data,
+    (*factsales \>* StoreId) whose values match the key property defined
+    on the *Store* entity (*dimstore \>* StoreId). In the tutorial data,
     the column name is the same (StoreId) in both tables.
 
 > ![](./media/image93.png)
 
-**Important:** Make sure to select the correct **Matched** columns that
+**Important:** Make sure to select the correct **Matched** columns that
 match the entity type key properties.
 
-6.  **Save** the relationship type. Confirm that the relationship type
-    updated successfully, then select **Cancel** to close the
+6.  **Save** the relationship type. Confirm that the relationship type
+    updated successfully, then select **Cancel** to close the
     configuration options.
 
 > ![](./media/image94.png)
@@ -560,13 +560,13 @@ match the entity type key properties.
 
 ### **SaleEvent sold Products**
 
-1.  Select **Home** to return to the configuration canvas where you can
+1.  Select **Home** to return to the configuration canvas where you can
     add new entity types.
 
 ![](./media/image97.png)
 
 2.  Follow the same steps that you used for the first relationship type
-    to create a second relationship from the **SaleEvent **entity type
+    to create a second relationship from the **SaleEvent **entity type
     that has the details described in the following table.
 
 | Relationship Type Name | Origin Entity Type | Target Entity Type | Mapping Table | Matched SaleEvent: SaleId | Matched Products: ProductId |
@@ -590,11 +590,11 @@ match the entity type key properties.
 # Exercise 3:Enrich the ontology with additional data
 
 In this exercise, you enrich your ontology by adding a
-new ***Freezer* **entity type. This entity type adds more domain context
+new ***Freezer* **entity type. This entity type adds more domain context
 and introduces properties for time series data, which reflects live
 operational information.
 
-** Note**
+** Note**
 
 For both static and time series data, you can create properties without
 binding data and bind data later, or create properties and bind data to
@@ -605,32 +605,32 @@ between a store and its freezers.
 
 ## Task 1: Create Freezer entity type and add properties
 
-Follow these steps to create the *Freezer* entity type and add
+Follow these steps to create the *Freezer* entity type and add
 properties to it. The properties aren't bound to data yet.
 
-1.  Select **Add entity type** from the top ribbon.
-    Enter +++**Freezer*+++*** for the name of your entity type and
-    select **Add Entity Type**.
+1.  Select **Add entity type** from the top ribbon.
+    Enter +++**Freezer*+++*** for the name of your entity type and
+    select **Add Entity Type**.
 
 > ![](./media/image105.png)
 >
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image106.png)
 
-2.  With the Freezer entity type selected in the **Explorer**,
-    select **View entity type details** from the top ribbon.
+2.  With the Freezer entity type selected in the **Explorer**,
+    select **View entity type details** from the top ribbon.
 
 > ![](./media/image107.png)
 
-3.  The **Configure** page of the entity type details opens. This page
+3.  The **Configure** page of the entity type details opens. This page
     surfaces important information about the entity type, including its
     properties and data bindings.
 
-Expand **Manage property bindings** and select **Add properties**.
+Expand **Manage property bindings** and select **Add properties**.
 
 ![](./media/image108.png)
 
-4.  Add the following properties and select **Save**.
+4.  Add the following properties and select **Save**.
 
 | Name | Property Type |
 |------|---------------|
@@ -645,7 +645,7 @@ Expand **Manage property bindings** and select **Add properties**.
 
 ![](./media/image110.png)
 
-5.  The properties are added to the **Configure** page, unbound to any
+5.  The properties are added to the **Configure** page, unbound to any
     data source.
 
 > ![](./media/image111.png)
@@ -653,22 +653,22 @@ Expand **Manage property bindings** and select **Add properties**.
 ## Task 2: Bind static data to properties
 
 Next, bind static data to the properties you created on
-the *Freezer* entity type.
+the *Freezer* entity type.
 
-1.  Expand **Manage property bindings** and select **Add binding and
+1.  Expand **Manage property bindings** and select **Add binding and
     properties**.
 
 > ![](./media/image112.png)
 
-2.  Select **Add data binding \> Lakehouse table**.
+2.  Select **Add data binding \> Lakehouse table**.
 
 > ![](./media/image113.png)
 
 3.  Choose your data source.
 
-- Select the **IQ_Lakehouse** lakehouse and select **Next**.
+- Select the **IQ_Lakehouse** lakehouse and select **Next**.
 
-- Select the **freezer** table and **Select**.
+- Select the **freezer** table and **Select**.
 
 > ![](./media/image114.png)
 >
@@ -689,23 +689,23 @@ the *Freezer* entity type.
   key. Together, the columns you select uniquely identify a record.
 
 - **Properties**: Lists the columns from the source data and
-  corresponding properties on the **Freezer** entity type. The **Source
-  column** side populates automatically with the columns from
-  the **freezer** table, and the **Property name** side lists their
-  corresponding property names on the **Freezer** entity type within
+  corresponding properties on the **Freezer** entity type. The **Source
+  column** side populates automatically with the columns from
+  the **freezer** table, and the **Property name** side lists their
+  corresponding property names on the **Freezer** entity type within
   ontology. For this tutorial, keep the default property names.
 
 ![](./media/image116.png)
 
-5.  Select **Define entity type key** at the top of the configuration.
-    Select FreezerId from the property list and select **Save**.
+5.  Select **Define entity type key** at the top of the configuration.
+    Select FreezerId from the property list and select **Save**.
 
 ![](./media/image117.png)
 
 ![](./media/image118.png)
 
-6.  **Save** the data binding. Confirm that the entity type updated
-    successfully, then select **Cancel** to close the configuration
+6.  **Save** the data binding. Confirm that the entity type updated
+    successfully, then select **Cancel** to close the configuration
     options.
 
 ![](./media/image119.png)
@@ -714,60 +714,60 @@ the *Freezer* entity type.
 
 ## Task 3: Bind time series data to additional properties
 
-Next, add time series data on the **Freezer **entity, by creating new
+Next, add time series data on the **Freezer **entity, by creating new
 properties and binding time series data to them in a single data binding
 operation.
 
-1.  In the **Configure** page, expand **Manage property bindings** and
-    select **Add binding and properties** again to reopen the binding
+1.  In the **Configure** page, expand **Manage property bindings** and
+    select **Add binding and properties** again to reopen the binding
     configuration.
 
 ![](./media/image121.png)
 
-2.  Under **Binding selection**, expand **Add data binding** and
-    select **Eventhouse table or materialized view**.
+2.  Under **Binding selection**, expand **Add data binding** and
+    select **Eventhouse table or materialized view**.
 
 ![](./media/image122.png)
 
 3.  Choose your data source.
 
-    1.  Select the **TelemetryDataEH **eventhouse and select **Add**.
+    1.  Select the **TelemetryDataEH **eventhouse and select **Add**.
 
 ![](./media/image123.png)
 
-4.  Select the **FreezerTelemetry **table and **Add**.
+4.  Select the **FreezerTelemetry **table and **Add**.
 
 ![](./media/image124.png)
 
-5.  A **Timeseries data** section appears in the configuration.
-    For **Timestamp column**, select timestamp
+5.  A **Timeseries data** section appears in the configuration.
+    For **Timestamp column**, select timestamp
 
 ![](./media/image125.png)
 
-6.  Scroll down to the **Properties** section, where
-    the **StoreId **shows an error because it is already bound in the
+6.  Scroll down to the **Properties** section, where
+    the **StoreId **shows an error because it is already bound in the
     static data binding. Use the trash icon to delete the duplicated
     property.
 
 ![](./media/image126.png)
 
-7.  **Save** the data binding. Confirm that the entity type updated
-    successfully, then select **Cancel** to close the configuration
+7.  **Save** the data binding. Confirm that the entity type updated
+    successfully, then select **Cancel** to close the configuration
     options.
 
 ![](./media/image127.png)
 
 ![](./media/image128.png)
 
-8.  Back in the **Configure** page for *Freezer*, notice that there are
+8.  Back in the **Configure** page for *Freezer*, notice that there are
     now more entity type properties, and the new ones are bound to
-    the *FreezerTelemetry* data source.
+    the *FreezerTelemetry* data source.
 
 ![](./media/image129.png)
 
-Now the *Freezer* entity has two data bindings: one with static data
-from the *freezer* lakehouse table and one with streaming data from
-the *FreezerTelemetry* eventhouse table.
+Now the *Freezer* entity has two data bindings: one with static data
+from the *freezer* lakehouse table and one with streaming data from
+the *FreezerTelemetry* eventhouse table.
 
 ## Task 4: Add relationship type
 
@@ -781,29 +781,29 @@ between a store and its freezers.
 
 ![](./media/image130.png)
 
-2.  Enter the following relationship type details and select **Add
+2.  Enter the following relationship type details and select **Add
     relationship type**.
 
-    1.  **Relationship type name**: **operates**
+    1.  **Relationship type name**: **operates**
 
-    2.  **Source entity type**: **Store**
+    2.  **Source entity type**: **Store**
 
-    3.  **Target entity type**: **Freezer**
+    3.  **Target entity type**: **Freezer**
 
 ![](./media/image131.png)
 
-3.  The relationship is added to the **Relationships** section. Select
-    the **operates** relationship on the canvas to open the relationship
+3.  The relationship is added to the **Relationships** section. Select
+    the **operates** relationship on the canvas to open the relationship
     details configuration. Observe the sections of the configuration
     page:
 
-- **Origin entity type**: Lists details of the origin entity (*Store* in
+- **Origin entity type**: Lists details of the origin entity (*Store* in
   this case).
 
 - **Relationship type**: Sets details of the relationship type.
 
 - **Target entity type**: Lists details of the target entity
-  (**Freezer** in this case).
+  (**Freezer** in this case).
 
 ![](./media/image132.png)
 
@@ -811,38 +811,38 @@ between a store and its freezers.
 
 4.  In the middle section, enter the following details.
 
-- **Mapping table**: Select the **freezer** table. This table in the
-  source data can link **Store** and **Freezer** entities together, because
+- **Mapping table**: Select the **freezer** table. This table in the
+  source data can link **Store** and **Freezer** entities together, because
   it contains identifying information for both entity types. Each row in
   this table references a store and a freezer by ID.
 
-- **Matched Store: StoreId**: Select **StoreId**. This setting specifies
+- **Matched Store: StoreId**: Select **StoreId**. This setting specifies
   the column in the relationship source data table (*freezer
-  \>* StoreId) whose values match the key property defined on
-  the *Store* entity (*dimstore \>* StoreId). In the tutorial data, the
+  \>* StoreId) whose values match the key property defined on
+  the *Store* entity (*dimstore \>* StoreId). In the tutorial data, the
   column name is the same (StoreId) in both tables.
 
-- **Matched Freezer: FreezerId**: Select **FreezerId.** This setting
+- **Matched Freezer: FreezerId**: Select **FreezerId.** This setting
   specifies the column in the relationship source data table whose
-  values match the key property defined on the *Freezer* entity. In this
+  values match the key property defined on the *Freezer* entity. In this
   case, the relationship data source and the entity data source both use
-  the *freezer* table, so you're selecting the same column (FreezerId).
+  the *freezer* table, so you're selecting the same column (FreezerId).
 
 ![](./media/image134.png)
 
 **Important:** Make sure to select the correct source columns that match
 the entity type key properties.
 
-5.  **Save** the relationship type. Confirm that the relationship type
-    updated successfully, then select **Cancel** to close the
+5.  **Save** the relationship type. Confirm that the relationship type
+    updated successfully, then select **Cancel** to close the
     configuration options.
 
 ![](./media/image135.png)
 
 ![](./media/image136.png)
 
-6.  You see the **Configure** page for the entity, where the updated
-    relationship remains visible in the **Relationships** section.
+6.  You see the **Configure** page for the entity, where the updated
+    relationship remains visible in the **Relationships** section.
 
 ![](./media/image137.png)
 
@@ -860,13 +860,13 @@ to the source data rows. In this section, you use the preview experience
 to view those entity instances.
 
 1.  Start in the Home configuration canvas of ontology. Select
-    the **SaleEvent **entity type, and **View Entity Type details** from
+    the **SaleEvent **entity type, and **View Entity Type details** from
     the top ribbon.
 
 ![](./media/image138.png)
 
-2.  Open the **Instances** tab. Verify that it shows six entity
-    instances with data populated from the **factsales **lakehouse
+2.  Open the **Instances** tab. Verify that it shows six entity
+    instances with data populated from the **factsales **lakehouse
     table, like revenue and unit counts.
 
 ![](./media/image139.png)
@@ -874,51 +874,51 @@ to view those entity instances.
 ## Task 2: View time series data
 
 1.  In the top left corner of the page, use the selector next to the
-    entity type name to switch to the **Freezer** entity type.
+    entity type name to switch to the **Freezer** entity type.
 
 ![](./media/image140.png)
 
-2.  Open the **Overview** tab. The tab loads with empty charts, because
-    the default time range of **Last 30 days** doesn't include any data.
+2.  Open the **Overview** tab. The tab loads with empty charts, because
+    the default time range of **Last 30 days** doesn't include any data.
 
 ![](./media/image141.png)
 
-3.  Update the time range from the default of **Last 30 days** to a
-    custom date range that begins on **Fri Aug 01 2025 at 12:00 AM,**
-    ends on **Mon Aug 04 2025** *at* **12:00 AM**, and has a **Time
-    granularity** of **5 minutes**.
+3.  Update the time range from the default of **Last 30 days** to a
+    custom date range that begins on **Fri Aug 01 2025 at 12:00 AM,**
+    ends on **Mon Aug 04 2025** *at* **12:00 AM**, and has a **Time
+    granularity** of **5 minutes**.
 
 ![](./media/image142.png)
 
 4.  Observe the time series data that's now visible from
-    several **Freezer **entity instances in the time window you
+    several **Freezer **entity instances in the time window you
     selected.
 
 ![](./media/image143.png)
 
 ## Task 3: **View ontology graph**
 
-The **Overview** tab also contains a **Relationship graph**, which you
+The **Overview** tab also contains a **Relationship graph**, which you
 use to visualize your ontology in a graph of nodes and edges.
 
-1.  Use the entity type selector to switch to the **SaleEvent** entity
-    type. In the **Relationship graph** tile, select **Expand**.
+1.  Use the entity type selector to switch to the **SaleEvent** entity
+    type. In the **Relationship graph** tile, select **Expand**.
 
 > ![](./media/image144.png)
 
 2.  he expanded graph view opens. Observe the details of the
-    relationships from the **SaleEvent **entity type
-    to **Products** and **Store.**
+    relationships from the **SaleEvent **entity type
+    to **Products** and **Store.**
 
 ![](./media/image145.png)
 
-3.  Use the entity type selector to switch to the **Store **entity type.
+3.  Use the entity type selector to switch to the **Store **entity type.
     **Expand** its **relationship graph.**
 
 ![](./media/image146.png)
 
-4.  In the graph, observe the relationships that **Store** has
-    with **Freezer **and **SaleEvent**. Then, select **Run query** in
+4.  In the graph, observe the relationships that **Store** has
+    with **Freezer **and **SaleEvent**. Then, select **Run query** in
     the query builder ribbon. This action runs the default query and
     shows a graph of entity instances alongside their connections
 
@@ -931,61 +931,61 @@ use to visualize your ontology in a graph of nodes and edges.
 ## Task 4: Query graph instances
 
 In the relationship graph view, you can query your ontology for entity
-instances that meet certain criteria. Use the **Query builder** filters
+instances that meet certain criteria. Use the **Query builder** filters
 in the top ribbon to craft queries.
 
 ![](./media/image150.png)
 
-First, craft this query: **Show all freezers that are operated in the
+First, craft this query: **Show all freezers that are operated in the
 Paris store.**
 
-1.  In the *Store* entity's relationship graph, select **Add filter \>
-    Store \> StoreId** from the query builder ribbon. Set the filter
-    for **StoreId = S-PAR-01**. This value is the store ID for the Paris
+1.  In the *Store* entity's relationship graph, select **Add filter \>
+    Store \> StoreId** from the query builder ribbon. Set the filter
+    for **StoreId = S-PAR-01**. This value is the store ID for the Paris
     store.
 
 ![](./media/image151.png)
 
 ![](./media/imga2.png)
 
-5.  In the **Components** section, uncheck *SaleEvent* so that the only
-    checked fields are **Nodes \> Store**, **Nodes \> Freezer**,
-    and **Edges \> operates**.
+5.  In the **Components** section, uncheck *SaleEvent* so that the only
+    checked fields are **Nodes \> Store**, **Nodes \> Freezer**,
+    and **Edges \> operates**.
 
 ![](./media/image153.png)
 
-6.  Select **Run query** and verify that the instance graph shows two
-    freezers connected to the **Paris** store.
+6.  Select **Run query** and verify that the instance graph shows two
+    freezers connected to the **Paris** store.
 
 ![](./media/image154.png)
 
 ![](./media/image155.png)
 
-7.  Select **Clear query** to clear the query results.
+7.  Select **Clear query** to clear the query results.
 
 ![](./media/image156.png)
 
-Next, craft this query: *Show all stores that have made a sale with a
+Next, craft this query: *Show all stores that have made a sale with a
 revenue greater than 150.*
 
-8.  Select **Add a node** and add a node for **SaleEvent.**
+8.  Select **Add a node** and add a node for **SaleEvent.**
 
 > ![](./media/image157.png)
 
-9.  In the **Components** section, check the boxes next to **Nodes \>
-    Store** and **Edges \> from** to add them to the graph.
+9.  In the **Components** section, check the boxes next to **Nodes \>
+    Store** and **Edges \> from** to add them to the graph.
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/imga3.png)
 
-10. From the query builder ribbon, select **Add filter \> SaleEvent \>
-    RevenueUSD**. Set the filter for +++**RevenueUSD \> 150+++.**
+10. From the query builder ribbon, select **Add filter \> SaleEvent \>
+    RevenueUSD**. Set the filter for +++**RevenueUSD \> 150+++.**
 
 ![](./media/image159.png)
 
 ![](./media/image160.png)
 
-11. Select **Run query** and verify that the instance graph shows two
+11. Select **Run query** and verify that the instance graph shows two
     stores that meet the filter for their connected sale events. You can
     also select the nodes in the graph to get details of the specific
     sale events
@@ -1000,8 +1000,8 @@ outcomes (sales).
 
 # Exercise 5: **Consume ontology from agents**
 
-Ontology (preview) integrates with [Fabric data agent
-(preview)](https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent) to
+Ontology (preview) integrates with [Fabric data agent
+(preview)](https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent) to
 let you ask questions in natural language, and get answers grounded in
 the ontology's definitions and bindings.
 
@@ -1010,25 +1010,25 @@ the ontology's definitions and bindings.
 Follow these steps to create a new data agent that connects to your
 ontology (preview) item.
 
-1.  Now, click on **Fabric IQ Ontology XX** on the left-sided navigation
+1.  Now, click on **Fabric IQ Ontology@lab.LabInstance.Id** on the left-sided navigation
     pane.
 
 ![](./media/image163.png)
 
-2.  In the **Fabric** home page, select **+New item.** In the Filter by
-    item type search box, enter +++**data agent**+++ and select the Data
+2.  In the **Fabric** home page, select **+New item.** In the Filter by
+    item type search box, enter +++**data agent**+++ and select the Data
     agent
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image164.png)
 
-3.  Enter **+++RetailOntologyAgent+++** as the Data agent name and
-    select **Create**.
+3.  Enter **+++RetailOntologyAgent+++** as the Data agent name and
+    select **Create**.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image165.png)
 
-4.  In **RetailOntologyAgent** page, select **Add a data source**
+4.  In **RetailOntologyAgent** page, select **Add a data source**
 
 > ![](./media/image166.png)
 
@@ -1043,17 +1043,17 @@ ontology (preview) item.
 
 ## Task 2: Provide agent instructions
 
-** Note:** This step is added in response to a known issue affecting
+** Note:** This step is added in response to a known issue affecting
 aggregation in queries.
 
 > Next, add a custom instruction to the agent.
 
-1.  Select **Agent instructions** from the menu ribbon.
+1.  Select **Agent instructions** from the menu ribbon.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image169.png)
 
-2.  At the bottom of the input box, add +++**Support group by in
+2.  At the bottom of the input box, add +++**Support group by in
     GQL**+++. This instruction enables better aggregation across
     ontology data.
 
@@ -1061,7 +1061,7 @@ aggregation in queries.
 > incorrect.](./media/image170.png)
 
 3.  The instruction is applied automatically. Optionally, close
-    the **Agent instructions** tab.
+    the **Agent instructions** tab.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image171.png)
@@ -1070,7 +1070,7 @@ aggregation in queries.
 
 > Next, explore your ontology with natural language questions.
 
-1.  Enter the following text and click on the **Submit icon** as shown
+1.  Enter the following text and click on the **Submit icon** as shown
     in the below image.
 
 > **+++For each store, show any freezers operated by that store that
@@ -1082,7 +1082,7 @@ aggregation in queries.
 ![A screenshot of a chat AI-generated content may be
 incorrect.](./media/image173.png)
 
-2.  Enter the following text and click on the **Submit icon** as shown
+2.  Enter the following text and click on the **Submit icon** as shown
     in the below image.
 
 > **+++What is the top product by revenue across all stores?+++**
@@ -1094,7 +1094,7 @@ incorrect.](./media/image174.png)
 incorrect.](./media/image175.png)
 
 > Notice that the responses reference entity types
-> (**Store**, **Products**, **Freezer**) and their relationships, not just raw
+> (**Store**, **Products**, **Freezer**) and their relationships, not just raw
 > tables.
 >
 > ![Screenshot of the result of a query.](./media/image176.png)
@@ -1108,7 +1108,7 @@ incorrect.](./media/image175.png)
 
 ## Task 4: Clean up resources
 
-1.  Select your workspace, the **Fabric IQ OntologyXX** from the
+1.  Select your workspace, the **Fabric IQ Ontology@lab.LabInstance.Id** from the
     left-hand navigation menu. It opens the workspace item view.
 
 > ![A screenshot of a computer AI-generated content may be
@@ -1120,7 +1120,7 @@ incorrect.](./media/image175.png)
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image178.png)
 
-3.  Navigate to the bottom of the General tab and select **Remove this
+3.  Navigate to the bottom of the General tab and select **Remove this
     workspace**.
 
 > ![A screenshot of a computer AI-generated content may be
@@ -1138,8 +1138,8 @@ structured lakehouse data with streaming telemetry data, the ontology
 provides a unified, business-friendly view of enterprise data.
 
 Through entity definitions, data bindings, and relationship modeling,
-users can analyze how operational signals—such as freezer temperature or
-humidity—relate to business outcomes like sales and revenue. The use
+users can analyze how operational signals-such as freezer temperature or
+humidity-relate to business outcomes like sales and revenue. The use
 case also highlights how ontologies power graph exploration and natural
 language queries through Fabric data agents, enabling deeper insights
 without requiring users to understand underlying tables or schemas.
