@@ -44,29 +44,29 @@ Agent連接Lakehouse，Contoso現在可以將代理集成到分析應用、Copil
 1.  在你的 VM 里，点击 **Search bar**，输入 **Settings**，然后点击
     **Best match** 中的 **Settings**。
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image1.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image1.png)
 
 2.  在 Settings 窗口中，点击 **Time & language**。
 
-![A screenshot of a computer Description automatically
-generated](./media/image2.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image2.png)
 
 3.  在 **“Time & language**”页面，点击 **“Date & time**”。
 
-![A screenshot of a computer Description automatically
-generated](./media/image3.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image3.png)
 
 4.  向下滚动，进入 **“Additional settings**”部分，然后点击 **“Syn
     now**”按钮。同步需要3-5分钟。
 
-![A screenshot of a computer Description automatically
-generated](./media/image4.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image4.png)
 
 5.  关闭 **Settings** 窗口。
 
-![A screenshot of a computer Description automatically
-generated](./media/image5.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image5.png)
 
 ## 任務1： **創建Fabric工作區**
 
@@ -75,7 +75,7 @@ Agent。該工作區作為所有使用場景中所有資產的中央容器。
 
 1.  打开browser，进入地址栏，输入或粘贴以下URL：+++https://app.fabric.microsoft.com/+++，然后按下**Enter** 键。
 
-![](./media/image6.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image6.png)
 
 2.  在 **Microsoft Fabric**
     窗口中，输入你的凭证，然后点击**Submit**按钮。
@@ -85,25 +85,25 @@ Agent。該工作區作為所有使用場景中所有資產的中央容器。
     |Username	|+++@lab.CloudPortalCredential(User1).Username+++|
     |TAP	|+++@lab.CloudPortalCredential(User1).AccessToken+++|
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image7.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image7.png)
 
 3.  然后，在 **Microsoft** 窗口输入密码，点击**Sign in** 按钮。
 
-> ![A login screen with a red box and blue text AI-generated content may
-> be incorrect.](./media/image8.png)
+    ![A login screen with a red box and blue text AI-generated content may
+    be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image8.png)
 
 4.  在 **Stay signed in?** 窗口，点击**“Yes”**按钮。
 
-&nbsp;
+    &nbsp;
 
 5.  你将被引导到Power BI主页。
 
-> ![](./media/image9.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image9.png)
 
 6.  Fabric主页，选择 **+New workspace** 瓷砖。
 
-> ![](./media/image10.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image10.png)
 
 7.  在右侧的**Create a
     workspace** 面板中，输入以下细节，然后点击**“Apply**”按钮。
@@ -115,18 +115,18 @@ incorrect.](./media/image7.png)
     | Default storage format | Small dataset storage format |
     | Template apps | Check **Develop template apps** |
 
-![](./media/image11.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image11.png)
 
-注意：要查找您的实验室instant ID，请选择“Help”并复制instant ID。
+    注意：要查找您的实验室instant ID，请选择“Help”并复制instant ID。
 
-![A screenshot of a computer Description automatically
-generated](./media/image12.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image12.png)
 
-> ![](./media/image13.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image13.png)
 
 8.  等待部署完成。完成大約需要1-2分鐘。
 
-> ![](./media/image14.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image14.png)
 
 ## 任务2：用AdventureWorksLH创建lakehouse
 
@@ -135,28 +135,28 @@ generated](./media/image12.png)
 
 1.  点击导航栏中的 **+New item** 按钮创建新lakehouse。
 
-![](./media/image15.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image15.png)
 
 2.  点击“**Lakehouse**”瓷砖。
 
-![](./media/image16.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image16.png)
 
 3.  在“**New lakehouse**”对话框中，在“**Name**”字段中输入
     +++**AdventureWorksLH+++**，单击“**Create**”按钮，打开新的lakehouse。
 
-**注意**：请确保在**AdventureWorksLH**之前删除空格
+    **注意**：请确保在**AdventureWorksLH**之前删除空格
 
-![](./media/image17.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image17.png)
 
-![](./media/image18.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image18.png)
 
 4.  你会看到一条通知，提示**Successfully created SQL endpoint**。
 
-![](./media/image19.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image19.png)
 
 5.  在你想创建 Fabric data agent的工作区创建一个新的笔记本。
 
-> ![](./media/image20.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image20.png)
 
 6.  用以下代碼更新該**單元格**的代碼，並點擊“**▷ Run
     cell** **”**左側的單元格。
@@ -179,15 +179,15 @@ generated](./media/image12.png)
         spark.createDataFrame(df).write.mode('overwrite').saveAsTable(table)
     ```
 
-![](./media/image21.png)
+![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image21.png)
 
-![](./media/image22.png)
+![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image22.png)
 
-![](./media/image23.png)
+![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image23.png)
 
-![](./media/image24.png)
+![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image24.png)
 
-![](./media/image25.png)
+![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image25.png)
 
 ## 任務3：創建Data agent
 
@@ -196,60 +196,60 @@ Agent並將其連接到Lakehouse。您將選擇所需的維度表和事實表，
 
 1.  现在，点击左侧导航面板上的**Fabric Data agent-XXXXXX**。
 
-![](./media/image26.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image26.png)
 
 2.  在**Fabric**主页，选择 **+New item。**
 
-![](./media/image27.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image27.png)
 
 3.  在**“Filter by item type”**搜索框中，输入 **+++data agent+++**
     并选择 **Data agent。**
 
-![](./media/image28.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image28.png)
 
 4.  输入 **+++AI-agent+++** 作为 Data agent名称，选择**Create**。
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image29.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image29.png)
 
-> ![](./media/image30.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image30.png)
 
 5.  在 AI-agent页面中，选择 **Add a data source**。
 
-> ![](./media/image31.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image31.png)
 
 6.  在 **OneLake catalog** 标签页中，选择 **AI-Fabric_lakehouse
     lakehouse** 并选择 **Add**。
 
-![](./media/image32.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image32.png)
 
-![](./media/image33.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image33.png)
 
 7.  然後你必須選擇你希望AI技能能訪問的表格。
 
-本實驗室使用以下表格：
+    本實驗室使用以下表格：
 
-- DimCustomer
+    - DimCustomer
 
-- DimDate
+    - DimDate
 
-- DimGeography
+    - DimGeography
 
-- DimProduct
+    - DimProduct
 
-- DimProductCategory
+    - DimProductCategory
 
-- DimPromotion
+    - DimPromotion
 
-- DimReseller
+    - DimReseller
 
-- DimSalesTerritory
+    - DimSalesTerritory
 
-- FactInternetSales
+    - FactInternetSales
 
-- FactResellerSales
+    - FactResellerSales
 
-![](./media/image34.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image34.png)
 
 ## 任務4：提供指令
 
@@ -261,88 +261,88 @@ Agent。這些示例幫助代理理解領域特定上下文，並為現實世界
 
 2.  例如，对于问题 +++**What is the most sold product?+++**
 
-![](./media/image35.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image35.png)
 
-> ![](./media/image36.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image36.png)
 
 3.  複製問題和SQL
     queries，粘貼到記事本，然後保存記事本，以便後續任務中使用這些信息。
 
-![A screenshot of a computer Description automatically
-generated](./media/image37.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image37.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image38.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image38.png)
 
 4.  选择**FactResellerSales**，输入以下文字，点击下图所示的**Submit图标**。
 
-**+++What is our most sold product?+++**
+    **+++What is our most sold product?+++**
 
-![A screenshot of a computer Description automatically
-generated](./media/image39.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image39.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image40.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image40.png)
 
-隨著你不斷嘗試查詢，應該添加更多指令。
+    隨著你不斷嘗試查詢，應該添加更多指令。
 
 5.  選擇**dimcustomer**，輸入以下文字，點擊**Submit圖標**
 
-**+++how many active customers did we have June 1st, 2013?+++**
+    **+++how many active customers did we have June 1st, 2013?+++**
 
-![A screenshot of a computer Description automatically
-generated](./media/image41.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image41.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image42.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image42.png)
 
 6.  把所有問題和SQL查詢複製出來，粘貼到記事本裡，然後保存記事本，方便後續任務中使用這些信息。
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image43.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image43.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image44.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image44.png)
 
 7.  选择**dimdate，FactInternetSales**
     ，输入以下文字，点击**Submit图标：**
 
-**+++what are the monthly sales trends for the last year?+++**
+    **+++what are the monthly sales trends for the last year?+++**
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image45.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image45.png)
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image46.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image46.png)
 
 8.  选择**dimproduct，FactInternetSales**，输入以下文字，点击**Submit图标：**
 
-**+++which product category had the highest average sales price?+++**
+    **+++which product category had the highest average sales price?+++**
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image47.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image47.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image48.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image48.png)
 
-問題的一部分在於“active
-customer”沒有正式的定義。模型文本框備註中更多說明可能會有幫助，但用戶可能會經常問這個問題。你需要确保AI正确地处理这个问题。
+    問題的一部分在於“active
+    customer”沒有正式的定義。模型文本框備註中更多說明可能會有幫助，但用戶可能會經常問這個問題。你需要确保AI正确地处理这个问题。
 
 7.  相关查询较为复杂，请从**Setup** 面板中选择**“Example
     queries**”按钮提供示例。
 
-> ![](./media/image49.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image49.png)
 
 8.  在“Example queries”标签中，选择**Add example。**
 
-![](./media/image50.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image50.png)
 
 9.  這裡，你應該為你創建的lakehouse
     data源添加示例查詢。在問題欄中添加以下問題：
 
-**+++What is the most sold product?+++**
+    **+++What is the most sold product?+++**
 
-> ![](./media/image51.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image51.png)
 
 10. 添加你保存在筆記本中的query1：
 
@@ -352,77 +352,77 @@ customer”沒有正式的定義。模型文本框備註中更多說明可能會
     GROUP BY ProductKey
     ORDER BY TotalQuantitySold DESC
     ```
-> ![](./media/image52.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image52.png)
 
 11. 要添加新的查詢字段，請點擊 **+Add。**
 
-> ![](./media/image53.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image53.png)
 
 12. 在題目欄中補充第二個問題：
 
-**+++What are the monthly sales trends for the last year?+++**
+    **+++What are the monthly sales trends for the last year?+++**
 
-![](./media/image54.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image54.png)
 
 13. 把你保存在筆記本裡的query3添加進去：
 
     ```
     SELECT
-        d.CalendarYear,
-        d.MonthNumberOfYear,
-        d.EnglishMonthName,
-        SUM(f.SalesAmount) AS TotalSales
+    d.CalendarYear,
+    d.MonthNumberOfYear,
+    d.EnglishMonthName,
+    SUM(f.SalesAmount) AS TotalSales
     FROM
-        dbo.factinternetsales f
-        INNER JOIN dbo.dimdate d ON f.OrderDateKey = d.DateKey
+    dbo.factinternetsales f
+    INNER JOIN dbo.dimdate d ON f.OrderDateKey = d.DateKey
     WHERE
-        d.CalendarYear = (
-            SELECT MAX(CalendarYear)
-            FROM dbo.dimdate
-            WHERE DateKey IN (SELECT DISTINCT OrderDateKey FROM dbo.factinternetsales)
-        )
+    d.CalendarYear = (
+    SELECT MAX(CalendarYear)
+    FROM dbo.dimdate
+    WHERE DateKey IN (SELECT DISTINCT OrderDateKey FROM dbo.factinternetsales)
+    )
     GROUP BY
-        d.CalendarYear,
-        d.MonthNumberOfYear,
-        d.EnglishMonthName
+    d.CalendarYear,
+    d.MonthNumberOfYear,
+    d.EnglishMonthName
     ORDER BY
-        d.MonthNumberOfYear
+    d.MonthNumberOfYear
     ```
-> ![](./media/image55.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image55.png)
 
 14. 要添加新的query字段，請點擊 **+Add。**
 
-> ![](./media/image56.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image56.png)
 
 15. 在題目欄中添加第三個問題：
 
-+++Which product category has the highest average sales price?+++
+    +++Which product category has the highest average sales price?+++
 
-![](./media/image57.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image57.png)
 
 16. 把你保存在記事本裡的query4添加進去：
 
     ```
     SELECT TOP 1
-        dp.ProductSubcategoryKey AS ProductCategory,
-        AVG(fis.UnitPrice) AS AverageSalesPrice
+    dp.ProductSubcategoryKey AS ProductCategory,
+    AVG(fis.UnitPrice) AS AverageSalesPrice
     FROM
-        dbo.factinternetsales fis
+    dbo.factinternetsales fis
     INNER JOIN
-        dbo.dimproduct dp ON fis.ProductKey = dp.ProductKey
+    dbo.dimproduct dp ON fis.ProductKey = dp.ProductKey
     GROUP BY
-        dp.ProductSubcategoryKey
+    dp.ProductSubcategoryKey
     ORDER BY
-        AverageSalesPrice DESC
+    AverageSalesPrice DESC
     ```
-> ![](./media/image58.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image58.png)
 
 17. 把你保存在Notepad的所有查询和SQL查询添加进去，然后点击“**Export
     all”**
 
-> ![](./media/image59.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image59.png)
 
-![](./media/image60.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image60.png)
 
 ## 任务5：程序化使用Data agent
 
@@ -434,51 +434,51 @@ notebook中编程使用AI技能。用來判斷AI技能是否有已發佈的URL�
 
 1.  在数据代理 Fabric 页面，主 功能**Home** ribbon选择**Settings**。
 
-> ![](./media/image61.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image61.png)
 
 2.  在你發佈AI技能之前，它沒有發佈的URL值，如這張截圖所示。
 
 3.  关闭AI技能设置。
 
-> ![](./media/image62.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image62.png)
 
 4.  在**Home ribbon**，选择 **Publish**。
 
-> ![](./media/image63.png)
->
-> ![](./media/image64.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image63.png)
+    >
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image64.png)
 
 5.  点击查看**View publishing details**
 
-> ![](./media/image65.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image65.png)
 
 6.  AI agent的公开URL显示在这张截图中。
 
 7.  复制URL粘贴到notepad，然后保存notepad以便在后续步骤中使用这些信息。
 
-> ![](./media/image66.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image66.png)
 
 8.  在左側導航窗格選擇**Notebook1。**
 
-> ![](./media/image67.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image67.png)
 
 9.  使用單元格輸出下方的 **+
     Code** 圖標，向筆記本添加一個新的代碼單元格，輸入以下代碼並替換
     **URL**。點擊 **▷ Run**按鈕，查看輸出結果
 
-+++%pip install "openai==1.70.0"+++
+    +++%pip install "openai==1.70.0"+++
 
-> ![](./media/image68.png)
->
-> ![](./media/image69.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image68.png)
+    >
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image69.png)
 
 10. 使用單元格輸出下方的 **+
     Code**圖標，向筆記本添加一個新的代碼單元格，輸入以下代碼並替換
     **URL**。點擊 **▷ Run** 按鈕，查看輸出結果
 
-+++%pip install httpx==0.27.2+++
+    +++%pip install httpx==0.27.2+++
 
-> ![](./media/image70.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image70.png)
 
 11. 使用單元格輸出下方的 **+
     Code** 圖標，向筆記本添加一個新的代碼單元格，輸入以下代碼並替換
@@ -569,38 +569,38 @@ notebook中编程使用AI技能。用來判斷AI技能是否有已發佈的URL�
     # Delete thread
     fabric_client.beta.threads.delete(thread_id=thread.id)
     ```
-> ![](./media/image71.png)
+![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image71.png)
 
-![](./media/image72.png)
+![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image72.png)
 
 ## **任务6：删除资源**
 
 1.  選擇你的工作區，在左側導航菜單中選用**AI-Fabric-XXXX**。它會打開工作區的物品視圖。
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image73.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image73.png)
 
 2.  选择...... 在工作区名称下选择选项，选择**Workspace settings**。
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image74.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image74.png)
 
 3.  选择**Other**并**Remove this workspace。**
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image75.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image75.png)
 
 4.  点击弹出的警告中“**Delete**”。
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image76.png)
->
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image77.png)
+    ![A screenshot of a computer Description automatically
+    generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image76.png)
+    >
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-CNT/Labguides/Usecase%2002/media/image77.png)
 
-**摘要：**
+    **摘要：**
 
-在本实验室中，你学习了如何利用Microsoft Fabric’s Data
-Agent，释放对话式分析的力量。你配置了一个Fabric工作区，将结构化data导入lakehouse，并设置了一个AI技能将自然语言问题转换为SQL查询。你還通過提供指導和示例來優化查詢生成，增強了AI代理的能力。最后，你通过Fabric
-notebook程序化调用了代理，展示了端到端的AI集成。该实验室通过自然语言和generative
-AI技术，赋能您让企业数据对企业用户更易访问、更易用且更智能。
+    在本实验室中，你学习了如何利用Microsoft Fabric’s Data
+    Agent，释放对话式分析的力量。你配置了一个Fabric工作区，将结构化data导入lakehouse，并设置了一个AI技能将自然语言问题转换为SQL查询。你還通過提供指導和示例來優化查詢生成，增強了AI代理的能力。最后，你通过Fabric
+    notebook程序化调用了代理，展示了端到端的AI集成。该实验室通过自然语言和generative
+    AI技术，赋能您让企业数据对企业用户更易访问、更易用且更智能。
