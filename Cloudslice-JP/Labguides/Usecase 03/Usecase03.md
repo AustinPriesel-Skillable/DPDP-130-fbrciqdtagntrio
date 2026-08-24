@@ -1,3 +1,5 @@
+## ユースケース03 - Microsoft Fabricでミラーリングされた Azure SQL Databaseを使用してFabric Data Agentを構築
+
 **紹介**
 
 現代の組織では、複雑なデータ移動を必要とせずに、オペレーショナルデータを迅速に分析し、有益な洞察を提供できるインテリジェントなシステムが求められています。このユースケースでは、Microsoft
@@ -74,8 +76,12 @@ Databaseを作成します。AdventureWorksLTサンプルスキーマをデプ�
 
 1.  ブラウザを開き、+++https://portal.azure.com+++
     にアクセスして、以下のクラウドスライスアカウントでサインインします。
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
-2.  Azure ポータルのホーム ページから、 Microsoft Azure コマンド
+3.  Azure ポータルのホーム ページから、 Microsoft Azure コマンド
     バーの左側にある3本の横線で表される**Azure
     ポータルメニュー**をクリックします。SQL データベースを選択します。
 
@@ -90,7 +96,19 @@ incorrect.](./media/image6.png)
     **「Basics** **」**タブの下に以下の詳細を入力してストレージアカウントを作成し、
     **「Next:Networking」**をクリックします。　
 
-[TABLE]
+    | Setting | Value  |
+    |--------|----------------|
+    | Subscription | @lab.CloudSubscription.Name |
+    | Resource group | @lab.CloudResourceGroup(ResourceGroup1).Name |
+    | Database name | +++sqldatabase@lab.LabInstance.Id+++ |
+    | Server | Select **Create new** |
+    | Server name | +++sqlserver@lab.LabInstance.Id+++ |
+    | Location | @lab.CloudResourceGroup(ResourceGroup1).Location |
+    | Authentication Method | **Use SQL Authentication** |
+    | Server admin login | +++sqladmin+++ |
+    | Password | +++password321!+++ |
+    | Confirm password | +++password321!+++ |
+    | Action | Click **OK** |
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image8.png)
@@ -122,7 +140,7 @@ incorrect.](./media/image9.png)
 
 > ![](./media/image14.png)
 
-9.  *「Additional settings」*タブで、 *「Use existing
+9.  **「Additional settings」**タブで  「Use existing
     data」*の下にある**「Sample」を選択し**、プロンプトが表示されたら**「AdventureWorksLT」**を選択して**「OK」**をクリックし、次に**「Review +
     create」を選択して**続行します。
 
@@ -195,7 +213,10 @@ BIデータセット、レポートなど、このレイクハウスチュート
     ++https://app.fabric.microsoft.com/+++。
     **Enter**キーを押して、資格情報でサインインします。
 
-[TABLE]
+    |  |   |
+    |---|----|
+    |Username	|+++@lab.CloudPortalCredential(User1).Username+++|
+    |TAP	|+++@lab.CloudPortalCredential(User1).AccessToken+++|
 
 2.  Fabricのホームページで、 **「+** **New
     workspace**」タイルを選択します。
@@ -207,7 +228,12 @@ BIデータセット、レポートなど、このレイクハウスチュート
     workspace」**ペインに、以下の詳細を入力し、
     **「Apply」**ボタンをクリックします。
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++FabricAgent-mirroringdatabase@lab.LabInstance.Id+++ |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image30.png)
 
@@ -246,7 +272,12 @@ Microsoft Fabric
 
 3.  接続設定タブで以下の詳細を入力し、「Connect」ボタンをクリックします。
 
-[TABLE]
+    | Field | Value |
+    |------|-------|
+    | Server | SQL server URL saved in **Task 2 → Step 15** |
+    | Database | +++sqldatabase@lab.LabInstance.Id+++ |
+    | Username | +++sqladmin+++ |
+    | Password | +++password321!+++ |
 
 ![](./media/image37.png)
 
@@ -316,8 +347,7 @@ Data Agent をテストするには、次のような分析的な質問をしま
 
 1.  すべてのテーブルに対して**SalesLT**スキーマを選択します。
 
-2.  *「+++* **Which product categories generate the highest
-    sales?+++」**という質問を入力し、Sendアイコンをクリックしてエージェントの応答を表示します。
+2.  「+++**Which product categories generate the highest sales?**+++」という質問を入力し、Sendアイコンをクリックしてエージェントの応答を表示します。
 
 ![](./media/image49.png)
 
