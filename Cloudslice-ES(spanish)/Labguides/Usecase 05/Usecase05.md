@@ -1,3 +1,5 @@
+## Caso de uso 05: Integrar Fabric Data Agent con Microsoft Teams para obtener información procesable y colaboración entre agentes mediante Copilot Studio
+
 **Introducción**
 
 En el competitivo mercado digital actual, las empresas de comercio
@@ -91,7 +93,10 @@ conjuntos de datos de Power BI y los informes.
     la siguiente dirección URL:+++https://app.fabric.microsoft.com/+++ ;
     luego presione **Enter** e inicie sesión con sus credenciales.
 
-[TABLE]
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
 2.  En la página principal de Fabric, seleccione el mosaico **+New
     workspace**.
@@ -102,7 +107,12 @@ conjuntos de datos de Power BI y los informes.
 3.  En el panel **Create a workspace** que aparece en el lado derecho,
     escriba los siguientes detalles y haga clic en el botón **Apply**.
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++Fabric-Copilot-@lab.LabInstance.Id+++  |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image2.png)
 
@@ -292,47 +302,38 @@ permitirá realizar transformaciones y consultas más adelante.
     metaprompt en el panel de prueba (**Test**) (a la derecha, donde
     aparece **Test the agent's responses**):
 
-> Meta-Prompt: Generate Agent-Level Instructions:
->
-> Analyze your available data sources and create agent-level
-> instructions for yourself (max 15000 chars).
->
-> Objective: {AGENT_OBJECTIVE}
->
-> Users: {USER_PERSONA}
->
-> Examine your data sources: list all sources, types, and primary use.
-> Analyze domain, time coverage, and main themes.
->
-> Generate instructions with:
->
-> \## Objective
->
-> \## Data Sources (list with priority)
->
-> \## Key Terminology (infer from columns/measures)
->
-> \## Response Guidelines
->
-> Style: {RESPONSE_STYLE}
->
-> \## Handling Common Topics (3-5 based on available data)
->
-> Custom terms: {CUSTOM_TERMINOLOGY}
+    ```
+    Meta-Prompt: Generate Agent-Level Instructions:
+     Analyze your available data sources and create agent-level instructions for yourself (max 15000 chars).
+    
+     Objective: {AGENT_OBJECTIVE}
+     Users: {USER_PERSONA}
+    
+     Examine your data sources: list all sources, types, and primary use. Analyze domain, time coverage, and main themes.
+    
+     Generate instructions with:
+     ## Objective
+     ## Data Sources (list with priority)
+     ## Key Terminology (infer from columns/measures)
+     ## Response Guidelines
+     Style: {RESPONSE_STYLE}
+     ## Handling Common Topics (3-5 based on available data)
+    
+     Custom terms: {CUSTOM_TERMINOLOGY}
+    ```
 
 Al utilizar este metaprompt, reemplace manualmente las variables del
 prompt con los siguientes valores **o** péguelos directamente en Test:
 
-- {AGENT_OBJECTIVE}: "E-commerce analytics agent for business
-  intelligence"
-
-- {USER_PERSONA}: "Business analysts and sales teams"
-
-- {RESPONSE_STYLE}: "Clear summaries with data citations and trend
-  analysis"
-
-- {CUSTOM_TERMINOLOGY}: Déjelo vacío o agregue la terminología
-  específica de su dominio.
+    - {AGENT_OBJECTIVE}: "E-commerce analytics agent for business
+    intelligence"
+  
+    - {USER_PERSONA}: "Business analysts and sales teams"
+  
+    - {RESPONSE_STYLE}: "Clear summaries with data citations and trend
+    analysis"
+  
+    - {CUSTOM_TERMINOLOGY}: Leave empty or add your domain-specific terms
 
 ![](./media/image40.png)
 
@@ -344,7 +345,7 @@ prompt con los siguientes valores **o** péguelos directamente en Test:
 
 ![](./media/image42.png)
 
-> +++**Which products have the lowest stock levels?**+++
+> +++Which products have the lowest stock levels?+++
 
 ![](./media/image43.png)
 
@@ -355,19 +356,16 @@ prompt con los siguientes valores **o** péguelos directamente en Test:
 1.  Genere la descripción del agente utilizando el siguiente metaprompt
     en el panel de prueba (Test) de su Fabric Agent.
 
-> Meta-Prompt: Generate Agent Description
->
-> Create a 1-2 sentence description of yourself as a Fabric Data Agent
-> (max 200 chars).
->
-> Analyze your data sources and describe: what data domain you cover and
-> what questions you answer.
->
-> Example: "Fabric Data Agent for retail sales. Answers questions about
-> revenue, products, customers, and orders"
->
-> Output plain text only.
->
+    ```
+    Meta-Prompt: Generate Agent Description
+    Create a 1-2 sentence description of yourself as a Fabric Data Agent (max 200 chars).
+    
+    Analyze your data sources and describe: what data domain you cover and what questions you answer.
+    
+    Example: "Fabric Data Agent for retail sales. Answers questions about revenue, products, customers, and orders"
+    
+    Output plain text only.
+    ```
 > ![](./media/image45.png)
 
 2.  Haga clic en **Publish** y pegue la descripción generada en el campo
@@ -510,8 +508,7 @@ prompt con los siguientes valores **o** péguelos directamente en Test:
 
 ![](./media/image76.png)
 
-> +++**What percentage of orders use credit card vs PayPal vs debit
-> card?**+++
+**+++What percentage of orders use credit card vs PayPal vs debit card?+++**
 
 ![](./media/image77.png)
 
