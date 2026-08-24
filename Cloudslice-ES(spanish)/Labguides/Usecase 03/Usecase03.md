@@ -1,3 +1,5 @@
+## Caso de uso 03: Crear un Fabric Data Agent mediante Mirrored Azure SQL Database en Microsoft Fabric
+
 **Introducción**
 
 Las organizaciones modernas requieren sistemas inteligentes que puedan
@@ -89,6 +91,11 @@ conexión del servidor para reflejarlo posteriormente en Fabric.
 1.  Abra un explorador, vaya a +++https://portal.azure.com+++ e inicie
     sesión con la cuenta de Cloud Slice que se indica a continuación.
 
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
+
 2.  En la página principal de Azure Portal, seleccione el menú de Azure
     portal, representado por las tres líneas horizontales situadas en el
     lado izquierdo de la barra de comandos de Microsoft Azure. A
@@ -105,7 +112,19 @@ incorrect.](./media/image6.png)
     **Basics**, escriba los siguientes datos para crear una cuenta de
     almacenamiento y, a continuación, seleccione **Next: Networking**
 
-[TABLE]
+    | Setting | Value  |
+    |--------|----------------|
+    | Subscription | @lab.CloudSubscription.Name |
+    | Resource group | @lab.CloudResourceGroup(ResourceGroup1).Name |
+    | Database name | +++sqldatabase@lab.LabInstance.Id+++ |
+    | Server | Select **Create new** |
+    | Server name | +++sqlserver@lab.LabInstance.Id+++ |
+    | Location | @lab.CloudResourceGroup(ResourceGroup1).Location |
+    | Authentication Method | **Use SQL Authentication** |
+    | Server admin login | +++sqladmin+++ |
+    | Password | +++password321!+++ |
+    | Confirm password | +++password321!+++ |
+    | Action | Click **OK** |
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image8.png)
@@ -215,7 +234,10 @@ Power BI y los informes.
     la siguiente URL:+++https://app.fabric.microsoft.com/+++ presione
     **Enter** e inicie sesión con sus credenciales.
 
-[TABLE]
+    |  |   |
+    |---|----|
+    |Username	|+++@lab.CloudPortalCredential(User1).Username+++|
+    |TAP	|+++@lab.CloudPortalCredential(User1).AccessToken+++|
 
 2.  En la página principal de Fabric, seleccione el mosaico +**New
     workspace**.
@@ -226,7 +248,12 @@ Power BI y los informes.
 3.  En el panel **Create a workspace**, que aparece en el lado derecho,
     escriba los siguientes datos y seleccione el botón **Apply**.
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++FabricAgent-mirroringdatabase@lab.LabInstance.Id+++ |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image30.png)
 
@@ -269,7 +296,12 @@ correctamente.
 3.  En la pestaña **Connection settings**, escriba los siguientes datos
     y seleccione el botón **Connect**.
 
-[TABLE]
+    | Field | Value |
+    |------|-------|
+    | Server | SQL server URL saved in **Task 2 → Step 15** |
+    | Database | +++sqldatabase@lab.LabInstance.Id+++ |
+    | Username | +++sqladmin+++ |
+    | Password | +++password321!+++ |
 
 ![](./media/image37.png)
 
@@ -345,8 +377,7 @@ responder a consultas de negocio.
 1.  Seleccione el esquema **SalesLT** para todas las tablas.
 
 2.  En el panel de consultas de su **Fabric Data Agent**, escriba la
-    pregunta +++**Which product categories generate the highest
-    sales?**+++ y seleccione el icono **Send** para ver la respuesta del
+    pregunta **+++Which product categories generate the highest sales?+++** y seleccione el icono **Send** para ver la respuesta del
     agente.
 
 ![](./media/image49.png)
