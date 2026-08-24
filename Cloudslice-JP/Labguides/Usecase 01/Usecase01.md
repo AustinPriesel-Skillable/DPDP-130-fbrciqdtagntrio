@@ -46,14 +46,21 @@
     +++https://app.fabric.microsoft.com/+++。
     次に**Enter**キーを押して、資格情報を使用してサインイン
 
-[TABLE]
+    | Credential | Value |
+    |------------|-------|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | Password | +++@lab.CloudPortalCredential(User1).Password+++ |
 
 > 2\. Workspacesペインで、**+New workspace** タイルをクリック
 >
 > 3\. 右側に表示される**Create a
 > workspace** ペインに、以下の詳細を入力し、**Apply** ボタンをクリック
 
-[TABLE]
+    | Setting | Value |
+    |----------|----------|
+    | Name | +++Fabric IQ Ontology@lab.LabInstance.Id+++|
+    | Advanced | Under **License mode**, select **Fabric capacity** |
+    | Default storage format | **Small dataset storage format** |
 
 ## タスク2：レイクハウスの構築
 
@@ -65,8 +72,7 @@
 > AI-generated content may be incorrect.](./media/image2.png)
 >
 > 3.**New
-> lakehouse** ダイアログボックスで、**Name** フィールドに**+++IQ_Lakehouse
-> +++**と入力し、レイクハウススキーマの選択を解除します。**Create**ボタンをクリックして、新しいレイクハウスを開く
+> lakehouse** ダイアログボックスで、**Name** フィールドに**+++IQ_Lakehouse+++**と入力し、レイクハウススキーマの選択を解除します。**Create**ボタンをクリックして、新しいレイクハウスを開く
 >
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image3.png)![A screenshot of a computer
@@ -80,7 +86,8 @@
 
 1.  **IQ_Lakehouse**ページで、**Get data in your
     lakehouse** セクションに移動し、下の画像に示すように**Upload
-    files**をクリック ![](./media/image6.png)
+    files**をクリック
+     ![](./media/image6.png)
 
 2.  Upload filesタブで、Filesの下にあるフォルダーをクリック![A
     screenshot of a computer AI-generated content may be
@@ -244,18 +251,22 @@ incorrect.](./media/image26.png)
     ペインが表示![](./media/image44.png)
 
 4.  設定キャンバスで、エンティティ名の横にある「...」を選択し、**Bind
-    data**を選択![](./media/image45.png)
+    data**を選択
+    ![](./media/image45.png)
 
-5.  **Add data binding \> Lakehouse
-    table**を選択![](./media/image46.png)
+6.  **Add data binding \> Lakehouse
+    table**を選択
+    ![](./media/image46.png)
 
-6.  次に、データソースを選択します。IQ_Lakehouse
-    レイクハウスを選択し、「**Next**」をクリック![](./media/image47.png)
+8.  次に、データソースを選択します。IQ_Lakehouse
+    レイクハウスを選択し、「**Next**」をクリック
+    ![](./media/image47.png)
 
-7.  **dimstore**
-    テーブルを選択し、**Select**をクリック![](./media/image48.png)
+10.  **dimstore**
+    テーブルを選択し、**Select**をクリック
+![](./media/image48.png)
 
-8.  ソーステーブルのフィールドがデータバインディング構成に反映されます。構成ページの以下のセクションを確認：
+12.  ソーステーブルのフィールドがデータバインディング構成に反映されます。構成ページの以下のセクションを確認：
 
 - **エンティティ型キー**：取り込まれたデータの各レコードを一意に識別するために使用できるフィールド（または複数のフィールド）を指定
 
@@ -269,25 +280,36 @@ incorrect.](./media/image26.png)
   name** 側にはオントロジー内の*Store* エンティティ型における対応するプロパティ名が一覧表示されます。このチュートリアルでは、既定のプロパティ名をそのまま使用![](./media/image49.png)
 
 9.  設定画面上部の**Define entity type
-    key** を選択![](./media/image50.png)
+    key** を選択
+    ![](./media/image50.png)
 
-10. プロパティリストから**StoreId**を選択し、**Save**を選択![](./media/image51.png)
+11. プロパティリストから**StoreId**を選択し、**Save**を選択
+ ![](./media/image51.png)
 
-11. データバインディングを保存![](./media/image52.png)![](./media/image53.png)
+13. データバインディングを保存
+ ![](./media/image52.png)
+ ![](./media/image53.png)
 
-12. エンティティ型が正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じる![](./media/image54.png)
+16. エンティティ型が正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じる
+    ![](./media/image54.png)
 
-13. エンティティ型の詳細情報の**Configure** ページが表示されます。このページには、エンティティ型のプロパティやデータバインディングなど、重要な情報が表示されます。設定済みのデータバインディングを確認![](./media/image55.png)
+18. エンティティ型の詳細情報の**Configure** ページが表示されます。このページには、エンティティ型のプロパティやデータバインディングなど、重要な情報が表示されます。設定済みのデータバインディングを確認
+    ![](./media/image55.png)
 
-14. **Home**を選択し、設定キャンバスに戻り、新しいエンティティ型を追加![](./media/image56.png)
+20. **Home**を選択し、設定キャンバスに戻り、新しいエンティティ型を追加![](./media/image56.png)
 
 ### その他のエンティティ型（Products, SaleEvent）の追加
 
 15. **Store **エンティティ型を作成した時と同じ手順に従って、以下の表に記載されているエンティティ型を作成してください。各エンティティには、ソーステーブルのデフォルト列との静的データバインディングが設定　
 
-[TABLE]
+    | Entity Type Name | Source Table in IQ_Lakehouse | Entity Type Key |
+    |------------------|------------------------------|-----------------|
+    | +++Products+++<br><br>**Note:** Use the plural form **Products** to avoid conflict with the GQL reserved word **PRODUCT**. | **dimproducts** | **ProductId** |
+    | +++SaleEvent+++ | **factsales** | **SaleId** |
 
-> ![](./media/image57.png)![](./media/image58.png)![](./media/image59.png)  
+> ![](./media/image57.png)
+> ![](./media/image58.png)
+> ![](./media/image59.png)  
 >   
 > ![](./media/image60.png)  
 >   
@@ -343,9 +365,10 @@ incorrect.](./media/image26.png)
 - **Relationship type：**類関係タイプの詳細を設定
 
 - **Target entity type**:
-  対象エンティティ（この場合は**Store **）の詳細を一覧表示![](./media/image74.png)
+  対象エンティティ（この場合は**Store **）の詳細を一覧表示
+  ![](./media/image74.png)
 
-> 　　　　　![](./media/image75.png)
+  ![](./media/image75.png)
 
 5.  中央部分に、以下の詳細を入力してください。
 
@@ -375,16 +398,15 @@ incorrect.](./media/image26.png)
 > これで最初のリレーションシップが作成され、ソーステーブルのデータにバインドされました。次のセクションに進み、別のリレーションシップタイプを作成してください。
 
 ### **SaleEventで販売されたProducts**
-
-> 1\.
-> **Home**を選択すると、新しいエンティティタイプを追加できる設定キャンバスに  
+1. **Home**を選択すると、新しいエンティティタイプを追加できる設定キャンバスに  
 > 戻る ![](./media/image80.png)
 >
-> 2\.
-> 最初の関係タイプで使用した手順と同じ手順に従って、次の表に記載されている  
-> 詳細を持つ **SaleEvent** エンティティタイプから 2 番目の関係を作成
+2. 最初の関係タイプで使用した手順と同じ手順に従って、次の表に記載されている  
+ 詳細を持つ **SaleEvent** エンティティタイプから 2 番目の関係を作成
 
-[TABLE]
+    | Relationship Type Name | Origin Entity Type | Target Entity Type | Mapping Table | Matched SaleEvent: SaleId | Matched Products: ProductId |
+    |------------------------|-------------------|-------------------|---------------|--------------------------|----------------------------|
+    | `sold` | `SaleEvent` | `Products` | `factsales` | `SaleId` | `ProductId` |
 
 > ![](./media/image81.png)
 >
@@ -431,12 +453,16 @@ properties**を選択![](./media/image91.png)
 
 4.  以下のプロパティを追加して、**Save**を選択
 
-[TABLE]
-
+    | Name | Property Type |
+    |------|---------------|
+    | `FreezerId` | `String` |
+    | `Model` | `String` |
+    | `minSafeTempC` | `Double` |
+    | `StoreId` | `String` |
 > ![](./media/image92.png)
->
+
 > 注記：プロパティ名は、すべてのエンティティタイプにおいて一意である必要があります。
->
+
 > ![](./media/image93.png)
 
 5.  どのデータソースにも紐付けられず、プロパティがConfigure
@@ -458,7 +484,7 @@ properties**を選択![](./media/image91.png)
 
 - **freezer** テーブルを選択して、**Selectをクリック**
 
-> 　　　![](./media/image97.png)  
+> ![](./media/image97.png)  
 >   
 > ![](./media/image98.png)
 
@@ -511,15 +537,17 @@ properties**を選択![](./media/image91.png)
 &nbsp;
 
 4.  設定に**Timeseries data** セクションが表示されます。**Timestamp
-    column**でtimestampを選択![](./media/image108.png)
+    column**でtimestampを選択
+    ![](./media/image108.png)
 
-5.  **Properties** セクションまでスクロールすると、**StoreId**にエラーが表示されます。これは、StoreIdが既に静的データバインディングにバインドされているためです。ゴミ箱アイコンを使用して、重複しているプロパティを削除![](./media/image109.png)
+6.  **Properties** セクションまでスクロールすると、**StoreId**にエラーが表示されます。これは、StoreIdが既に静的データバインディングにバインドされているためです。ゴミ箱アイコンを使用して、重複しているプロパティを削除
+7. ![](./media/image109.png)
 
-6.  データバインディングを**保存します。**エンティティタイプが正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じます。![](./media/image110.png)  
+8.  データバインディングを**保存します。**エンティティタイプが正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じます。![](./media/image110.png)  
       
     ![](./media/image111.png)
 
-7.  *Freezer*
+9.  **Freezer**
     の**Configure** ページに戻ると、エンティティタイプのプロパティが増えていることに気づきます。新しいプロパティは
     *FreezerTelemetry* データソースに  
     バインド![](./media/image112.png)
@@ -666,19 +694,20 @@ builder** フィルターを使用します。![](./media/image133.png)
     のノードを追加![](./media/image140.png)
 
 6.  **Components** セクションで、 **Nodes \> Store** と**Edges \>
-    from** の横にあるチェックボックスをオンにして、それらをグラフに追加![A
-    screenshot of a computer AI-generated content may be
+    from** の横にあるチェックボックスをオンにして、それらをグラフに追加
+    ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image141.png)
 
-7.  クエリビルダーリボンから、**Add filter \> SaleEvent \>
+8.  クエリビルダーリボンから、**Add filter \> SaleEvent \>
     RevenueUSD**を選択します。フィルターを +++**RevenueUSD \>
-    150+++**に設定![](./media/image142.png)  
+    150+++**に設定
+    ![](./media/image142.png)  
       
     ![](./media/image143.png)
 
-8.  **Run
-    query** を選択し、インスタンスグラフに、関連する販売イベントのフィルタ条件を満たす2つの店舗が表示されていることを確認します。グラフ内のノードを選択して、特定の販売イベントの詳細を取得可能![](./media/image144.png)  
-      
+10.  **Run
+    query** を選択し、インスタンスグラフに、関連する販売イベントのフィルタ条件を満たす2つの店舗が表示されていることを確認します。グラフ内のノードを選択して、特定の販売イベントの詳細を取得可能
+    ![](./media/image144.png)  
     ![](./media/image145.png)
 
 　このプロセスにより、業務上の問題（特定の店舗における冷凍庫の温度上昇など）とビジネス成果（売上）を結びつける経路を検証することができます。
@@ -697,19 +726,23 @@ builder** フィルターを使用します。![](./media/image133.png)
 
 2.  **Fabric**のホームページで、**New item**を選択します。 Filter by
     item type 検索ボックスに**+++data agent+++**と入力し、Data
-    agentを選択![A screenshot of a computer AI-generated content may be
+    agentを選択
+    ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image147.png)
 
-3.  データエージェント名として**+++RetailOntologyAgent+++**と入力し、**Create**を選択![A
-    screenshot of a computer AI-generated content may be
+4.  データエージェント名として**+++RetailOntologyAgent+++**と入力し、**Create**を選択
+5. ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image148.png)
 
-4.  **RetailOntologyAgent**ページで、**Add a data
-    source**を選択![](./media/image149.png)
+6.  **RetailOntologyAgent**ページで、**Add a data
+    source**を選択
+    ![](./media/image149.png)
 
-5.  OneLakeカタログタブで、**RetailSalesOntology**オントロジーを選択し、**Add**を選択![](./media/image150.png)
+8.  OneLakeカタログタブで、**RetailSalesOntology**オントロジーを選択し、**Add**を選択
+   ![](./media/image150.png)
 
-エージェントの準備が整うと、開きます。![](./media/image151.png)
+エージェントの準備が整うと、開きます。
+![](./media/image151.png)
 
 ## タスク2：エージェントへの指示を提供
 
@@ -763,16 +796,18 @@ of the result of a query.](./media/image158.png)
 ## タスク4：リソースの削除
 
 1.  左側のナビゲーションメニューからワークスペース**Fabric IQ
-    OntologyXX**を選択します。ワークスペースアイテムビューが開く![A
-    screenshot of a computer AI-generated content may be
+    OntologyXX**を選択します。ワークスペースアイテムビューが開
+
+    ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image159.png)
 
-2.  ワークスペース名の下にある「…」オプションを選択し、**Workspace
-    settings**を選択![A screenshot of a computer AI-generated content
+3.  ワークスペース名の下にある「…」オプションを選択し、**Workspace
+    settings**を選択
+    ![A screenshot of a computer AI-generated content
     may be incorrect.](./media/image160.png)
 
-3.  General タブの一番下まで移動し、**Remove this workspace**を選択![A
-    screenshot of a computer AI-generated content may be
+5.  General タブの一番下まで移動し、**Remove this workspace**を選択
+6. ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image161.png)  
       
     ![A screenshot of a computer AI-generated content may be
