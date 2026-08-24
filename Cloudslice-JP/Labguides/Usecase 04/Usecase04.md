@@ -138,7 +138,10 @@ BIデータセット、レポートなど、このレイクハウスチュート
     <https://app.fabric.microsoft.com/+++>
     。**Enter**キーを押して、資格情報でサインインします。
 
-[TABLE]
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
 2.  Fabricのホームページで、 **「+** **New
     workspace**」タイルを選択します。
@@ -150,7 +153,12 @@ generated](./media/image7.png)
     workspace」ペイン**に、以下の詳細を入力し、
     **「Apply」**ボタンをクリックします。
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++Fabric agent@lab.LabInstance.Id+++  |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image8.png)
 >
@@ -226,7 +234,7 @@ IDをパラメータとして渡す必要があります。
 
 3.  Azureにログインする：
 
-+++ az login+++
++++az login+++
 
 ![](./media/image25.png)
 
@@ -242,7 +250,7 @@ IDをパラメータとして渡す必要があります。
 6.  Microsoft Cognitive Services リソース プロバイダーを登録します
     (サブスクリプションに既に登録されていない場合は必須です)。
 
-+++ az provider register --namespace Microsoft.CognitiveServices +++
++++az provider register --namespace Microsoft.CognitiveServices+++
 
 ![](./media/image28.png)
 
@@ -259,15 +267,11 @@ mailto:+++@lab.labinstance.id](mailto:+++@lab.LabInstance.Id)+++に変更しま�
 
 8.  以下の値を選択してください。
 
-    - **Azure リソースの環境を作成するには**、[+++](mailto:+++%20)
-      [mailto:+++env@lab.labinstance.idenv@lab.LabInstance.Id
-      mailto:+++env@lab.labinstance.id](mailto:+++env@lab.LabInstance.Id)+++を入力します。
+    - **Azure リソースの環境を作成するには**、 +++env@lab.LabInstance.Id+++を入力します。
 
-    - **使用するAzureサブスクリプションを選択**:
-      **@lab.CloudSubscription.Name**
+    - **使用するAzureサブスクリプションを選択**: **@lab.CloudSubscription.Name**
 
-    - **「Location」インフラストラクチャパラメータ：** **ResourceGroup1
-      Locationを選択します　**
+    - **「Location」インフラストラクチャパラメータ：** **ResourceGroup1 Locationを選択します**
 
     - **リソースグループ:** **@lab.CloudResourceGroup(ResourceGroup1).Name**
 
@@ -303,13 +307,12 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 12. 仮想環境を作成してアクティブ化します。
 
-+++python -m venv . venv +++
++++python -m venv . venv+++
 
 ![](./media/image34.png)
 
 13. **Visual Studio Code**の左上の**メニューアイコンを使用して**、
-    **\[Terminal → New
-    Terminal** **\]**に移動すると、ワークスペースに新しいターミナル
+    **\[Terminal → New Terminal** **\]**に移動すると、ワークスペースに新しいターミナル
     ウィンドウが開きます。
 
 ![](./media/image35.png)
@@ -326,7 +329,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 15. ターミナルで以下のコマンドを実行してください。すると、コピーするコードが生成されます。そのコードをコピーしてEnterキーを押してください。
 
-+++ az login+++
++++az login+++
 
 ![](./media/image39.png)
 
@@ -342,8 +345,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
      Workspace ID \>を、前の手順で作成したFabric  Workspace
     IDに置き換えます。スクリプトは次の通り：
 
-18. python scripts/00_build_solution.py --from 02 --fabric-workspace-id
-    \<your-workspace-id\>
++++python scripts/00_build_solution.py --from 02 --fabric-workspace-id <your-workspace-id>+++
 
 ![](./media/image43.png)
 
@@ -357,7 +359,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 ## タスク5：Fabric Lakehouseとデータを確認
 
-1.  <https://app.fabric.microsoft.com/+++>ワークスペースに移動します。　
+1.  +++https://app.fabric.microsoft.com/+++ワークスペースに移動します。　
 
 2.  リソースが正常にデプロイされたことを確認します。
 
@@ -380,7 +382,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 ![](./media/image50.png)
 
 2.  サンプル質問を入力します  
-    +++ What is the average score from inspections?+++
+    +++What is the average score from inspections?+++
 
 ![](./media/image51.png)
 
@@ -390,8 +392,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 ![](./media/image53.png)
 
-+++Do any inspections violate quality control standards in our
-Inspection Procedures?+++
++++Do any inspections violate quality control standards in our Inspection Procedures?+++
 
 ![](./media/image54.png)
 
@@ -404,21 +405,17 @@ Inspection Procedures?+++
 ## タスク7：FabricData Agentを作成
 
 1.  Microsoft
-    Fabricワークスペース[（https://app.fabric.microsoft.com/）](https://app.fabric.microsoft.com/+++)にアクセスします。
+    Fabricワークスペース[ +++https://app.fabric.microsoft.com/+++ にアクセスします。
 
 2.  「New item」を選択 → 「Data Agent」を検索 → Data Agentを選択します。
 
 ![](./media/image57.png)
 
-3.  名前[「+++
-    mailto:+++FabricDataAgent@lab.labinstance.idFabricDataAgent@lab.LabInstance.Id
-    mailto:+++FabricDataAgent@lab.labinstance.id](mailto:+++FabricDataAgent@lab.LabInstance.Id)+++」を入力し、
-    **「Create」**をクリックします。
+3.  名前[+++FabricDataAgent@lab.LabInstance.Id+++ を入力し、 **Create**をクリックします。
 
 ![](./media/image58.png)
 
-4.  新しいデータソースを設定するには、 **「Add data
-    source** **」**を選択します。
+4.  新しいデータソースを設定するには、 **「Add data source** 」を選択します。
 
 ![](./media/image59.png)
 
@@ -434,8 +431,7 @@ Inspection Procedures?+++
 
 7.  以下のエージェント指示を追加します。
 
-+++You are a helpful assistant that can answer user questions using
-data. Support group by in GQL+++
++++You are a helpful assistant that can answer user questions using data. Support group by in GQL+++
 
 ![](./media/image63.png)
 
@@ -460,14 +456,15 @@ Ontologyの設定には最大15分かかる場合がありますので、良好�
 
 ![](./media/image69.png)
 
-+++What is the average score from
-inspections?+++![](./media/image70.png)
++++What is the average score from inspections?+++
+![](./media/image70.png)
 
 ![](./media/image71.png)
 
 ![](./media/image72.png)
 
-+++Show tickets grouped by status+++![](./media/image73.png)
++++Show tickets grouped by status+++
+![](./media/image73.png)
 
 ![](./media/image74.png)
 
@@ -488,7 +485,7 @@ inspections?+++![](./media/image70.png)
 
 2.  azd up を実行- これにより Azureリソースがプロビジョニングされます
 
-+++ azd up +++
++++azd up+++
 
 ![](./media/image77.png)
 
@@ -522,8 +519,8 @@ inspections?+++![](./media/image70.png)
 
 小売売上分析のユースケース：
 
-+++Show total revenue by year for last 5
-years+++.![](./media/image85.png)
++++Show total revenue by year for last 5 years+++.
+![](./media/image85.png)
 
 ![](./media/image86.png)
 
@@ -614,46 +611,29 @@ Portalにアクセスしたら、左側のメニューから**「Agents」**を�
 
 8.  手順を入力します。
 
-> **You are a data assistant that analyzes inspection data stored in
-> Microsoft Fabric.**
->
-> **Use the Fabric Lakehouse dataset to answer questions about
-> inspection results and scores. The dataset includes the following
-> columns:**
->
-> **- inspection_id: Unique identifier for each inspection**
->
-> **- ticket_id: Identifier associated with the inspection ticket**
->
-> **- result: Inspection outcome (Pass or Fail)**
->
-> **- score: Numeric score assigned to the inspection**
->
-> **You can analyze and summarize the data to provide insights such
-> as:**
->
-> **- Total number of inspections**
->
-> **- Number of passed and failed inspections**
->
-> **- Average, highest, and lowest inspection scores**
->
-> **- Distribution of inspection results**
->
-> **- Score trends across inspections or tickets**
->
-> **When responding:**
->
-> **- Use the Fabric data source to retrieve accurate information.**
->
-> **- Provide clear summaries and insights based on the inspection
-> results.**
->
-> **- When appropriate, suggest visualizations such as bar charts or pie
-> charts to show pass vs fail distribution or score comparisons.**
->
-> **- Ensure answers are concise, accurate, and based only on the
-> available dataset.**![](./media/image102.png)
+    ```
+    You are a data assistant that analyzes inspection data stored in Microsoft Fabric.
+    
+    Use the Fabric Lakehouse dataset to answer questions about inspection results and scores. The dataset includes the following columns:
+    - inspection_id: Unique identifier for each inspection
+    - ticket_id: Identifier associated with the inspection ticket
+    - result: Inspection outcome (Pass or Fail)
+    - score: Numeric score assigned to the inspection
+    
+    You can analyze and summarize the data to provide insights such as:
+    - Total number of inspections
+    - Number of passed and failed inspections
+    - Average, highest, and lowest inspection scores
+    - Distribution of inspection results
+    - Score trends across inspections or tickets
+    
+    When responding:
+    - Use the Fabric data source to retrieve accurate information.
+    - Provide clear summaries and insights based on the inspection results.
+    - When appropriate, suggest visualizations such as bar charts or pie charts to show pass vs fail distribution or score comparisons.
+    - Ensure answers are concise, accurate, and based only on the available dataset.
+    ```
+    ![](./media/image102.png)
 
 9.  **「Agents」**を選択し、次に「**Fabric
     Agent」**を選択します**。** エージェントをクリックし、 **「Try in
@@ -665,50 +645,61 @@ Portalにアクセスしたら、左側のメニューから**「Agents」**を�
 
 サンプルプロンプト -
 
-+++What constitutes a failed inspection?+++![](./media/image104.png)
++++What constitutes a failed inspection?+++
+
+![](./media/image104.png)
 
 ![](./media/image105.png)
 
-+++What is the total number of tickets in the
-system?+++![](./media/image106.png)
++++What is the total number of tickets in the system?+++
+![](./media/image106.png)
 
 ![](./media/image107.png)
 
-+++Do any inspections violate quality control standards in our
-Inspection Procedures?+++
++++Do any inspections violate quality control standards in our Inspection Procedures?+++
 
 ## タスク11：リソースを削除
 
 1.  削除するには、 Azure ポータル検索バーに**「Resource
     groups」**と入力し、移動して**「Services」**の下にある**「Resource
-    groups」**をクリックします。![A screenshot of a computer Description
+    groups」**をクリックします。
+    ![A screenshot of a computer Description
     automatically generated](./media/image108.png)
 
-2.  Resource groupsページで、リソースグループを選択します。
+3.  Resource groupsページで、リソースグループを選択します。
 
-3.  **Resource Group**のホームページで、**Fabric
+4.  **Resource Group**のホームページで、**Fabric
     Capacity**以外のすべてのリソースを選択し、
     **\[Delete\]**をクリックします。![](./media/image109.png)
 
-4.  右側に表示される**「Delete Resources** **」ペイン**で、 **「Enter
+5.  右側に表示される**「Delete Resources** **」ペイン**で、 **「Enter
     "delete" to confirm
-    deletion」**フィールドに**「Delete」**ボタンをクリックします。![](./media/image110.png)  
+    deletion」**フィールドに**「Delete」**ボタンをクリックします。
+
+    ![](./media/image110.png)  
       
     ![](./media/image111.png)
 
-5.  Microsoft
+7.  Microsoft
     Fabricワークスペース[（https://app.fabric.microsoft.com/）](https://app.fabric.microsoft.com/+++)にアクセスします。
 
-6.  ワークスペース名の下にある「 **...」**オプションを選択し、
-    **「Workspace settings」**を選択します。![](./media/image112.png)
+8.  ワークスペース名の下にある「 **...」**オプションを選択し、
+    **「Workspace settings」**を選択します。
 
-7.  **「General** **」**を選択し、 **「Remove this
-    workspace」**を選択します。![A screenshot of a computer AI-generated
+    ![](./media/image112.png)
+
+10.  **「General** **」**を選択し、 **「Remove this
+    workspace」**を選択します。
+![A screenshot of a computer AI-generated
     content may be incorrect.](./media/image113.png)
 
-8.  表示された警告メッセージで**「Delete** **」**をクリックします。![](./media/image114.png)
+12.  表示された警告メッセージで**「Delete** **」**をクリックします。
 
-9.  次のラボに進む前に、ワークスペースが削除されたという通知が表示されるまでお待ちください。![](./media/image115.png)
+![](./media/image114.png)
+
+14.  次のラボに進む前に、ワークスペースが削除されたという通知が表示されるまでお待ちください。
+
+     ![](./media/image115.png)
 
 **まとめ**
 
