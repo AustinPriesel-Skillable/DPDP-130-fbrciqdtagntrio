@@ -1,3 +1,5 @@
+## ユースケース05 - Copilot Studioを使用して、Fabric Data AgentをMicrosoft Teamsと統合し、実用的なインサイトとエージェント間のコラボレーションを実現
+
 **紹介**
 
 今日の競争の激しいデジタル市場において、eコマース組織は顧客取引、商品カタログ、ウェブサイト上でのやり取り、決済システムなどから膨大な量のデータを生成しています。これらのデータから有益な洞察を引き出すことは、顧客体験の向上、業務の最適化、収益の増加に不可欠です。しかし、複数のソースから得られる大規模なデータセットを管理・分析するには、統合された分析プラットフォームがなければ複雑な作業となります。
@@ -59,7 +61,10 @@ BIデータセット、レポートなど、このレイクハウスチュート
     ++https://app.fabric.microsoft.com/+++
     。**Enter**キーを押して、資格情報でサインインします。
 
-[TABLE]
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
 2.  Fabricのホームページで、 **「+ New
     workspace** 」タイルを選択します。
@@ -71,7 +76,12 @@ BIデータセット、レポートなど、このレイクハウスチュート
     workspace」ペイン**に、以下の詳細を入力し、
     **「Apply」**ボタンをクリックします。
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++Fabric-Copilot-@lab.LabInstance.Id+++  |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image2.png)
 
@@ -124,8 +134,7 @@ BIデータセット、レポートなど、このレイクハウスチュート
 
 > ![](./media/image11.png)
 
-6.  「Upload
-    files」タブで、「Files」の下にあるフォルダーをクリックします。
+6.  「Upload files」タブで、「Files」の下にあるフォルダーをクリックします。
 
 > ![](./media/image12.png)
 
@@ -219,8 +228,7 @@ BIデータセット、レポートなど、このレイクハウスチュート
 
 5.  リストされたテーブルで最初に質問すると、**すべてのテーブルを選択すると**、データエージェントが適切に回答できます。
 
-6.  例えば、+++**Who are the top 10 customers by total purchase
-    amount?**+++
+6.  例えば、+++**Who are the top 10 customers by total purchase amount?**+++
 
 ![](./media/image35.png)
 
@@ -245,47 +253,25 @@ BIデータセット、レポートなど、このレイクハウスチュート
 2.  **テストペイン**（右側の**「Test the agent's
     responses」**と表示されている部分）にあるこのメタプロンプトを使用して、エージェントレベルの指示を生成します。
 
-> Meta-Prompt: Generate Agent-Level Instructions:
->
-> Analyze your available data sources and create agent-level
-> instructions for yourself (max 15000 chars).
->
-> Objective: {AGENT_OBJECTIVE}
->
-> Users: {USER_PERSONA}
->
-> Examine your data sources: list all sources, types, and primary use.
-> Analyze domain, time coverage, and main themes.
->
-> Generate instructions with:
->
-> \## Objective
->
-> \## Data Sources (list with priority)
->
-> \## Key Terminology (infer from columns/measures)
->
-> \## Response Guidelines
->
-> Style: {RESPONSE_STYLE}
->
-> \## Handling Common Topics (3-5 based on available data)
->
-> Custom terms: {CUSTOM_TERMINOLOGY}
-
-このメタプロンプトを使用する場合は、プロンプト内の変数を以下の値に従って手動で置き換えるか**、または**テストに貼り付けます。
-
-- {AGENT_OBJECTIVE}: 「E-commerce analytics agent for business
-  intelligence」
-
-- {USER_PERSONA}: 「Business analysts and sales teams」
-
-- {RESPONSE_STYLE}: 「Clear summaries with data citations and trend
-  analysis」
-
-- {CUSTOM_TERMINOLOGY}:
-  空欄のままにするか、ドメイン固有の用語を追加します
-
+    ```
+    Meta-Prompt: Generate Agent-Level Instructions:
+     Analyze your available data sources and create agent-level instructions for yourself (max 15000 chars).
+    
+     Objective: {AGENT_OBJECTIVE}
+     Users: {USER_PERSONA}
+    
+     Examine your data sources: list all sources, types, and primary use. Analyze domain, time coverage, and main themes.
+    
+     Generate instructions with:
+     ## Objective
+     ## Data Sources (list with priority)
+     ## Key Terminology (infer from columns/measures)
+     ## Response Guidelines
+     Style: {RESPONSE_STYLE}
+     ## Handling Common Topics (3-5 based on available data)
+    
+     Custom terms: {CUSTOM_TERMINOLOGY}
+    ```
 ![](./media/image40.png)
 
 8.  より複雑なクエリを使用して、強化されたエージェントをテストします。
@@ -492,13 +478,17 @@ BIデータセット、レポートなど、このレイクハウスチュート
       
     ![](./media/image88.png)  
       
-    ![](./media/image89.png)![](./media/image90.png)
+    ![](./media/image89.png)
+    ![](./media/image90.png)
 
-8.  **「Add」**をクリックします。![](./media/image91.png)
+9.  **「Add」**をクリックします。
+10. ![](./media/image91.png)
 
-9.  アプリが正常に追加されたら、 *「Open」*ボタンをクリックして*、*
+11.  アプリが正常に追加されたら、 *「Open」*ボタンをクリックして*、*
     Microsoft Teams でE コマース RAG
-    Agentを起動します。![](./media/image92.png)![](./media/image93.png)
+    Agentを起動します。
+![](./media/image92.png)
+![](./media/image93.png)
 
 ## タスク2：接続されたFabric Data Agentのテスト
 
@@ -508,13 +498,17 @@ BIデータセット、レポートなど、このレイクハウスチュート
 >
 > ![](./media/image94.png)
 
-2.  必要な権限を付与するには、「**Allow」**をクリックします。![](./media/image95.png)![](./media/image96.png)
+2.  必要な権限を付与するには、「**Allow」**をクリックします。
+   ![](./media/image95.png)
+   ![](./media/image96.png)
 
 　+++What are the top 10 highest value orders?+++
-![](./media/image97.png)![](./media/image98.png)
+![](./media/image97.png)
+![](./media/image98.png)
 
 +++Which payment method is used the most?+++
-![](./media/image99.png)![](./media/image100.png)
+![](./media/image99.png)
+![](./media/image100.png)
 
 **まとめ**
 
