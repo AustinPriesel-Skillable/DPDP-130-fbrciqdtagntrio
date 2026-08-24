@@ -166,7 +166,10 @@ Factory pipelines, notebooks, conjuntos de datos de Power BI e informes.
     la siguiente URL: +++<https://app.fabric.microsoft.com/+++>,
     presione **Enter** e inicie sesión con sus credenciales.
 
-[TABLE]
+    |   |   |
+    |---|---|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
 2.  En la página principal de Microsoft Fabric, seleccione el mosaico
     **+New workspace**.
@@ -177,7 +180,12 @@ generated](./media/image7.png)
 3.  En el panel **Create a workspace**, que aparece en el lado derecho,
     escriba la siguiente información y haga clic en **Apply**.
 
-[TABLE]
+    | Property | Value |
+    |---------|-------|
+    | Name | +++Fabric agent@lab.LabInstance.Id+++  |
+    | Advanced | Under **License mode**, select **Fabric** |
+    | Default storage format | Small dataset storage format |
+    | Template apps | Check **Develop template apps** |
 
 > ![](./media/image8.png)
 >
@@ -242,7 +250,7 @@ solución.
 1.  Ejecute el siguiente comando en la **Terminal**. Se generará un
     código. Cópielo y, a continuación, presione **Enter**.
 
-> +++azd auth login+++
+ +++azd auth login+++
 
 ![](./media/image20.png)
 
@@ -387,8 +395,7 @@ Regiones admitidas:
     Workspace ID que creó en los pasos anteriores. El script tendrá un
     aspecto similar al siguiente:
 
-18. python scripts/00_build_solution.py --from 02 --fabric-workspace-id
-    \<your-workspace-id\>
+    `python scripts/00_build_solution.py --from 02 --fabric-workspace-id <your-workspace-id>`
 
 ![](./media/image43.png)
 
@@ -403,7 +410,7 @@ Regiones admitidas:
 ## Tarea 5: Revise Fabric Lakehouse y Data
 
 1.  Vaya a su espacio de trabajo en
-    +++<https://app.fabric.microsoft.com/+++>.
+    +++https://app.fabric.microsoft.com/+++.
 
 2.  Asegúrese de que los recursos se hayan implementado correctamente.
 
@@ -437,8 +444,7 @@ Regiones admitidas:
 
 ![](./media/image53.png)
 
-+++Do any inspections violate quality control standards in our
-Inspection Procedures?+++
++++Do any inspections violate quality control standards in our Inspection Procedures?+++
 
 ![](./media/image54.png)
 
@@ -451,14 +457,14 @@ Inspection Procedures?+++
 ## Tarea 7: Crear un Fabric Data Agent
 
 1.  Vaya a su espacio de trabajo de Microsoft Fabric en
-    +++<https://app.fabric.microsoft.com/+++> 
+    +++https://app.fabric.microsoft.com/+++
 
 2.  Seleccione **New item**, busque **Data Agent** y, a continuación,
     seleccione **Data agent.**
 
 ![](./media/image57.png)
 
-3.  Escriba <+++FabricDataAgent@lab.LabInstance.Id>+++ como nombre y
+3.  Escriba +++FabricDataAgent@lab.LabInstance.Id+++ como nombre y
     haga clic en **Create**.
 
 ![](./media/image58.png)
@@ -480,8 +486,7 @@ Inspection Procedures?+++
 
 7.  Agregue las siguientes instrucciones para el agente:
 
-+++You are a helpful assistant that can answer user questions using
-data. Support group by in GQL+++
++++You are a helpful assistant that can answer user questions using data. Support group by in GQL+++
 
 ![](./media/image63.png)
 
@@ -675,44 +680,28 @@ haga clic en **+ New agent** para crearlo.
 
 8.  Escriba las siguientes instrucciones:
 
-> **You are a data assistant that analyzes inspection data stored in
-> Microsoft Fabric.**
-
-**Use the Fabric Lakehouse dataset to answer questions about inspection
-results and scores. The dataset includes the following columns:**
-
-**- inspection_id: Unique identifier for each inspection**
-
-**- ticket_id: Identifier associated with the inspection ticket**
-
-**- result: Inspection outcome (Pass or Fail)**
-
-**- score: Numeric score assigned to the inspection**
-
-**You can analyze and summarize the data to provide insights such as:**
-
-**- Total number of inspections**
-
-**- Number of passed and failed inspections**
-
-**- Average, highest, and lowest inspection scores**
-
-**- Distribution of inspection results**
-
-**- Score trends across inspections or tickets**
-
-**When responding:**
-
-**- Use the Fabric data source to retrieve accurate information.**
-
-**- Provide clear summaries and insights based on the inspection
-results.**
-
-**- When appropriate, suggest visualizations such as bar charts or pie
-charts to show pass vs fail distribution or score comparisons.**
-
-**- Ensure answers are concise, accurate, and based only on the
-available dataset.**
+    ```
+    You are a data assistant that analyzes inspection data stored in Microsoft Fabric.
+    
+    Use the Fabric Lakehouse dataset to answer questions about inspection results and scores. The dataset includes the following columns:
+    - inspection_id: Unique identifier for each inspection
+    - ticket_id: Identifier associated with the inspection ticket
+    - result: Inspection outcome (Pass or Fail)
+    - score: Numeric score assigned to the inspection
+    
+    You can analyze and summarize the data to provide insights such as:
+    - Total number of inspections
+    - Number of passed and failed inspections
+    - Average, highest, and lowest inspection scores
+    - Distribution of inspection results
+    - Score trends across inspections or tickets
+    
+    When responding:
+    - Use the Fabric data source to retrieve accurate information.
+    - Provide clear summaries and insights based on the inspection results.
+    - When appropriate, suggest visualizations such as bar charts or pie charts to show pass vs fail distribution or score comparisons.
+    - Ensure answers are concise, accurate, and based only on the available dataset.
+    ```
 
 ![](./media/image102.png)
 
@@ -740,8 +729,7 @@ Prompts de ejemplo:
 
 ![](./media/image107.png)
 
-+++Do any inspections violate quality control standards in our
-Inspection Procedures?+++
++++Do any inspections violate quality control standards in our Inspection Procedures?+++
 
 ![](./media/image108.png)
 
