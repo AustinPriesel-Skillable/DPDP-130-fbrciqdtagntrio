@@ -1,4 +1,4 @@
-Caso de uso 1: De la semántica a los insights: Aprovechar Fabric IQ
+## Caso de uso 1: De la semántica a los insights: Aprovechar Fabric IQ
 Ontology con Fabric Data Agents
 
 **Introducción**
@@ -56,7 +56,10 @@ informes.
     la siguiente URL: +++https://app.fabric.microsoft.com/+++; luego
     presione **Enter** e inicie sesión con sus credenciales.
 
-[TABLE]
+    | Credential | Value |
+    |------------|-------|
+    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
+    | Password | +++@lab.CloudPortalCredential(User1).Password+++ |
 
 2.  En el panel Workspaces, haga clic en el mosaico **+New workspace.**
 
@@ -66,7 +69,11 @@ informes.
 3.  En el panel **Create a workspace** que aparece en el lado derecho,
     escriba los siguientes valores y haga clic en el botón **Apply**.
 
-[TABLE]
+    | Setting | Value |
+    |----------|----------|
+    | Name | +++Fabric IQ Ontology@lab.LabInstance.Id+++|
+    | Advanced | Under **License mode**, select **Fabric capacity** |
+    | Default storage format | **Small dataset storage format** |
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image2.png)
@@ -214,11 +221,11 @@ dispositivos en una base de datos KQL en Eventhouse.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image30.png)
 
-3.  El Eventhouse se abrirá cuando esté listo. ![A screenshot of a
-    computer AI-generated content may be
+3.  El Eventhouse se abrirá cuando esté listo.
+    ![A screenshot of a  computer AI-generated content may be
     incorrect.](./media/image31.png)
 
-4.  Abra la base de datos KQL seleccionando su nombre.
+5.  Abra la base de datos KQL seleccionando su nombre.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image32.png)
@@ -424,7 +431,10 @@ dispositivos en una base de datos KQL en Eventhouse.
     Cada entidad tiene una vinculación de datos estática con las
     columnas predeterminadas de su tabla de origen.
 
-[TABLE]
+    | Entity Type Name | Source Table in IQ_Lakehouse | Entity Type Key |
+    |------------------|------------------------------|-----------------|
+    | +++Products+++<br><br>**Note:** Use the plural form **Products** to avoid conflict with the GQL reserved word **PRODUCT**. | **dimproducts** | **ProductId** |
+    | +++SaleEvent+++ | **factsales** | **SaleId** |
 
 ![](./media/image62.png)
 
@@ -501,9 +511,9 @@ representar las conexiones contextuales de los datos.
 
 - **Relationship type name**: +++from+++
 
-- **Source entity type**: *SaleEvent*
+- **Source entity type**: **SaleEvent**
 
-- **Target entity type**: *Store*
+- **Target entity type**: **Store**
 
 > ![](./media/image88.png)
 >
@@ -514,7 +524,7 @@ representar las conexiones contextuales de los datos.
     siguientes secciones de la página de configuración:
 
 - **Origin entity type:** Muestra los detalles de la entidad de origen
-  **(SaleEvent** en este caso**).**
+  **(SaleEvent** en este caso**).
 
 - **Relationship type:** Permite configurar los detalles del tipo de
   relación.
@@ -586,7 +596,9 @@ entidad.
     para crear un segundo tipo de relación desde el tipo de entidad
     **SaleEvent**, con los detalles descritos en la siguiente tabla.
 
-[TABLE]
+    | Relationship Type Name | Origin Entity Type | Target Entity Type | Mapping Table | Matched SaleEvent: SaleId | Matched Products: ProductId |
+    |------------------------|-------------------|-------------------|---------------|--------------------------|----------------------------|
+    | `sold` | `SaleEvent` | `Products` | `factsales` | `SaleId` | `ProductId` |
 
 ![](./media/image98.png)
 
@@ -650,7 +662,12 @@ Expanda **Manage property bindings** y seleccione **Add properties**.
 
 4.  Agregue las siguientes propiedades y seleccione **Save**.
 
-[TABLE]
+    | Name | Property Type |
+    |------|---------------|
+    | `FreezerId` | `String` |
+    | `Model` | `String` |
+    | `minSafeTempC` | `Double` |
+    | `StoreId` | `String` |
 
 ![](./media/image109.png)
 
@@ -805,11 +822,11 @@ entre una tienda y sus congeladores.
 2.  Especifique los siguientes detalles del tipo de relación y
     seleccione **Add relationship type**.
 
-    1.  **Relationship type name**: *operates*
+    1.  **Relationship type name**: **operates**
 
-    2.  **Source entity type**: *Store*
+    2.  **Source entity type**: **Store**
 
-    3.  **Target entity type**: *Freezer*
+    3.  **Target entity type**: **Freezer**
 
 ![](./media/image131.png)
 
@@ -819,7 +836,7 @@ entre una tienda y sus congeladores.
     configuración:
 
 - **Origin entity type:** Enumera los detalles de la entidad de origen
-  **(Store** en este caso**).**
+  (**Store** en este caso).
 
 - **Relationship type:** Establece los detalles del tipo de relación.
 
@@ -853,8 +870,8 @@ entre una tienda y sus congeladores.
 
 ![](./media/image134.png)
 
-**  
- Importante:** Asegúrese de seleccionar las columnas de origen correctas
+ 
+ **mportante:** Asegúrese de seleccionar las columnas de origen correctas
 que coincidan con las propiedades clave del tipo de entidad.
 
 5.  **Guarde** el tipo de relación. Confirme que el tipo de relación se
@@ -1090,8 +1107,7 @@ afecta a la agregación en las consultas**.**
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image169.png)
 
-2.  En la parte inferior del cuadro de entrada, agregue +++**Support
-    group by in GQL**+++. Esta instrucción permite una mejor agregación
+2.  En la parte inferior del cuadro de entrada, agregue +++**Support group by in GQL**+++. Esta instrucción permite una mejor agregación
     de los datos de **Ontology.**
 
 > ![A screenshot of a computer AI-generated content may be
@@ -1111,8 +1127,7 @@ afecta a la agregación en las consultas**.**
 1.  Escriba el siguiente texto y seleccione el **icono Submit**, como se
     muestra en la siguiente imagen.
 
-> **+++For each store, show any freezers operated by that store that
-> ever had a humidity lower than 46 percent.+++**
+> **+++For each store, show any freezers operated by that store that ever had a humidity lower than 46 percent.+++**
 >
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image172.png)
@@ -1123,7 +1138,7 @@ incorrect.](./media/image173.png)
 2.  Escriba el siguiente texto y seleccione el **icono Submit**, como se
     muestra en la siguiente imagen.
 
-> *+++What is the top product by revenue across all stores?+++*
+> **+++What is the top product by revenue across all stores?+++**
 
 ![A screenshot of a chat AI-generated content may be
 incorrect.](./media/image174.png)
