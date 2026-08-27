@@ -244,9 +244,9 @@ Fabric Data Agent를 통해 Lakehouse가 연결됨에 따라, Contoso는 이제 
 
 1. 모든 질문과 SQL 쿼리를 복사하여 메모장에 붙여넣은 다음, 메모장을 저장해 두세요. 이후 작업에서 이 정보를 사용할 수 있도록 하기 위함입니다.
 
-    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image43.png)
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image43.png)
 
-    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image44.png)
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image44.png)
 
 1. **dimdate**인 **FactInternetSales** , 를 선택하고, 다음 텍스트를 입력한 후 **Submit icon**을 클릭합니다:
 
@@ -266,7 +266,7 @@ Fabric Data Agent를 통해 Lakehouse가 연결됨에 따라, Contoso는 이제 
   
   ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image48.png)
 
-문제의 일부는 active customer에 대한 공식적인 정의가 없다는 점입니다. 모델 텍스트 박스에 대한 설명을 더 추가하면 도움이 될 수 있지만, 사용자들이 자주 묻는 질문일 수도 있습니다. AI가 질문을 올바르게 처리하는지 확인해야 합니다.
+  문제의 일부는 active customer에 대한 공식적인 정의가 없다는 점입니다. 모델 텍스트 박스에 대한 설명을 더 추가하면 도움이 될 수 있지만, 사용자들이 자주 묻는 질문일 수도 있습니다. AI가 질문을 올바르게 처리하는지 확인해야 합니다.
 
 1. 관련 쿼리는 다소 복잡하므로, **Setup** 창에서 **Example queries** 버튼을 선택하여 예제를 확인하십시오.
 
