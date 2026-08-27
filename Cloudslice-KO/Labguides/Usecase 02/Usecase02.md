@@ -231,7 +231,7 @@ Fabric Data Agent를 통해 Lakehouse가 연결됨에 따라, Contoso는 이제 
   
   ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image40.png)
 
-쿼리로 계속 실험을 진행하면서 더 많은 지시 사항을 추가해야 합니다.
+  쿼리로 계속 실험을 진행하면서 더 많은 지시 사항을 추가해야 합니다.
 
 1. **dimcustomer**를 선택하고, 다음 텍스트를 입력한 후 **Submit icon** 을 클릭합니다.
 
