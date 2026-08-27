@@ -225,22 +225,22 @@ Fabric Data Agent를 통해 Lakehouse가 연결됨에 따라, Contoso는 이제 
 1. **FactResellerSales** 를 선택하고 아래 이미지에 표시된 대로 텍스트를 입력한 다음 제출**Submit icon** 을 클릭하십시오.
 
 
-+++What is our most sold product?+++
+  +++What is our most sold product?+++
 
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image39.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image40.png)
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image39.png)
+  
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image40.png)
 
 쿼리로 계속 실험을 진행하면서 더 많은 지시 사항을 추가해야 합니다.
 
 1. **dimcustomer**를 선택하고, 다음 텍스트를 입력한 후 **Submit icon** 을 클릭합니다.
 
 
-+++how many active customers did we have June 1st, 2013?+++
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image41.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image42.png)
+  +++how many active customers did we have June 1st, 2013?+++
+  
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image41.png)
+  
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image42.png)
 
 1. 모든 질문과 SQL 쿼리를 복사하여 메모장에 붙여넣은 다음, 메모장을 저장해 두세요. 이후 작업에서 이 정보를 사용할 수 있도록 하기 위함입니다.
 
@@ -251,20 +251,20 @@ Fabric Data Agent를 통해 Lakehouse가 연결됨에 따라, Contoso는 이제 
 1. **dimdate**인 **FactInternetSales** , 를 선택하고, 다음 텍스트를 입력한 후 **Submit icon**을 클릭합니다:
 
 
-+++what are the monthly sales trends for the last year?+++
-
-![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image45.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image46.png)
+  +++what are the monthly sales trends for the last year?+++
+  
+  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image45.png)
+  
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image46.png)
 
 1. **dimproduct**인 **FactInternetSales**를 선택하고, 다음 텍스트를 입력한 후 **Submit icon**을 클릭합니다:
 
 
-+++which product category had the highest average sales price?+++
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image47.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image48.png)
+  +++which product category had the highest average sales price?+++
+  
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image47.png)
+  
+  ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image48.png)
 
 문제의 일부는 active customer에 대한 공식적인 정의가 없다는 점입니다. 모델 텍스트 박스에 대한 설명을 더 추가하면 도움이 될 수 있지만, 사용자들이 자주 묻는 질문일 수도 있습니다. AI가 질문을 올바르게 처리하는지 확인해야 합니다.
 
@@ -279,9 +279,9 @@ Fabric Data Agent를 통해 Lakehouse가 연결됨에 따라, Contoso는 이제 
 1. 여기에서 생성한 lakehouse 데이터 소스에 대한 예시 쿼리를 추가해야 합니다. 질문 입력란에 다음 질문을 추가하세요:
 
 
-+++What is the most sold product?+++
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image51.png)
+  +++What is the most sold product?+++
+  
+  ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image51.png)
 
 1. 메모장에 저장해 둔 query1을 추가하세요:
 
@@ -302,9 +302,9 @@ Fabric Data Agent를 통해 Lakehouse가 연결됨에 따라, Contoso는 이제 
 1. 질문 입력란에 두 번째 질문을 추가하려면:
 
 
-+++What are the monthly sales trends for the last year?+++
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image54.png)
+  +++What are the monthly sales trends for the last year?+++
+  
+  ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2002/media/image54.png)
 
 1. 메모장에 저장해 둔 query3를 추가하세요:
 
