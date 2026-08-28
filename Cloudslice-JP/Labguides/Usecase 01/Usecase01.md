@@ -390,7 +390,7 @@
 
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image76.png)
 
-    > 重要：エンティティタイプのキープロパティに一致する、正しい一致列を選択してください。
+    重要：エンティティタイプのキープロパティに一致する、正しい一致列を選択してください。
 
 1. 保存関係タイプを確認してください。関係タイプが正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じます。
 
