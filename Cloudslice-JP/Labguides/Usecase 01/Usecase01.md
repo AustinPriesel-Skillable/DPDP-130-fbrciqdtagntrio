@@ -88,33 +88,41 @@
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image6.png)
 
 1. Upload filesタブで、Filesの下にあるフォルダーをクリック
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image7.png)
 
 1. VM 上の **C:\LabFiles\LabFiles** に移動し、**DimProducts.csv、DimStore.csv、FactSale.csv、Freezer.csv** ファイルを選択して、**Open** ボタンをクリック
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image8.png)
 
 1. 次に、**Upload** ボタンをクリックし、ダイアログの**Upload files** ダイアログの「×」 アイコンを選択して閉じる
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image9.png)
 
     ![A screenshot of a upload box AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image10.png)
 
 1. **Files**をクリックして「更新」を選択すると、ファイルが表示
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image11.png)
 
 1. **Lakehouse** ページで、Explorerラー ペインの下にある**Files**を選択します。次に、マウスカーソルを **DimProducts.csv** ファイルの上に移動します。DimProducts.csv の横にある横三点リーダー (…) をクリックします。**Load Table**をクリックしてから、**New table**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image12.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image13.png)
 
 1. **Load file to new table** ダイアログボックスで、**Load** ボタンをクリック
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image14.png)
 
 1. **DimProducts**テーブルの作成に成功
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image15.png)
 
 1. データをプレビューするには、**DimProducts** テーブルを選択
 
     注: データをプレビューするには、\[更新\] ボタンを複数回選択する必要がある場合がある
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image16.png)
 
 1. 手順7～9を繰り返して、残りのファイルをテーブルにプッシュ
