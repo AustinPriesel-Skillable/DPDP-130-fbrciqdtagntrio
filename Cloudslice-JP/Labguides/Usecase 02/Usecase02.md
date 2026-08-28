@@ -233,22 +233,22 @@ Fabric Data Agentを介してレイクハウスが接続されたことで、 Co
 1. **FactResellerSales**を選択し、以下のテキストを入力して、下の画像に示すように**Submit**アイコンをクリックします。
 
 
-+++What is our most sold product?+++
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image39.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image40.png)
+    +++What is our most sold product?+++
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image39.png)
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image40.png)
 
 クエリの実験を続けるにつれて、指示をさらに追加していく必要があります。
 
 1. **dimcustomer**を選択し、以下のテキストを入力して**Submit**アイコンをクリックします。
 
 
-+++how many active customers did we have June 1st, 2013?+++
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image41.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image42.png)
+    +++how many active customers did we have June 1st, 2013?+++
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image41.png)
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image42.png)
 
 1. すべての質問とSQLクエリをコピーしてメモ帳に貼り付け、メモ帳を保存して、今後のタスクでその情報を使用します。
 
@@ -259,20 +259,20 @@ Fabric Data Agentを介してレイクハウスが接続されたことで、 Co
 1. **dimdate、FactInternetSales** を選択し、以下のテキストを入力して**Submit**アイコンをクリックします。
 
 
-+++what are the monthly sales trends for the last year?+++
-
-![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image45.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image46.png)
+    +++what are the monthly sales trends for the last year?+++
+    
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image45.png)
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image46.png)
 
 1. **dimproduct、FactInternetSales**を選択し、以下のテキストを入力して**Submit**アイコンをクリックします。
 
 
-+++which product category had the highest average sales price?+++
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image47.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image48.png)
+    +++which product category had the highest average sales price?+++
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image47.png)
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image48.png)
 
 問題の一つは、「アクティブな顧客（active customer）」に正式な定義がないことです。モデルテキストボックスの注釈に詳細な説明を追加すれば解決するかもしれませんが、ユーザーからこのような質問が頻繁に寄せられる可能性があります。AIがこの質問に正しく対応できるようにする必要があります。
 
@@ -287,9 +287,9 @@ Fabric Data Agentを介してレイクハウスが接続されたことで、 Co
 1. レイクハウスデータソースのExample queriesを追加する必要があります。質問フィールドに以下の質問を追加します。
 
 
-+++What is the most sold product?+++
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image51.png)
+    +++What is the most sold product?+++
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image51.png)
 
 1. メモ帳に保存したクエリ1を追加します。
 
@@ -308,7 +308,9 @@ Fabric Data Agentを介してレイクハウスが接続されたことで、 Co
 
 1. 質問欄に2つ目の質問を追加するには：
 
-    +++What are the monthly sales trends for the last year?+++![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image54.png)
+    +++What are the monthly sales trends for the last year?+++
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image54.png)
 
 1. メモ帳に保存したquery3を追加します。
 
@@ -343,8 +345,9 @@ Fabric Data Agentを介してレイクハウスが接続されたことで、 Co
 
 1. 質問欄に3つ目の質問を追加します。
 
-    +++Which product category has the highest average sales
-    price?+++![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image57.png)
+    +++Which product category has the highest average sales price?+++
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2002/media/image57.png)
 
 1. メモ帳に保存したquery4を追加します。
 
