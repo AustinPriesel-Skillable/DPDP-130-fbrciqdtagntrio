@@ -217,13 +217,13 @@
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image40.png)
 
-    **ヒント**：オントロジー名には、数字、文字、アンダースコアを含めることができます。スペースやハイフンは使用しないでください。
+    ヒント**：オントロジー名には、数字、文字、アンダースコアを含めることができます。スペースやハイフンは使用しないでください。
 
 1. オントロジーは準備が整い次第開く
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image41.png)
 
-    > 次に、Lakehouseテーブルのデータに基づいて、エンティティタイプ、データバインディングとリレーションシップを作成します。
+    次に、Lakehouseテーブルのデータに基づいて、エンティティタイプ、データバインディングとリレーションシップを作成します。
 
 
 ## タスク2：エンティティ型とデータバインディングを作成
