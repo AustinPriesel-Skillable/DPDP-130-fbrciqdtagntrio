@@ -471,7 +471,7 @@
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image92.png)
 
-    > 注記：プロパティ名は、すべてのエンティティタイプにおいて一意である必要があります。
+    注記：プロパティ名は、すべてのエンティティタイプにおいて一意である必要があります。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image93.png)
 
@@ -509,13 +509,12 @@
     - **Binding
     selection：**バインディングのデータを保持するソーステーブルを特定
 
-    - **Entity type key
-    mapping：**ソースデータテーブル内で、エンティティタイプキープロパティに対応する列を指定します。ソースデータから文字列型と整数型の列をエンティティタイプキーとして選択できます。選択した列を組み合わせることで、レコードを一意に識別可能
+    - **Entity type key mapping**: ソースデータテーブル内で、エンティティタイプキープロパティに対応する列を指定します。ソースデータから文字列型と整数型の列をエンティティタイプキーとして選択できます。選択した列を組み合わせることで、レコードを一意に識別可能
 
-    - **Properties：**ソースデータの列と、それに対応する**Freezer**エンティティタイプのプロパティを一覧表示します。**Source
+    - **Properties**: ソースデータの列と、それに対応する**Freezer**エンティティタイプのプロパティを一覧表示します。**Source
     column** 側にはFreezerテーブルの列が自動的に入力され、**Property name** 側にはオントロジー内のFreezerエンティティタイプの対応するプロパティ名が表示されます。このチュートリアルでは、既定のプロパティ名を使用
 
-  ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image99.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image99.png)
 
 
 1. 設定画面上部の**Define entity type key** を選択します。プロパティリストからFreezerIdを選択し、**Save**を選択
