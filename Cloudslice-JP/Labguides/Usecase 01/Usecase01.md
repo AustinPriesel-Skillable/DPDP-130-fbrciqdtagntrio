@@ -235,31 +235,31 @@
 
 1. 上部のリボンまたは構成キャンバスの中央から、**Add entity type**を選択
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image42.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image42.png)
 
 1. エンティティ型名に+++ **Store** +++と入力し、**Add Entity Type**を選択
 
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image43.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image43.png)
 
 1. *Store* エンティティ型が構成キャンバスに追加され、**Entity type configuration** ペインが表示
 
-   ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image44.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image44.png)
 
 1. 設定キャンバスで、エンティティ名の横にある「...」を選択し、**Bind data**を選択
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image45.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image45.png)
 
 1. **Add data binding \> Lakehouse table**を選択
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image46.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image46.png)
 
 1. 次に、データソースを選択します。IQ_Lakehouse レイクハウスを選択し、「**Next**」をクリック
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image47.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image47.png)
 
 1. **dimstore** テーブルを選択し、**Select**をクリック
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image48.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image48.png)
 
 1. ソーステーブルのフィールドがデータバインディング構成に反映されます。構成ページの以下のセクションを確認：
 
@@ -271,7 +271,7 @@
     - **プロパティ**：ソースデータから、*Store* エンティティ型のプロパティとして表現される列を一覧表示します。**Source
     column** 側には*dimstore* テーブルの列が自動的に入力され、**Property name** 側にはオントロジー内の*Store* エンティティ型における対応するプロパティ名が一覧表示されます。このチュートリアルでは、既定のプロパティ名をそのまま使用
     
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image49.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image49.png)
 
 
 1. 設定画面上部の**Define entity type key** を選択
