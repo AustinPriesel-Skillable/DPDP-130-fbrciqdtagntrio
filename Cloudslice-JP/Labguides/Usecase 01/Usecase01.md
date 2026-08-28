@@ -79,7 +79,7 @@
 
 1. **Successfully created SQL endpoint**という通知が表示
 
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image5.png)
+   ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image5.png)
 
 ## タスク3：サンプルデータの取り込み
 
