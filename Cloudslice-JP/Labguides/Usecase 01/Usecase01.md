@@ -782,7 +782,7 @@ Ontology（プレビュー）は[Fabric data agent (preview)] (https://learn.mic
 
 **注記**：この手順は、クエリにおける集計に影響を与える既知の問題に対応するために追加
 
-> 次に、エージェントにカスタム指示を追加
+次に、エージェントにカスタム指示を追加
 
 1. メニューリボンから**Agent instructions** を選択  
   
@@ -798,7 +798,7 @@ Ontology（プレビュー）は[Fabric data agent (preview)] (https://learn.mic
 
 ## タスク3：自然言語によるエージェントにクエリを送信
 
-> 次に、自然言語による質問を使って、オントロジーを探索します。
+次に、自然言語による質問を使って、オントロジーを探索します。
 
 1. 以下のテキストを入力し、下の画像に示されている**送信**アイコンをクリック
 
@@ -818,7 +818,7 @@ Ontology（プレビュー）は[Fabric data agent (preview)] (https://learn.mic
 
      ![Screenshot of the result of a query.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image158.png)
 
-    **ヒント**：サンプルクエリの実行中にデータがないというエラーが表示された場合は、エージェントの初期化に十分な時間を確保するため、数分待ってから再度クエリを実行してください。
+    ヒント**：サンプルクエリの実行中にデータがないというエラーが表示された場合は、エージェントの初期化に十分な時間を確保するため、数分待ってから再度クエリを実行してください。
     
     データエージェントをさらに詳しく調べるには、自分でいくつかのプロンプトを試してみてください。
 
