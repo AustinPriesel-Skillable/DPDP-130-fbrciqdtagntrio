@@ -568,9 +568,7 @@
 
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image112.png)
 
-    > これで、*Freezer*エンティティには2つのデータバインディングができました。1つは*freezer*
-    > レイクハウステーブルからの静的データ、もう1つは*FreezerTelemetry*
-    > eventhouseテーブルからのストリーミングデータです。
+    これで、*Freezer* エンティティには2つのデータバインディングができました。1つは *freezer* レイクハウステーブルからの静的データ、もう1つは *FreezerTelemetry* eventhouseテーブルからのストリーミングデータです。
 
 
 ## タスク4：関係タイプを追加
