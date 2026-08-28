@@ -14,39 +14,36 @@
 
 この実習を完了することで、以下のことを学ぶことができます。
 
-- **Azure SQL Database**を作成します。
-- データおよび分析リソースをホストするための**Microsoft
-  Fabricワークスペース**を作成します。
+- **Azure SQL Database** を作成します。
+- データおよび分析リソースをホストするための **Microsoft Fabricワークスペース** を作成します。
 
-- **Azure SQL Mirroringを使用して、 Azure SQL Databaseを Microsoft
-  Fabric に**ミラーリングします。
+- **Azure SQL Mirroring** を使用して、Azure SQL Databaseを Microsoft Fabric に**ミラーリングします。
 
-- **Fabric Data
-  Agent**を設定し、ミラーリングされたデータベースに接続します。
+- **Fabric Data Agent** を設定し、ミラーリングされたデータベースに接続します。
 
-- **自然言語のプロンプト**を使用してデータをクエリし、洞察を生成します。
+- **自然言語のプロンプト** を使用してデータをクエリし、洞察を生成します。
 - サンプル分析質問を用いて、エージェントの回答を検証します。
 
 
 ## **タスク0：ホスト環境の時刻を同期**
 
-1. VM内で、**検索バーに移動してクリックし**、 **「Settings」と入力して、 「Best match」**の下にある**「Settings」**をクリックします。
+1. VM内で、**検索バーに移動してクリックし**、**Settings** と入力して、**Best match** の下にある **Settings** をクリックします。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image1.png)
 
-1. **Settingsウィンドウで「Time & language」**をクリックします。
+1. **Settings** ウィンドウで **Time & language** をクリックします。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image2.png)
 
-1. **「Time & language」ページ**で、**「Date & time」**に移動してクリックします。
+1. **Time & language** ページ**で、**Date & time** に移動してクリックします。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image3.png)
 
-1. **「Additional settings」**セクションに移動し、 **「Syn now」**ボタンをクリックします。同期には3～5分かかります。
+1. **Additional settings** セクションに移動し、 **Syn now** ボタンをクリックします。同期には3～5分かかります。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image4.png)
 
-1. **Settingsウィンドウ**を閉じます。
+1. **Settings** ウィンドウを閉じます。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image5.png)
 
@@ -66,11 +63,11 @@
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image6.png)
 
-1. **「+Create」**をクリックします。
+1. **+Create**をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image7.png)
 
-1. **「Create a storage account** **」**ウィンドウで、 **「Basics** **」**タブの下に以下の詳細を入力してストレージアカウントを作成し、 **「Next:Networking」**をクリックします。
+1. **Create a storage account** ウィンドウで、 **Basics** タブの下に以下の詳細を入力してストレージアカウントを作成し、 **Next:Networking** をクリックします。
 
     | Setting | Value  |
     |--------|----------------|
@@ -90,45 +87,45 @@
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image9.png)
 
-1. 「Compute + Storage」セクションで、 **「Configure database」**をクリックします。
+1. **Compute + Storage** セクションで、 **Configure database ** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image10.png)
 
-1. Service tier のドロップダウンメニューから**「Standard(Budget Friendly)」を選択し、DTU**に100を入力して**「Apply」**をクリックします。
+1. Service tier のドロップダウンメニューから **Standard(Budget Friendly)** を選択し、DTU**に100を入力して **Apply** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image11.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image12.png)
 
-1. **「Networking」タブ**で**「Public endpoint」**を選択し、 **「Allow Azure services and resources」を「Yes」**に設定し、 **「Add current client IP address」**を有効にして、 **「Next: Security\>」**をクリックします。
+1. **Networking** タブ**で **Public endpoint** を選択し、 **Allow Azure services and resources** を **Yes** に設定し、 **Add current client IP address** を有効にして、 **Next: Security\>** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image13.png)
 
-1. **Security**ページで、内容を確認後、 **「Next : Additional settings」を選択します。**
+1. **Security** ページで、内容を確認後、 **Next : Additional settings** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image14.png)
 
-1. **「Additional settings」**タブで  「Use existing data」*の下にある**「Sample」を選択し**、プロンプトが表示されたら**「AdventureWorksLT」**を選択して**「OK」**をクリックし、次に**「Review + create」を選択して**続行します。
+1. **Additional settings** タブで  「Use existing data」*の下にある **Sample** を選択し、プロンプトが表示されたら **AdventureWorksLT** を選択して **OK** をクリックし、次に **Review + create** を選択して**続行します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image15.png)
 
-1. **「Review + create」ページ**で、レビュー後、 **「Create」を選択します。**
+1. **Review + create** ページ**で、レビュー後、 **Create** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image16.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image17.png)
 
-1. **Microsoft.SQLDatabase**ウィンドウで、デプロイが完了したら、 **\[Go to resource\]**ボタンをクリックします。
+1. **Microsoft.SQLDatabase** ウィンドウで、デプロイが完了したら、 **\Go to resource\** ボタンをクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image18.png)
 
-1. SQLデータベースページで**Query editorを選択します**。
+1. SQLデータベースページで**Query editorを選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image19.png)
 
-1. **Query editor (preview)**で、SQL Server の**ログイン名**として**sqladmin** 、**パスワード**として +++
-    **password 321! ++**を入力し、
-    **\[OK\]**をクリックしてデータベースに接続します。
+1. **Query editor (preview)** で、SQL Server の **ログイン名** として +++**sqladmin**+++ 、**パスワード** として
+    +++**password 321!**+++ を入力し、
+    **OK** をクリックしてデータベースに接続します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image20.png)
 
@@ -136,27 +133,27 @@
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image21.png)
 
-1. SQLデータベースに戻ります。**Server name** （1）と**SQL Database name+++（2）をコピーし、メモ帳に貼り付けてから、メモ帳を+++保存して、**次のタスクでその情報を使用します。
+1. SQLデータベースに戻ります。**Server name** （1）と **SQL Database name**（2）をコピーし、メモ帳に貼り付けてから、メモ帳を+++保存して、**次のタスクでその情報を使用します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image22.png)
 
-1. **Home**をクリックしてメインページに戻ります。
+1. **Home** をクリックしてメインページに戻ります。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image23.png)
 
-1. **Resource groups**をクリックします。
+1. **Resource groups** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image24.png)
 
-1. **ResourceGroup1リソースグループ**をクリックします。
+1. **ResourceGroup1** リソースグループ**をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image25.png)
 
-1. **SQLサーバー**を選択します
+1. **SQLサーバー** を選択します
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image26.png)
 
-1. 「Identity」に移動し、「System assigned managed identity」の状態を**「On」**に切り替えてから、 **「Save」**をクリックして変更を適用します。
+1. 「Identity」に移動し、「System assigned managed identity」の状態を**「On」**に切り替えてから、 **Save** をクリックして変更を適用します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image27.png)
 
@@ -168,18 +165,18 @@
 このタスクでは、Fabricワークスペースを作成します。このワークスペースには、 レイクハウス、データフロー、Data Factoryパイプライン、ノートブック、Power BIデータセット、レポートなど、このレイクハウスチュートリアルに必要なすべてのアイテムが含まれています。
 
 1. ブラウザを開き、アドレスバーに移動して、次のURLを入力または貼り付けます。 ++https://app.fabric.microsoft.com/+++。
-    **Enter**キーを押して、資格情報でサインインします。
+    **Enter** キーを押して、資格情報でサインインします。
 
     |  |   |
     |---|----|
     |Username	|+++@lab.CloudPortalCredential(User1).Username+++|
     |TAP	|+++@lab.CloudPortalCredential(User1).AccessToken+++|
 
-1. Fabricのホームページで、 **「+** **New workspace**」タイルを選択します。
+1. Fabricのホームページで、 **New workspace** タイルを選択します。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image29.png)
 
-1. 右側に表示される**「Create a workspace」**ペインに、以下の詳細を入力し、 **「Apply」**ボタンをクリックします。
+1. 右側に表示される **Create a workspace** ペインに、以下の詳細を入力し、 **Apply** ボタンをクリックします。
 
     | Property | Value |
     |---------|-------|
@@ -205,17 +202,15 @@
 
 このタスクでは、Azure SQL Mirroringを使用して Azure SQL Databaseを Microsoft Fabric に接続します。テーブルを選択し、ミラーリングされたデータベースを作成し、データが正常に同期されたことを確認します。
 
-1. ナビゲーションバーの**「+** **New item」**ボタンをクリックして、新しいレイクハウスを作成します。
+1. ナビゲーションバーの **New item** ボタンをクリックして、新しいレイクハウスを作成します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image34.png)
 
-1. **Filter by keyword**検索ボックスに**「+++Mirrored Azure SQL
-    Database+++」**と入力し、「 **Mirrored Azure SQL
-    Database」**を選択します。
+1. **Filter by keyword** 検索ボックスに **Mirrored Azure SQL Database** と入力し、**Mirrored Azure SQL Database** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image35.png)
 
-1. **「Choose a database connection to get started」**ウィンドウで、 **Azure SQL Database**を選択します。
+1. **Choose a database connection to get started** ウィンドウで、 **Azure SQL Database** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image36.png)
 
@@ -230,21 +225,21 @@
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image37.png)
 
-1. **「Choose data」ウィンドウ**で**「Select all」**を選択し、 **「Connect」**ボタンをクリックします。
+1. **Choose data** ウィンドウ**で **Select all** を選択し、 **Connect** ボタンをクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image38.png)
 
-1. 「Destination」タブで、 **「Create mirrored database」**をクリックします。
+1. **Destination** タブで、 **Create mirrored database** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image39.png)
 
-1. **「Refresh」**をクリックして、最新の変更内容を確認します。
+1. **Refresh** をクリックして、最新の変更内容を確認します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image40.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image41.png)
 
-1. 左側のナビゲーションメニューで、下の画像に示すように、 ***「FabricAgent- +++mirroringdatabase@lab.LabInstance.Id+++ 」*に移動します。**
+1. 左側のナビゲーションメニューで、下の画像に示すように、 **FabricAgent- +++mirroringdatabase@lab.LabInstance.Id+++** に移動します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image42.png)
 
@@ -253,20 +248,19 @@
 
 ここでは、新しいFabric Data Agentを作成し、ミラーリングされたAzure SQL Databaseをデータソースとして使用するように構成します。このエージェントは、ミラーリングされたデータを使用して自然言語によるプロンプトに応答します。
 
-1. **Fabric**のホームページで、 **「+** **New item」**を選択します**。**
+1. **Fabric** のホームページで、 **+New item** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image43.png)
 
-1. **「Filter by item type」検索ボックス+++に+++「+++data
-    agent+++」**と入力し、「**Data agent」を選択します。**
+1. **Filter by item type** 検索ボックス+++に+++ **data agent** と入力し、**Data agent** を選択します
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image44.png)
 
-1. Data agent名として**+++FabricDataAgent @lab.LabInstance.Id+++を**入力し、 **\[Create\]**を選択します。
+1. Data agent名として **+++FabricDataAgent @lab.LabInstance.Id+++** を入力し、 **Create** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image45.png)
 
-1. **「Add data source」**を選択して、新しいデータソースを設定します。
+1. **Add data source** を選択して、新しいデータソースを設定します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image46.png)
 
@@ -290,7 +284,7 @@ Data Agent をテストするには、次のような分析的な質問をしま
 
 1. すべてのテーブルに対して**SalesLT**スキーマを選択します。
 
-1. 「+++Which product categories generate the highest sales?+++」という質問を入力し、Sendアイコンをクリックしてエージェントの応答を表示します。
+1. +++Which product categories generate the highest sales?+++ という質問を入力し、Sendアイコンをクリックしてエージェントの応答を表示します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image49.png)
 
@@ -298,7 +292,7 @@ Data Agent をテストするには、次のような分析的な質問をしま
 
 1. エージェントをテストするには、アプリケーションを実行し、サンプル質問を入力して応答を確認します。
 
-    ++++List products with high list price but low sales volume.+++
+    +++List products with high list price but low sales volume.+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image51.png)
 
@@ -310,11 +304,11 @@ Data Agent をテストするには、次のような分析的な質問をしま
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image54.png)
 
-1. 上部メニューから**「Agent instructions」**をクリックします。
+1. 上部メニューから **Agent instructions** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image55.png)
 
-1. 上部メニューから「**Publish**」をクリックし、 **「Publish」**を選択します。
+1. 上部メニューから **Publish** をクリックし、 **Publish** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image56.png)
 
@@ -322,18 +316,18 @@ Data Agent をテストするには、次のような分析的な質問をしま
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image58.png)
 
-1. 次に、左側のナビゲーションペインにある**「FabricAgent - +++mirroringdatabase@lab.LabInstance.Id+++ 」**をクリックします。
+1. 次に、左側のナビゲーションペインにある **FabricAgent - +++mirroringdatabase@lab.LabInstance.Id+++ ** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image59.png)
 
 
 ## タスク6：リソースを削除
 
-1. ワークスペース名の下にある「 **...」**オプションを選択し、 **「Workspace settings」**を選択します。
+1. ワークスペース名の下にある **...** オプションを選択し、 **Workspace settings** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image60.png)
 
-1. **「General」**を選択し、 **「Remove this workspace」**を選択します。
+1. **General** を選択し、 **Remove this workspace** を選択します。
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image61.png)
 
@@ -347,17 +341,17 @@ Data Agent をテストするには、次のような分析的な質問をしま
 
 1. ブラウザを開き、+++https://portal.azure.com+++ にアクセスして、以下のクラウドスライスアカウントでサインインします。
 
-1. リソースを削除するには、 Azure ポータル検索バーに**「Resource groups」**と入力し、**「Services」**の下にある**「Resource groups」**をクリックします。
+1. リソースを削除するには、 Azure ポータル検索バーに **Resource groups** と入力し、**Services** の下にある **Resource groups** をクリックします。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image64.png)
 
 1. Resource groupsページで、リソースグループを選択します。
 
-1. **Resource Group**のホームページで、**Fabric Capacity**以外のすべてのリソースを選択し、 **\[Delete\]**をクリックします。
+1. **Resource Group** のホームページで、**Fabric Capacity** 以外のすべてのリソースを選択し、 **Delete** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image65.png)
 
-1. 右側に表示される**「Delete Resources」**ペインで、 **「Enter “delete” to confirm deletion」+++フィールドに移動し、「+++Delete」**ボタンをクリックします。
+1. 右側に表示される **Delete Resources** ペインで、 **Enter +++delete+++ to confirm deletion** フィールドに移動し、ボタンをクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2003/media/image66.png)
 
