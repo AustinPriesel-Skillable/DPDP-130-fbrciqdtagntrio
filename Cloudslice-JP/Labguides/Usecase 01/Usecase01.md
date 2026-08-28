@@ -211,17 +211,17 @@
 
 1. Fabricワークスペースで、**+ New item**を選択します。**Ontology (preview)**アイテムを検索して選択
    
-   ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image39.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image39.png)
 
 1. オントロジーの**Name**フィールド に+++RetailSalesOntology+++と入力し、**Create**を選択  
 
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image40.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image40.png)
 
     **ヒント**：オントロジー名には、数字、文字、アンダースコアを含めることができます。スペースやハイフンは使用しないでください。
 
 1. オントロジーは準備が整い次第開く
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image41.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image41.png)
 
     > 次に、Lakehouseテーブルのデータに基づいて、エンティティタイプ、データバインディングとリレーションシップを作成します。
 
