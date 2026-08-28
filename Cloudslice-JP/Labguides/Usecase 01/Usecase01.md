@@ -126,6 +126,7 @@
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image16.png)
 
 1. 手順7～9を繰り返して、残りのファイルをテーブルにプッシュ
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image17.png)
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image18.png)
@@ -141,14 +142,16 @@
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image23.png)
 
 1. 左側のナビゲーションバーから**Fabric IQ Ontology**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image24.png)
 
 
 ## タスク4：Eventhouseの準備
 
-> 以下の手順に従って、デバイスのストリーミングデータファイルをEventhouseのKQLデータベースにアップロードします。
+以下の手順に従って、デバイスのストリーミングデータファイルをEventhouseのKQLデータベースにアップロードします。
 
 1. **Fabric IQ Ontology**のホームページで、**+New item** を選択し、**Eventhouse**を選択
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image25.png)
 
 1. Eventhouse に +++TelemetryDataEH+++ という名前を付けて、**Create** ボタンをクリック
@@ -156,38 +159,49 @@
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image26.png)
 
 1. Eventhouseは準備が整い次第開く
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image27.png)
 
 1. KQLデータベースの名前を選択して開く
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image28.png)
 
 1. **KQLデータベース**の下部リボンで、**Get data**をクリックし、**Local file**を選択して、ローカルシステムからデータベースにファイルをアップロード
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image29.png)
 
 1. データを新しいテーブルに取り込むためのターゲットオプションを選択し、+ New tableをクリックして、テーブル名として +++FreezerTelemetry+++ と入力
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image30.png)
   
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image31.png)
 
 1. アップロード先のテーブルを選択し、ファイルをドラッグアンドドロップするか、*Browse for files*をクリックしてデータをアップロード
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image32.png)
 
 1. VM 上の **C:\LabFiles\Lab1** に移動し、**FreezerTelemetry.csv** ファイルを選択して、**Open** ボタンをクリック
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image33.png)
 
 1. **Next**ボタンをクリック
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image34.png)
 
 1. 次に、**Finish** ボタンをクリック
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image35.png)
 
 1. データ取り込みが完了された上、**Close**をクリック
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image36.png)
 
 1. 処理が完了すると、KQLデータベースに**FreezerTelemetry**テーブルが表示
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image37.png)
 
 1. 左側のナビゲーションペインで**Fabric IQ Ontology**を選択
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image38.png)
 
 
@@ -196,15 +210,17 @@
 ## タスク 1: オントロジー (プレビュー) アイテムの作成
 
 1. Fabricワークスペースで、**+ New item**を選択します。**Ontology (preview)**アイテムを検索して選択
+   
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image39.png)
 
 1. オントロジーの**Name**フィールド に+++RetailSalesOntology+++と入力し、**Create**を選択  
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image40.png)
+  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image40.png)
 
     **ヒント**：オントロジー名には、数字、文字、アンダースコアを含めることができます。スペースやハイフンは使用しないでください。
 
 1. オントロジーは準備が整い次第開く
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image41.png)
 
     > 次に、Lakehouseテーブルのデータに基づいて、エンティティタイプ、データバインディングとリレーションシップを作成します。
@@ -212,19 +228,21 @@
 
 ## タスク2：エンティティ型とデータバインディングを作成
 
-> まず、エンティティ型を作成します。エンティティ型は、ビジネスにおけるオブジェクトの種類を表します。このステップでは、*Store*, *Products*,と*SaleEvent*の3つのエンティティ型を作成します。エンティティタイプを作成したら、**IQ_Lakehouse**
-> レイクハウステーブルのソースデータ列をバインドして、それらのプロパティを作成します。
+まず、エンティティ型を作成します。エンティティ型は、ビジネスにおけるオブジェクトの種類を表します。このステップでは、*Store*, *Products*,と*SaleEvent*の3つのエンティティ型を作成します。エンティティタイプを作成したら、**IQ_Lakehouse**
+レイクハウステーブルのソースデータ列をバインドして、それらのプロパティを作成します。
 
 ### 最初のエンティティ型（Store）の追加
 
 1. 上部のリボンまたは構成キャンバスの中央から、**Add entity type**を選択
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image42.png)
 
 1. エンティティ型名に+++ **Store** +++と入力し、**Add Entity Type**を選択
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image43.png)
+  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image43.png)
 
 1. *Store* エンティティ型が構成キャンバスに追加され、**Entity type configuration** ペインが表示
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image44.png)
 
 1. 設定キャンバスで、エンティティ名の横にある「...」を選択し、**Bind data**を選択
@@ -252,6 +270,7 @@
     - **エンティティ型のキーマッピング**：ソースデータテーブル内で、エンティティ型キープロパティに対応する列を指定します。ソースデータから文字列型と整数型の列をエンティティ型キーとして選択できま。選択した列を組み合わせることで、レコードを一意に識別可能
     - **プロパティ**：ソースデータから、*Store* エンティティ型のプロパティとして表現される列を一覧表示します。**Source
     column** 側には*dimstore* テーブルの列が自動的に入力され、**Property name** 側にはオントロジー内の*Store* エンティティ型における対応するプロパティ名が一覧表示されます。このチュートリアルでは、既定のプロパティ名をそのまま使用
+    
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image49.png)
 
 
@@ -278,7 +297,8 @@
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image55.png)
 
 1. **Home**を選択し、設定キャンバスに戻り、新しいエンティティ型を追加
-     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image56.png)
+
+   ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image56.png)
 
 
 ### その他のエンティティ型（Products, SaleEvent）の追加
@@ -317,6 +337,7 @@
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image68.png)
 
 1. 完了すると、これらのエンティティ型が**Entity Types** ペインに一覧表示
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image69.png)
 
 
@@ -327,9 +348,11 @@
 # StoreからのSaleEvent
 
 1. エクスプローラーから**SaleEvent**エンティティタイプを選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image70.png)
 
 1. メニューリボンから**Add relationship** を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image71.png)
 
 1. 以下の関係タイプの詳細を入力し、**Add relationship type**を選択
@@ -364,26 +387,28 @@
 1. **Matched SaleEvent**: 販売ID: SaleIdを選択します。この設定では、SaleEventエンティティで定義されたキープロパティと値が一致する、リレーションシップソースデータテーブルの列を指定します。この場合、リレーションシップデータソースとエンティティデータソースの両方がfactsalesテーブルを使用するため、同じ列（SaleId）を選択します。
 
 1. **Matched Store**: **StoreId**: **StoreId**を選択します。この設定では、リレーションシップソースデータテーブル（*factsales* \> StoreId）内の列のうち、*Store*エンティティ（*dimstore* \> StoreId）で定義されたキープロパティと値が一致する列を指定します。チュートリアルデータでは、両方のテーブルで列名は同じ（StoreId）です。
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image76.png)
 
     > 重要：エンティティタイプのキープロパティに一致する、正しい一致列を選択してください。
 
 1. 保存関係タイプを確認してください。関係タイプが正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じます。
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image77.png)  
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image78.png)  
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image79.png)
 
-    > これで最初のリレーションシップが作成され、ソーステーブルのデータにバインドされました。次のセクションに進み、別のリレーションシップタイプを作成してください。
+これで最初のリレーションシップが作成され、ソーステーブルのデータにバインドされました。次のセクションに進み、別のリレーションシップタイプを作成してください。
 
 
 ### **SaleEventで販売されたProducts**
 
-1. **Home**を選択すると、新しいエンティティタイプを追加できる設定キャンバスに  
-    > 戻る
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image80.png)
-    >
+1. **Home**を選択すると、新しいエンティティタイプを追加できる設定キャンバスに 戻る
+
+   ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image80.png)
+    
 1. 最初の関係タイプで使用した手順と同じ手順に従って、次の表に記載されている 詳細を持つ **SaleEvent** エンティティタイプから 2 番目の関係を作成
 
     | Relationship Type Name | Origin Entity Type | Target Entity Type | Mapping Table | Matched SaleEvent: SaleId | Matched Products: ProductId |
@@ -407,29 +432,32 @@
 
 # 演習3：追加データでオントロジーを充実
 
-> この演習では、新しい*Freezer*エンティティタイプを追加することで、オントロジーを拡張します。このエンティティタイプは、より多くのドメインコンテキストを追加し、リアルタイムの運用情報を反映する時系列データのプロパティを導入します。
->
-> 注記
->
-> 静的データと時系列データの両方において、データをバインドせずにプロパティを作成し、後でデータをバインドすることも、プロパティを作成してデータをバインドする手順を一度に行うことも可能です。この記事では、両方の方法について説明します。
->
-> 最後に、店舗とその冷凍庫間のつながりを表す新しい関係タイプを作成します。
+この演習では、新しい*Freezer*エンティティタイプを追加することで、オントロジーを拡張します。このエンティティタイプは、より多くのドメインコンテキストを追加し、リアルタイムの運用情報を反映する時系列データのプロパティを導入します。
+
+注記
+
+静的データと時系列データの両方において、データをバインドせずにプロパティを作成し、後でデータをバインドすることも、プロパティを作成してデータをバインドする手順を一度に行うことも可能です。この記事では、両方の方法について説明します。
+
+最後に、店舗とその冷凍庫間のつながりを表す新しい関係タイプを作成します。
 
 ## タスク 1:エンティティ タイプ「Freezer」を作成し、プロパティを追加
 
-> 以下の手順に従って、*Freezer* エンティティタイプを作成し、プロパティを追加してください。プロパティはまだデータにバインドされていません。
+以下の手順に従って、*Freezer* エンティティタイプを作成し、プロパティを追加してください。プロパティはまだデータにバインドされていません。
 
 1. 上部のリボンから**Add entity type** を選択します。エンティティタイプの名前として+++Freezer+++と入力し、**Add entity type** を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image88.png)
   
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image89.png)
 
 1. **Explorer**でFreezerエンティティタイプを選択した状態で、上部のリボンから**View entity type details**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image90.png)
 
 1. エンティティタイプの詳細情報を表示する**Configure** ページが開きます。このページには、エンティティタイプのプロパティやデータバインディングなど、重要な情報が表示
 
     **Manage property bindings** を展開し、**Add properties**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image91.png)
 
 1. 以下のプロパティを追加して、**Save**を選択
@@ -453,12 +481,14 @@
 
 ## タスク2：静的データをプロパティにバインド
 
-> 次に、*Freezer*エンティティ型に作成したプロパティに静的データをバインドします。
+次に、*Freezer*エンティティ型に作成したプロパティに静的データをバインドします。
 
 1. **Manage property bindings** を展開し、**Add binding and properties**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image95.png)
 
 1. **Add data binding \> Lakehouse table**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image96.png)
 
 1. データソースを選択
@@ -484,10 +514,12 @@
 
     - **Properties：**ソースデータの列と、それに対応する**Freezer**エンティティタイプのプロパティを一覧表示します。**Source
     column** 側にはFreezerテーブルの列が自動的に入力され、**Property name** 側にはオントロジー内のFreezerエンティティタイプの対応するプロパティ名が表示されます。このチュートリアルでは、既定のプロパティ名を使用
+
   ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image99.png)
 
 
 1. 設定画面上部の**Define entity type key** を選択します。プロパティリストからFreezerIdを選択し、**Save**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image100.png)
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image101.png)
@@ -504,9 +536,11 @@
 > 次に、新しいプロパティを作成し、それらに時系列データを単一のデータバインディング操作で紐付けることで、**Freezer**エンティティに時系列データを追加します。
 
 1. **Configure** ページで、**Manage property bindings** を展開し、**Add binding and properties**を 再度選択して、バインディング構成を再度開く
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image104.png)
 
 1. **Binding selection**で、**Add data binding**を展開し、**Eventhouse table or materialized view**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image105.png)
 
 1. データソースを選択
@@ -522,14 +556,17 @@
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image108.png)
 
 1. **Properties** セクションまでスクロールすると、**StoreId**にエラーが表示されます。これは、StoreIdが既に静的データバインディングにバインドされているためです。ゴミ箱アイコンを使用して、重複しているプロパティを削除
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image109.png)
 
 1. データバインディングを**保存します。**エンティティタイプが正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じます。
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image110.png)  
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image111.png)
 
 1. **Freezer** の**Configure** ページに戻ると、エンティティタイプのプロパティが増えていることに気づきます。新しいプロパティは *FreezerTelemetry* データソースに バインド
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image112.png)
 
     > これで、*Freezer*エンティティには2つのデータバインディングができました。1つは*freezer*
@@ -539,11 +576,12 @@
 
 ## タスク4：関係タイプを追加
 
-> 最後に、店舗とその冷凍庫間のつながりを表す新しい関係タイプを作成します。
->
-> **Create StoreはFreezerを運用**
+最後に、店舗とその冷凍庫間のつながりを表す新しい関係タイプを作成します。
+
+**Create StoreはFreezerを運用**
 
 1. **Configure**ページで、Manage relationshipsを展開し、**Add new relationship**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image113.png)
 
 1. 以下の関係タイプの詳細を入力し、**Add relationship type**を選択
@@ -553,6 +591,7 @@
     1. **Source entity type**: *Store*
 
     1. **Target entity type**: *Freezer*
+
        ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image114.png)
 
 1. 関係が「**Relationships** 」セクションに追加されます。キャンバス上で**operates** 関係を選択して、関係の詳細設定を開きます。設定ページの各セクションを確認：
@@ -563,7 +602,8 @@
     - **Relationship type：**関係タイプの詳細を設定
     - **Target entity type**:
     対象エンティティ（この場合は*Freezer* ）の詳細を表示
-  ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image115.png)
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image115.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image116.png)
 
@@ -578,47 +618,56 @@
 
     - **Matched Freezer**: **FreezerId**: **FreezerId**
     を選択します。この設定では、リレーションシップソースデータテーブル内で、*Freezer* エンティティで定義されたキープロパティと値が一致する列を指定します。この場合、リレーションシップデータソースとエンティティデータソースの両方が *freezer* テーブルを使用するため、同じ列 (FreezerId) を選択
-  ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image117.png)
 
-    > 　重要：エンティティタイプのキープロパティに一致する正しいソース列を選択してください。
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image117.png)
+
+    重要：エンティティタイプのキープロパティに一致する正しいソース列を選択してください。
 
 
 1. 関係タイプを保存します。関係タイプが正常に更新されたことを確認したら、**Cancel** を選択して設定オプションを閉じる
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image118.png)  
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image119.png)
 
 1. エンティティの**Configure** ページが表示され、更新された関係が**Relationships** セクションに引き続き確認可能
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image120.png)
 
 
 # 演習4：オントロジーを表示する
 
-> この演習では、プレビュー機能を使用してオントロジーを探索します。エンティティ型をデータでインスタンス化するエンティティインスタンスを調べ、売上データとデバイスストリーミングデータにわたるグラフ状のコンテキストを探索します。
+この演習では、プレビュー機能を使用してオントロジーを探索します。エンティティ型をデータでインスタンス化するエンティティインスタンスを調べ、売上データとデバイスストリーミングデータにわたるグラフ状のコンテキストを探索します。
 
 ## タスク 1: インスタンス一覧と静的データを表示する
 
-> 前のチュートリアル手順でエンティティタイプにデータをした際、オントロジーはソースデータ行に関連付けられたエンティティのインスタンスを自動的に作成しました。このセクションでは、プレビュー機能を使用してこれらのエンティティインスタンスを表示します。
+前のチュートリアル手順でエンティティタイプにデータをした際、オントロジーはソースデータ行に関連付けられたエンティティのインスタンスを自動的に作成しました。このセクションでは、プレビュー機能を使用してこれらのエンティティインスタンスを表示します。
 
 1. オントロジーのHome設定キャンバスから始めます。**SaleEvent**エンティティタイプを選択し、上部のリボンから**View Entity Type details**を選択
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image121.png)
 
 1. **Instances** タブを開きます。収益や販売数量など、**factsales** レイクハウステーブルからデータが入力された 6 つのエンティティ インスタンスが表示されていることを確認
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image122.png)
 
 
 ## タスク2：時系列データの表示
 
 1. ページ左上にある、エンティティタイプ名の横にあるセレクターを使用して、**Freezer**エンティティタイプに切り替える
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image123.png)
 
 1. **Overview** タブを開きます。デフォルトの時間の範囲である**Last 30 days** にはデータが含まれていないため、タブには空のグラフが表示
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image124.png)
 
 1. 時間の範囲をデフォルトの「**Last 30 days** 」から、開始日時を **Fri Aug 01 2025**、**12:00 AM** 、終了日時を **Mon Aug 04 2025、12:00 AM** 、**Time granularity**  を **5 minutes** とするカスタム期間に変更
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image125.png)
 
 1. 選択した時間枠内で、複数の**Freezer**エンティティインスタンスから表示されるようになった時系列データを観察
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image126.png)
 
 
@@ -631,12 +680,15 @@
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image127.png)
 
 1. グラフビューが展開されます。SaleEventエンティティタイプから**Products**および**Store**への関係の詳細を確認
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image128.png)
 
 1. エンティティタイプセレクターを使用して、**Store **エンティティタイプに切り替えます。その**relationship graph**を展開（**Expand**）
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image129.png)
 
 1. グラフ上で、**Store** と **Freezer** および **SaleEvent** の関係を確認してください。次に、クエリ ビルダー リボンで **Run query**を選択します。この操作により既定のクエリが実行され、エンティティ インスタンスとその接続のグラフが表示
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image130.png)
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image131.png)  
@@ -647,6 +699,7 @@
 ## タスク4：グラフインスタンスのクエリ
 
 関係グラフビューでは、特定の条件を満たすエンティティインスタンスをオントロジーからクエリできます。クエリを作成するには、上部リボンの**Query builder** フィルターを使用します。
+  
   ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image133.png)
 
 まず、*パリ店で稼働しているすべての冷凍庫を表示する*というクエリを作成
@@ -657,9 +710,11 @@
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image135.png)
 
 1. **Components** セクションで、*SaleEvent*のチェックを外し、チェックされているフィールドが**Nodes \> Store**、**Nodes \> Freezer**、**Edges \> operates**のみになるようにする
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image136.png)
 
 1. **Run query** を選択し、インスタンスグラフに*パリ*店に接続された2台の冷凍庫が表示されていることを確認
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image137.png)
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image138.png)
@@ -671,6 +726,7 @@
     次のクエリを構築：*売上高が150を超える販売を行ったすべての店舗を表示*
 
 1. **Add a node** を選択し、**SaleEvent** のノードを追加
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image140.png)
 
 1. **Components** セクションで、 **Nodes \> Store** と**Edges \> from** の横にあるチェックボックスをオンにして、それらをグラフに追加
@@ -694,14 +750,14 @@
 
 # 演習5：エージェントからオントロジーを取得
 
-> Ontology（プレビュー）は[Fabric data agent
-> (preview)](https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent) と統合され、自然言語で質問を行い、Ontologyの定義やバインディングに基づいた回答を得ることができます。
+Ontology（プレビュー）は[Fabric data agent (preview)] (https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent) と統合され、自然言語で質問を行い、Ontologyの定義やバインディングに基づいた回答を得ることができます。
 
 ## タスク 1: オントロジー (プレビュー) ソースを使用してデータ エージェントを作成
 
 以下の手順に従って、オントロジー（プレビュー）アイテムに接続する新しいデータエージェントを作成
 
 1. 次に、左側のナビゲーションペインにある**Fabric IQ Ontology XX** をクリック
+
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image146.png)
 
 1. **Fabric**のホームページで、**New item**を選択します。 Filter by item type 検索ボックスに+++data agent+++と入力し、Data agentを選択
@@ -709,6 +765,7 @@
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image147.png)
 
 1. データエージェント名として+++RetailOntologyAgent+++と入力し、**Create**を選択
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image148.png)
 
 1. **RetailOntologyAgent**ページで、**Add a data source**を選択
@@ -748,24 +805,25 @@
 
 1. 以下のテキストを入力し、下の画像に示されている**送信**アイコンをクリック
 
-    > **+++For each store, show any freezers operated by that store that ever had a humidity lower than 46 percent.+++**
-      ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image154.png)**
+    **+++For each store, show any freezers operated by that store that ever had a humidity lower than 46 percent.+++**
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image154.png)
     
       ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image155.png)
 
 1. 以下のテキストを入力し、下の画像に示されている送信アイコンをクリック
 
-    > *+++What is the top product by revenue across all stores?+++**
+    **+++What is the top product by revenue across all stores?+++**
       ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image156.png)
     
-    > *![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image157.png)
+    ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image157.png)
 
     応答では、単なるテーブルではなく、エンティティタイプ(*Store*, *Products*, *Freezer*）とその関係性が参照されていることに注意してください。
+
      ![Screenshot of the result of a query.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image158.png)
 
-    > **ヒント**：サンプルクエリの実行中にデータがないというエラーが表示された場合は、エージェントの初期化に十分な時間を確保するため、数分待ってから再度クエリを実行してください。
-    >
-    > データエージェントをさらに詳しく調べるには、自分でいくつかのプロンプトを試してみてください。
+    **ヒント**：サンプルクエリの実行中にデータがないというエラーが表示された場合は、エージェントの初期化に十分な時間を確保するため、数分待ってから再度クエリを実行してください。
+    
+    データエージェントをさらに詳しく調べるには、自分でいくつかのプロンプトを試してみてください。
 
 
 ## タスク4：リソースの削除
@@ -779,16 +837,17 @@
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image160.png)
 
 1. General タブの一番下まで移動し、**Remove this workspace**を選択
+
    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image161.png)
   
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image162.png)
 
-    > まとめ
-    >
-    > このユースケースでは、Microsoft Fabric IQ
-    > Ontology（プレビュー版）を使用して、現実世界のビジネス概念とその関係性を表す、接続されたセマンティックデータモデルを作成する方法を示します。構造化されたレイクハウスデータとストリーミング診断データを組み合わせることで、このオントロジーは、企業データの統一された、ビジネスに適したビューを提供します。
-    >
-    > エンティティ定義、データバインディング、およびリレーションシップモデリングを通じて、ユーザーは冷凍庫の温度や湿度といった運用シグナルが、売上や収益などのビジネス成果にどのように関連しているかを分析できます。このユースケースでは、オントロジーがFabricデータエージェントを介したグラフ探索と自然言語クエリをどのように強化し、ユーザーが基となるテーブルやスキーマを理解する必要なく、より深い洞察を可能にするかも示されています。
-    >
-    > 全体として、このユースケースは、Fabric IQ
-    > Ontologyが運用データと分析を結びつけ、様々な分野におけるよりスマートな意思決定をどのように支援するかを示しています。
+    まとめ
+    
+    このユースケースでは、Microsoft Fabric IQ
+    Ontology（プレビュー版）を使用して、現実世界のビジネス概念とその関係性を表す、接続されたセマンティックデータモデルを作成する方法を示します。構造化されたレイクハウスデータとストリーミング診断データを組み合わせることで、このオントロジーは、企業データの統一された、ビジネスに適したビューを提供します。
+    
+    エンティティ定義、データバインディング、およびリレーションシップモデリングを通じて、ユーザーは冷凍庫の温度や湿度といった運用シグナルが、売上や収益などのビジネス成果にどのように関連しているかを分析できます。このユースケースでは、オントロジーがFabricデータエージェントを介したグラフ探索と自然言語クエリをどのように強化し、ユーザーが基となるテーブルやスキーマを理解する必要なく、より深い洞察を可能にするかも示されています。
+    
+    全体として、このユースケースは、Fabric IQ
+    Ontologyが運用データと分析を結びつけ、様々な分野におけるよりスマートな意思決定をどのように支援するかを示しています。
