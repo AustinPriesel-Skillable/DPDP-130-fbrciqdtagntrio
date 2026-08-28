@@ -1,12 +1,12 @@
-# ユースケース04 - Fabric Data AgentをMicrosoft Foundryに接続して、統合されたインテリジェントデータ分析を実現
+# ユースケース04 - Fabric Data Agent を Microsoft Foundry に接続して、統合されたインテリジェントデータ分析を実現
 
 ### 紹介
 
 現代の組織は複数のシステムにわたって大量のデータを生成するため、ビジネスユーザーやアナリストが迅速にインサイトを得ることが困難になっています。データはしばしばサイロ化された状態で保存されるため、情報の抽出、分析、解釈には専門的な技術知識が必要となります。
 
-Microsoft Fabric統合データプラットフォームは、分析、データエンジニアリング、ビジネスインテリジェンスの機能を単一の環境に統合することで、この課題に対応します。Azure AI FoundryのエージェントベースのAI機能を統合することで、組織は自然言語と自動化されたワークフローを使用してエンタープライズデータと連携するインテリジェントなアプリケーションを構築できます。
+Microsoft Fabric 統合データプラットフォームは、分析、データエンジニアリング、ビジネスインテリジェンスの機能を単一の環境に統合することで、この課題に対応します。Azure AI Foundry のエージェントベースのAI機能を統合することで、組織は自然言語と自動化されたワークフローを使用してエンタープライズデータと連携するインテリジェントなアプリケーションを構築できます。
 
-「Unified Data Foundation Solution Accelerator」向けエージェント型アプリケーション・ソリューション・アクセラレーターは、AI搭載エージェントが統合エンタープライズを活用し、質問への回答、データ分析の自動化、そして技術系・非技術系双方のユーザーへのインサイト提供を行う仕組みを実証するものです。これらのエージェント型アプリケーションは、タスクの調整、関連データの取得、文脈に応じた回答の生成を行うことで、迅速な意思決定と業務効率の向上を実現します。
+Unified Data Foundation Solution Accelerator 向けエージェント型アプリケーション・ソリューション・アクセラレーターは、AI搭載エージェントが統合エンタープライズを活用し、質問への回答、データ分析の自動化、そして技術系・非技術系双方のユーザーへのインサイト提供を行う仕組みを実証するものです。これらのエージェント型アプリケーションは、タスクの調整、関連データの取得、文脈に応じた回答の生成を行うことで、迅速な意思決定と業務効率の向上を実現します。
 
 このユースケースでは、企業はAIエージェントを使用して、売上実績、顧客行動、製品トレンドなどのビジネスデータを分析できます。複数のデータセットを手動で照会する代わりに、ユーザーは自然言語で質問するだけで、システムから直接実用的なインサイトを受け取ることができます。
 
@@ -14,7 +14,7 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
 このユースケースの目的は、組織が**統合データ基盤と連携したエージェント型AIを活用して**、データへのアクセスと意思決定を改善する方法を示すことです。主な目標は以下のとおりです。
 
-### Microsoft Fabric に統合データ基盤の確立
+### 1. Microsoft Fabric に統合データ基盤の確立
 
 - Lakehouse、Warehouse、およびセマンティックモデルを使用して、管理されたFabricワークスペースを作成します。
 - 分析のために企業データセットをロードして検証します。
@@ -22,8 +22,7 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
 ### 2. Fabric データエージェントの構築と構成
 
-- 自然言語を使用してデータセットを照会できる**Fabric Data
-  Agent**を作成します。
+- 自然言語を使用してデータセットを照会できる **Fabric Data Agent** を作成します。
 
 - Ontologyリソースを接続し、企業固有のクエリをサポートするエージェント指示を定義します。
 
@@ -67,11 +66,9 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
 このソリューションは、Microsoft FabricとMicrosoft Foundryを組み合わせることで、構造化データと非構造化ドキュメントの両方を使用して質問に答えることができるAIソリューションを実現します。
 
-- **Microsoft
-  Fabricは**、Lakehouse、Warehouse、および自然言語からSQLへの変換を行うFabric IQセマンティックレイヤーを備えたデータレイヤーを提供します。
+- **Microsoft Fabricは**、Lakehouse、Warehouse、および自然言語からSQLへの変換を行うFabric IQセマンティックレイヤーを備えたデータレイヤーを提供します。
 
-- **Microsoft Foundryは**、文書検索用のFoundry
-  IQや、両方の機能をオーケストレーションするOrchestrator Agentなど、AIエージェントをホストしています。
+- **Microsoft Foundryは**、文書検索用の Foundry IQ や、両方の機能をオーケストレーションする Orchestrator Agent など、AIエージェントをホストしています。
 
 - **Azure AI Services は**、言語モデル (GPT-4o-mini)
   と埋め込み機能を提供します。
@@ -82,31 +79,29 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
 ### 前提条件
 
-- **GitHubアカウント：GitHubのログイン認証情報が必要です。  
-  アカウントを持っていない場合は、以下のリンクから作成してください。 +++
-  <https://github.com/signup?user_email=&source=form-home-signup+++>**
+- **GitHubアカウント：GitHubのログイン認証情報が必要です。アカウントを持っていない場合は、以下のリンクから作成してください。
+  +++**<https://github.com/signup?user_email=&source=form-home-signup>**+++
 
 
 ## タスク0：GitHubアカウントを作成
 
 このラボで使用したテナント認証情報と同じものを使用して、新しい**GitHubアカウントを作成します。**
 
-1. <https://github.com/+++>を使用して GitHub にアクセスし、 **\[Sign
-    up\]**をクリックします。
+1. +++<https://github.com/>+++ を使用して GitHub にアクセスし、 **Sign up** をクリックします。
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image2.png)
 
-1. それでは、新しいGitHubアカウントを作成するために、**メールアドレス**、**パスワード**、および固有の**ユーザー名**を入力し、 **「Continue」**ボタンをクリックします。
+1. それでは、新しいGitHubアカウントを作成するために、**メールアドレス**、**パスワード**、および固有の**ユーザー名**を入力し、 **Continue** ボタンをクリックします。
 
     ![A screenshot of a login box AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image3.png)
 
-1. 画面の指示に従って、**検証用のパズル**を開始します。 **「Submit」**をクリックします。
+1. 画面の指示に従って、**検証用のパズル**を開始します。 **Submit** をクリックします。
 
 1. メールで受け取った**検証コード**を入力します**。**
 
     ![A screenshot of a email form AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image4.png)
 
-1. それでは、認証情報を使ってGitHubにサインインし、 **「Sign in」**をクリックします。
+1. それでは、認証情報を使ってGitHubにサインインし、 **Sign in** をクリックします。
 
     ![A screenshot of a login page AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image5.png)
 
@@ -119,20 +114,19 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
 このタスクでは、Fabricワークスペースを作成します。このワークスペースには、 レイクハウス 、データフロー、Data Factoryパイプライン、ノートブック、Power BIデータセット、レポートなど、このレイクハウスチュートリアルに必要なすべてのアイテムが含まれています。
 
-1. ブラウザを開き、アドレスバーに移動して、次のURLを入力または貼り付ける：+++
-    <https://app.fabric.microsoft.com/+++>
-    。**Enter**キーを押して、資格情報でサインインします。
+1. ブラウザを開き、アドレスバーに移動して、次のURLを入力または貼り付ける：+++<https://app.fabric.microsoft.com/>+++
+    。**Enter** キーを押して、資格情報でサインインします。
 
     |   |   |
     |---|---|
     | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
     | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
 
-1. Fabricのホームページで、 **「+** **New workspace**」タイルを選択します。
+1. Fabricのホームページで、**New workspace** タイルを選択します。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image7.png)
 
-1. 右側に表示される**「Create a workspace」ペイン**に、以下の詳細を入力し、 **「Apply」**ボタンをクリックします。
+1. 右側に表示される **Create a workspace** ペイン**に、以下の詳細を入力し、 **Apply** ボタンをクリックします。
 
     | Property | Value |
     |---------|-------|
@@ -143,8 +137,8 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image8.png)
 
-    > \[!注\]
-    > ラボのインスタントIDを確認するには、「Help」を選択してインスタントIDをコピーします。
+    \[!注\]
+    ラボのインスタントIDを確認するには、「Help」を選択してインスタントIDをコピーします。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image9.png)
 
@@ -161,25 +155,24 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
 1. URLを確認－ Workspace IDは、/groups/の後に現れるGUIDです。
 
-1. URL（例：https://app.fabric.microsoft.com/groups/{workspace-id}/...）から **Workspace ID**をコピーし、後で使用するために**メモ帳に保存します。**
+1. URL 例：(https://app.fabric.microsoft.com/groups/{workspace-id}/...）から **Workspace ID**をコピーし、後で使用するために**メモ帳に保存します。**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image12.png)
 
 
 ## タスク3：オープンな開発環境
 
-1. ブラウザを開き、アドレスバーに移動して、次のURLを入力または貼り付ける：+++
-    <https://github.com/technofocus-pte/agnticapp-for-unified-data/tree/main+++>
+1. ブラウザを開き、アドレスバーに移動して、次のURLを入力または貼り付ける：+++<https://github.com/technofocus-pte/agnticapp-for-unified-data/tree/main>+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image13.png)
 
-1. **Fork**をクリックしてリポジトリをフォークします。リポジトリに一意の名前を付けて、 **「Create repo」**ボタンをクリックします。
+1. **Fork** をクリックしてリポジトリをフォークします。リポジトリに一意の名前を付けて、 **Create repo** ボタンをクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image14.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image15.png)
 
-1. **Code -\> Codespaces -\> Create Codespace on main**をクリックします。
+1. **Code -\> Codespaces -\> Create Codespace on main** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image16.png)
 
@@ -200,7 +193,7 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image20.png)
 
-1. デフォルトのブラウザが開き、生成されたコードを入力して認証を行います。コードを入力し、 **「Next」**をクリックします。
+1. デフォルトのブラウザが開き、生成されたコードを入力して認証を行います。コードを入力し、 **Next** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image21.png)
 
@@ -216,7 +209,7 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image25.png)
 
-1. デフォルトのブラウザが開き、生成されたコードを入力して認証を行います。コードを入力し、 **「Next」**をクリックします。
+1. デフォルトのブラウザが開き、生成されたコードを入力して認証を行います。コードを入力し、 **Next** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image26.png)
 
@@ -230,7 +223,7 @@ Microsoft Fabric統合データプラットフォームは、分析、データ�
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image28.png)
 
-    >[!Alert] 左側の**Infra**フォルダーに移動し**、 main.bicep**ファイルの**122 行目**を開いて、 *Lab Instance ID文字列を*[+++@ mailto: +++@lab.labinstance.idlab.LabInstance.Id mailto: +++@lab.LabInstance.Id](mailto:@lab.LabInstance.Id)に変更します。
+    >[!Alert] 左側の **Infra** フォルダーに移動し、**main.bicep**ファイルの **122 行目** を開いて、 *Lab Instance ID文字列を*
 
 1. すべてのリソースをプロビジョニングしてデプロイ。
 
@@ -325,7 +318,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 ## タスク5：Fabric Lakehouseとデータを確認
 
-1. +++https://app.fabric.microsoft.com/+++ワークスペースに移動します。
+1. +++https://app.fabric.microsoft.com/+++ ワークスペースに移動します。
 
 1. リソースが正常にデプロイされたことを確認します。
 
@@ -381,7 +374,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image58.png)
 
-1. 新しいデータソースを設定するには、 **「Add data source** 」を選択します。
+1. 新しいデータソースを設定するには、 **Add data source** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image59.png)
 
@@ -391,7 +384,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image61.png)
 
-1. 上部メニューから**「Agent instructions** **」**をクリックします。
+1. 上部メニューから **Agent instructions** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image62.png)
 
@@ -435,11 +428,11 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image74.png)
 
-1. ** Workspace ID**と**AISkills ID**をメモ帳に保存して、後で使用します。
+1. **Workspace ID** と **AISkills ID** をメモ帳に保存して、後で使用します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image75.png)
 
-1. **Codespace**に戻り、アプリケーションをデプロイして起動します。
+1. **Codespace** に戻り、アプリケーションをデプロイして起動します。
 
 
 ## タスク8：アプリケーションのデプロイと起動
@@ -501,14 +494,13 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 ## タスク 9: Azureリソースの検証とFabric Lakehouseデータの確認
 
-1. ブラウザを開き、+++
-    +++https://portal.azure.com+++/+++にアクセスします。以下のクラウドスライスアカウントでサインインします。
+1. ブラウザを開き、+++https://portal.azure.com+++/+++ にアクセスします。以下のクラウドスライスアカウントでサインインします。
 
-1. **Resource groups**を選択します
+1. **Resource groups** を選択します
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image89.png)
 
-1. 割り当てられた**Resource groups**をクリックします。
+1. 割り当てられた **Resource groups** をクリックします。
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image90.png)
 
@@ -529,7 +521,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 1. **Foundry** を選択します。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image92.png)
 
-1. Overviewペインで、 **「Go to Foundry portal」**をクリックします。これにより、Microsoft Foundryポータルに移動します。
+1. Overviewペインで、 **Go to Foundry portal** をクリックします。これにより、Microsoft Foundryポータルに移動します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image93.png)
 
@@ -541,24 +533,23 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image96.png)
 
-1. 新しく作成した**エージェント**を選択すると、右側に設定ペインが開きます。エージェント名を「+++Fabric
-    Agent+++」と入力します。
+1. 新しく作成した**エージェント**を選択すると、右側に設定ペインが開きます。エージェント名を +++Fabric Agent+++ と入力します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image97.png)
 
-1. 同じエージェント設定ペインで、下にスクロールして**「Knowledge」**パラメーターの**「+** **Add」**をクリックします。
+1. 同じエージェント設定ペインで、下にスクロールして **Knowledge** パラメーターの **+Add** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image98.png)
 
-1. **「Add knowledge」**ペインで**「Microsoft Fabric」**を選択します。
+1. **Add knowledge** ペインで **Microsoft Fabric** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image99.png)
 
-1. **「+ Create connection」**をクリックします。
+1. **+ Create connection** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image100.png)
 
-1. **タスク 7 \> ステップ 6**で保存した**ワークスペース ID**や**AISkills ID**などのカスタムキーを入力します。接続名を**Fabric- aiskillsと指定し**、 **\[Connect\]** をクリックします。
+1. **タスク 7 \> ステップ 6**で保存した**ワークスペース ID**や **AISkills ID** などのカスタムキーを入力します。接続名を**Fabric- aiskillsと指定し**、 **\[Connect\]** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image101.png)
 
@@ -589,7 +580,7 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image102.png)
 
-1. **「Agents」**を選択し、次に「**Fabric Agent」**を選択します**。** エージェントをクリックし、 **「Try in playground」**をクリックします。
+1. **Agents** を選択し、次に **Fabric Agent** を選択します**。** エージェントをクリックし、 **Try in playground** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image103.png)
 
@@ -614,15 +605,15 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 ## タスク11：リソースを削除
 
-1. 削除するには、 Azure ポータル検索バーに**「Resource groups」**と入力し、移動して**「Services」**の下にある**「Resource groups」**をクリックします。
+1. 削除するには、 Azure ポータル検索バーに**「Resource groups」**と入力し、移動して **Services** の下にある **Resource groups** をクリックします。
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image108.png)
 
 1. Resource groupsページで、リソースグループを選択します。
 
-1. **Resource Group**のホームページで、**Fabric Capacity**以外のすべてのリソースを選択し、 **\[Delete\]**をクリックします。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image109.png)
+1. **Resource Group** のホームページで、**Fabric Capacity** 以外のすべてのリソースを選択し、 **Delete** をクリックします。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image109.png)
 
-1. 右側に表示される**「Delete Resources** **」ペイン**で、 **「Enter "delete" to confirm deletion」+++フィールドに+++「Delete」**ボタンをクリックします。
+1. 右側に表示される **Delete Resources** ペイン**で、 Enter +++delete+++ to confirm deletion フィールドに **Delete** ボタンをクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image110.png)  
   
@@ -630,15 +621,15 @@ azd env set AZURE_RESOURCE_LOCATION westus2
 
 1. Microsoft Fabricワークスペース[（https://app.fabric.microsoft.com/）](https://app.fabric.microsoft.com/+++)にアクセスします。
 
-1. ワークスペース名の下にある「 **...」**オプションを選択し、 **「Workspace settings」**を選択します。
+1. ワークスペース名の下にある「 **...」**オプションを選択し、 **Workspace settings** を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image112.png)
 
-1. **「General** **」**を選択し、 **「Remove this workspace」**を選択します。
+1. **General** を選択し、 **Remove this workspace** を選択します。
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image113.png)
 
-1. 表示された警告メッセージで**「Delete** **」**をクリックします。
+1. 表示された警告メッセージで **Delete** をクリックします。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2004/media/image114.png)
 
