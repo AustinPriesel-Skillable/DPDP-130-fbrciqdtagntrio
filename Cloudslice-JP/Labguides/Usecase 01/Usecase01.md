@@ -65,18 +65,20 @@
 
 > 1\. ナビゲーションバーの**+New
 > item** ボタンをクリックして、新しいレイクハウスを構築
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image1.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image1.png)
 >
 > 2\. 絞り込んで+++Lakehouse+++ タイルを選択
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image2.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image2.png)
 >
 > 3.**New lakehouse** ダイアログボックスで、**Name** フィールドに+++IQ_Lakehouse+++と入力し、レイクハウススキーマの選択を解除します。**Create**ボタンをクリックして、新しいレイクハウスを開く
 
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image3.png)
-  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image4.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image3.png)
+    
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image4.png)
 
 > 4\. **Successfully created SQL endpoint**という通知が表示
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image5.png)
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2001/media/image5.png)
 
 ## タスク3：サンプルデータの取り込み
 
