@@ -161,7 +161,7 @@ Fabric Agent는 Lakehouse에서 관련 데이터를 자동으로 가져와 인�
 
 ## 과제 3: Fabric data agent 만들기
 
-1. **Fabric-+++Copilot-@lab.LabInstance.Id+++ 작업 영역 페이지에서 +New item 버튼을 찾아 클릭한 다음**, **Data agent를 선택합니다.**
+1. +++Fabric-copilot-@lab.labinstance.id+++ 작업 영역 페이지에서 +New item 버튼을 찾아 클릭한 다음**, **Data agent를 선택합니다.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-KO/Labguides/Usecase%2005/media/image30.png)
 
