@@ -409,25 +409,37 @@ Fabric AgentはLakehouseから関連データを自動的に取得し、洞察�
 
 ## タスク1：Copilotの機能を追加
 
-1. **E-commerce RAG Agent**で、 **\[+\]（Add）**アイコンをクリックし、 \[**Channels\]**を選択してエージェントチャネルの設定を構成します。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image79.png)
+1. **E-commerce RAG Agent**で、 **\[+\]（Add）**アイコンをクリックし、 \[**Channels\]**を選択してエージェントチャネルの設定を構成します。
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image79.png)
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image80.png)
 
-1. **TeamsとMicrosoft 365 Copilot**を選択します。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image81.png)
+1. **TeamsとMicrosoft 365 Copilot**を選択します。
 
-1. 「Add Channel」をクリックします![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image82.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image81.png)
+
+1. 「Add Channel」をクリックします
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image82.png)
 
 1. **Microsoft Teams**でエージェントを開いてテストするには、\[ **See agent in Teams\]**を選択します。
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image83.png)
 
-1. **Open Microsoft Teams**をクリックします。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image84.png)  
+1. **Open Microsoft Teams**をクリックします。
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image84.png)  
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image85.png)
 
-1. **「Sign in」**をクリックします。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image86.png)
+1. **「Sign in」**をクリックします。
 
-1. 提供された認証情報を入力してサインインします。![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image87.png)  
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image86.png)
+
+1. 提供された認証情報を入力してサインインします。
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image87.png)  
   
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image88.png)  
   
@@ -436,7 +448,8 @@ Fabric AgentはLakehouseから関連データを自動的に取得し、洞察�
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image90.png)
 
 1. **「Add」**をクリックします。
-1. ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image91.png)
+
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-JP/Labguides/Usecase%2005/media/image91.png)
 
 1. アプリが正常に追加されたら、 *「Open」*ボタンをクリックして*、* Microsoft Teams でE コマース RAG Agentを起動します。
 
