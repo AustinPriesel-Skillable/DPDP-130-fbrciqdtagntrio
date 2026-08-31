@@ -96,9 +96,9 @@ En esta tarea, configurará el entorno base mediante la creación de un espacio 
 
     **Nota:** Para encontrar el identificador de la instancia del laboratorio, seleccione **Help** y copie el **Instance ID**.
 
-    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image12.png)
-
-     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image13.png)
+      ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image12.png)
+      
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image13.png)
 
 1. Espere a que finalice la implementación. Este proceso tarda entre 1 y 2 minutos en completarse.
 
@@ -122,9 +122,9 @@ En esta tarea, creará un nuevo Lakehouse y lo poblará con las tablas de Advent
     **Nota:** Asegúrese de eliminar el espacio antes de **AdventureWorksLH.**
 
 
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image17.png)
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image18.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image17.png)
+      
+      ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image18.png)
 
 1. Verá una notificación que indica que el **SQL endpoint se creó correctamente**.
 
@@ -235,22 +235,22 @@ En esta tarea, enriquecerá el Fabric Data Agent agregando preguntas en lenguaje
 1. Seleccione **FactResellerSales**, escriba el siguiente texto y haga clic en el **ícono** **Submit**, como se muestra en la siguiente imagen.
 
 
-+++What is our most sold product?+++
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image39.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image40.png)
-
-A medida que continúe probando consultas, agregue más instrucciones.
+    +++What is our most sold product?+++
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image39.png)
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image40.png)
+    
+    A medida que continúe probando consultas, agregue más instrucciones.
 
 1. Seleccione **dimcustomer**, escriba el siguiente texto y haga clic en el **ícono Submit**.
 
 
-+++how many active customers did we have June 1st, 2013?+++
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image41.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image42.png)
+    +++how many active customers did we have June 1st, 2013?+++
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image41.png)
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image42.png)
 
 1. Copie todas las preguntas y consultas SQL, péguelas en un archivo de Notepad y, a continuación, guarde el archivo para utilizarlo en las siguientes tareas.
 
@@ -261,22 +261,22 @@ A medida que continúe probando consultas, agregue más instrucciones.
 1. Seleccione **dimdate** y **FactInternetSales**, escriba el siguiente texto y haga clic en el **ícono Submit:**
 
 
-+++what are the monthly sales trends for the last year?+++
-
-![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image45.png)
-
- ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image46.png)
+    +++what are the monthly sales trends for the last year?+++
+    
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image45.png)
+    
+     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image46.png)
 
 1. Seleccione **dimproduct** y **FactInternetSales**, escriba el siguiente texto y haga clic en el **ícono Submit:**
 
 
-+++which product category had the highest average sales price?+++
-
- ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image47.png)
-
-![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image48.png)
-
-Parte del problema es que "**active customer**" no tiene una definición formal. Agregar más instrucciones en el cuadro de texto Notes to the model podría ayudar, pero es posible que los usuarios formulen esta pregunta con frecuencia. Debe asegurarse de que la AI responda correctamente a esta pregunta..
+    +++which product category had the highest average sales price?+++
+    
+     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image47.png)
+    
+    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image48.png)
+    
+    Parte del problema es que "**active customer**" no tiene una definición formal. Agregar más instrucciones en el cuadro de texto Notes to the model podría ayudar, pero es posible que los usuarios formulen esta pregunta con frecuencia. Debe asegurarse de que la AI responda correctamente a esta pregunta..
 
 1. La consulta correspondiente es moderadamente compleja, por lo que debe proporcionar un ejemplo. Para ello, seleccione el botón **Example queries** en el panel **Setup.**
 
@@ -289,9 +289,9 @@ Parte del problema es que "**active customer**" no tiene una definición formal.
 1. En este paso, agregará consultas de ejemplo para el origen de **datos del Lakehouse** que creó anteriormente. Escriba la siguiente pregunta en el campo **Question:**
 
 
-+++What is the most sold product?+++
-
- ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image51.png)
+    +++What is the most sold product?+++
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image51.png)
 
 1. Agregue la consulta 1 que guardó en el archivo de **Notepad:**
 
@@ -311,9 +311,9 @@ Parte del problema es que "**active customer**" no tiene una definición formal.
 1. Para agregar una segunda pregunta, escríbala en el campo **Question:**
 
 
-+++What are the monthly sales trends for the last year?+++
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image54.png)
+    +++What are the monthly sales trends for the last year?+++
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2002/media/image54.png)
 
 1. Agregue la **consulta 3** que guardó en el archivo de **Notepad**:
 
