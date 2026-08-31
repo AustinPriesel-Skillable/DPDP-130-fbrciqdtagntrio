@@ -408,17 +408,17 @@ En esta tarea, configurará un Lakehouse e ingerirá los datos de ejemplo de NYC
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image76.png)
 
 
-+++What percentage of orders use credit card vs PayPal vs debit card?+++
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image77.png)
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image78.png)
-
-+++What is the revenue by payment method?+++
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image79.png)
-
-![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image80.png)
+    +++What percentage of orders use credit card vs PayPal vs debit card?+++
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image77.png)
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image78.png)
+    
+    +++What is the revenue by payment method?+++
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image79.png)
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2005/media/image80.png)
 
 # Ejercicio 3: Conectar el Fabric Data Agent con Microsoft Teams
 
