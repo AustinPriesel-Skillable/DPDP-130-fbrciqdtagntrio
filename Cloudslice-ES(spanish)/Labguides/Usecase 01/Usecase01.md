@@ -44,7 +44,7 @@ En esta tarea, creará un espacio de trabajo de Fabric. El espacio de trabajo co
 
 1. En el panel Workspaces, haga clic en el mosaico **+New workspace.**
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image1.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image1.png)
 
 1. En el panel **Create a workspace** que aparece en el lado derecho, escriba los siguientes valores y haga clic en el botón **Apply**.
 
@@ -54,77 +54,77 @@ En esta tarea, creará un espacio de trabajo de Fabric. El espacio de trabajo co
     | Advanced | Under **License mode**, select **Fabric capacity** |
     | Default storage format | **Small dataset storage format** |
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image2.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image3.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image4.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image2.png)
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image3.png)
+    
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image4.png)
 
 
 ## Tarea 2: Crear un Lakehouse
 
 1. Cree un nuevo Lakehouse haciendo clic en el botón **+New item** de la barra de navegación.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image5.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image5.png)
 
 1. Filtre por Lakehouse y seleccione el mosaico +++Lakehouse+++.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image6.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image6.png)
 
 1. En el cuadro de diálogo **New lakehouse**, escriba +++IQ_Lakehouse+++ en el campo **Name** y desactive **Lakehouse schemas**. Haga clic en el botón **Create** y abra el nuevo **Lakehouse**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image7.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image8.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image7.png)
+    
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image8.png)
 
 1. Verá una notificación con el mensaje **Successfully created SQL endpoint**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image9.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image9.png)
 
 
 ## Tarea 3: Incorporar datos de ejemplo
 
 1. En la página **IQ_Lakehouse**, vaya a la sección **Get data in your lakehouse** y haga clic en **Upload files**, como se muestra en la siguiente imagen**.**
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image10.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image10.png)
 
 1. En la pestaña **Upload files**, haga clic en el icono de carpeta ubicado debajo de **Files**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image11.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image11.png)
 
 1. Vaya a **C:\LabFiles\LabFiles** en la VM, seleccione los archivos **DimProducts.csv**, **DimStore.csv**, **FactSale.csv** y **Freezer.csv**, y haga clic en el botón **Open**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image12.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image12.png)
 
 1. A continuación, haga clic en el botón **Upload** y cierre el cuadro de diálogo **Upload files** seleccionando el icono **X**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image13.png)
-    >
-    > ![A screenshot of a upload box AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image14.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image13.png)
+    
+    ![A screenshot of a upload box AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image14.png)
 
 1. Haga clic en **Refresh** en **Files**. Los archivos aparecerán.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image15.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image15.png)
 
 1. En la página **Lakehouse**, en el panel **Explorer**, seleccione **Files**. A continuación, coloque el cursor sobre el archivo **DimProducts.csv**. Haga clic en los puntos suspensivos (**…**) junto a **DimProducts.csv**, seleccione **Load to Tables** y, después, **New table.**
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image16.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image17.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image16.png)
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image17.png)
 
 1. En el cuadro de diálogo **Load file to new table**, haga clic en el botón **Load**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image18.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image18.png)
 
 1. La tabla **DimProducts** se creará correctamente.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image19.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image19.png)
 
 1. Seleccione la tabla **DimProducts** para obtener una vista previa de los datos.
 
-    >[!Note] **Nota**: Es posible que deba seleccionar el botón **Refresh** más de una vez para obtener una vista previa de los datos.
+    [!Note] **Nota**: Es posible que deba seleccionar el botón **Refresh** más de una vez para obtener una vista previa de los datos.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image20.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image20.png)
 
 1. Repita los pasos 7 al 9 para cargar los archivos restantes en las tablas.
 
@@ -132,19 +132,19 @@ En esta tarea, creará un espacio de trabajo de Fabric. El espacio de trabajo co
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image22.png)
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image23.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image24.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image25.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image26.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image27.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image23.png)
+    
+    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image24.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image25.png)
+    
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image26.png)
+    
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image27.png)
 
 1. En la barra de navegación izquierda, seleccione **Fabric IQ Ontology**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image28.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image28.png)
 
 
 ## Tarea 4: Preparar el Eventhouse
@@ -153,11 +153,11 @@ Siga estos pasos para cargar el archivo de datos de streaming de dispositivos en
 
 1. En la página principal de **Fabric IQ Ontology**, seleccione **+New item** y, a continuación, seleccione **Eventhouse**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image29.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image29.png)
 
 1. Asigne el nombre +++TelemetryDataEH+++ al **Eventhouse** y haga clic en el botón **Create**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image30.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image30.png)
 
 1. El Eventhouse se abrirá cuando esté listo.
 
@@ -165,9 +165,9 @@ Siga estos pasos para cargar el archivo de datos de streaming de dispositivos en
 
 1. Abra la base de datos KQL seleccionando su nombre.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image32.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image33.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image32.png)
+    
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image33.png)
 
 1. En la cinta de opciones inferior de la **KQL database**, haga clic en **Get data** y, a continuación, seleccione **Local file** para cargar archivos desde el sistema local en la base de datos.
 
@@ -175,37 +175,37 @@ Siga estos pasos para cargar el archivo de datos de streaming de dispositivos en
 
 1. Seleccione la opción de destino para incorporar los datos en una nueva tabla, haga clic en **+ New table** y escriba +++FreezerTelemetry+++ como nombre de la tabla.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image35.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image36.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image35.png)
+    
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image36.png)
 
 1. Seleccione la tabla de destino y, a continuación, arrastre y suelte los archivos o haga clic en **Browse for files** para cargar los datos.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image37.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image37.png)
 
 1. Vaya a **C:\LabFiles\Lab1** en su VM, seleccione el archivo **FreezerTelemetry.csv** y haga clic en el botón **Open**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image38.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image38.png)
 
 1. Haga clic en el botón **Next.**
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image39.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image39.png)
 
 1. A continuación, haga clic en el botón **Finish**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image40.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image40.png)
 
 1. Espere a que se complete la **Data ingestion** y haga clic en **Close**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image41.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image41.png)
 
 1. Cuando termine, la KQL database mostrará la tabla **FreezerTelemetry**:
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image42.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image42.png)
 
 1. Seleccione **Fabric IQ Ontology** en el panel de navegación izquierdo.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image43.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image43.png)
 
 
 # Ejercicio 2: Crear una Ontology a partir de OneLake
@@ -214,56 +214,56 @@ Siga estos pasos para cargar el archivo de datos de streaming de dispositivos en
 
 1. En el espacio de trabajo de Fabric, seleccione **+ New item**. Busque y seleccione el elemento **Ontology (preview)**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image44.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image44.png)
 
 1. Escriba +++RetailSalesOntology+++ como nombre de la ontología y seleccione **Create**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image45.png)
-    >
-    > ** Sugerencia:** Los nombres de las ontologías pueden incluir números,
-    > letras y guiones bajos. No utilice espacios ni guiones.
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image45.png)
+    
+     ** Sugerencia:** Los nombres de las ontologías pueden incluir números,
+     letras y guiones bajos. No utilice espacios ni guiones.
 
 1. La **Ontology** se abrirá cuando esté lista.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image46.png)
-    >
-    > A continuación, cree tipos de entidad, vinculaciones de datos y
-    > relaciones basadas en los datos de las tablas de su Lakehouse.
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image46.png)
+    
+     A continuación, cree tipos de entidad, vinculaciones de datos y
+     relaciones basadas en los datos de las tablas de su Lakehouse.
 
 
 ## Tarea 2: Crear tipos de entidad y vinculaciones de datos
 
-> Primero, cree los tipos de entidad. Los tipos de entidad representan
-> tipos de objetos en una empresa. En este paso se crean tres tipos de
-> entidad: *Store, Products* y *SaleEvent*. Después de crear los tipos
-> de entidad, cree sus propiedades vinculando las columnas de los datos
-> de origen de las tablas del Lakehouse ***IQ_Lakehouse.***
+ Primero, cree los tipos de entidad. Los tipos de entidad representan
+ tipos de objetos en una empresa. En este paso se crean tres tipos de
+ entidad: *Store, Products* y *SaleEvent*. Después de crear los tipos
+ de entidad, cree sus propiedades vinculando las columnas de los datos
+ de origen de las tablas del Lakehouse ***IQ_Lakehouse.***
 
 ### Agregar el primer tipo de entidad (Store)
 
 1. En la cinta de opciones superior o en el centro del lienzo de configuración, seleccione **Add entity type**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image47.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image47.png)
 
 1. Escriba +++Store+++ como nombre del tipo de entidad y seleccione **Add Entity Type**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image48.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image48.png)
 
 1. El tipo de entidad *Store* se agrega al lienzo de configuración y el panel **Entity type configuration** estará visible.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image49.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image49.png)
 
 1. En el lienzo de configuración, haga clic en los puntos suspensivos (**...**) situados junto al nombre de la entidad y seleccione **Bind data**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image50.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image50.png)
 
-1. Seleccione **Add data binding \> Lakehouse table**.
+1. Seleccione **Add data binding \ Lakehouse table**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image51.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image51.png)
 
 1. A continuación, elija el origen de datos. Seleccione el **Lakehouse** **IQ_Lakehouse** y haga clic en **Next**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image52.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image52.png)
 
 1. Seleccione la tabla **dimstore** y haga clic en **Select**.
 
@@ -319,12 +319,12 @@ Siga estos pasos para cargar el archivo de datos de streaming de dispositivos en
 
     | Entity Type Name | Source Table in IQ_Lakehouse | Entity Type Key |
     |------------------|------------------------------|-----------------|
-    | +++Products+++<br><br>**Note:** Use the plural form **Products** to avoid conflict with the GQL reserved word **PRODUCT**. | **dimproducts** | **ProductId** |
+    | +++Products+++<br<br**Note:** Use the plural form **Products** to avoid conflict with the GQL reserved word **PRODUCT**. | **dimproducts** | **ProductId** |
     | +++SaleEvent+++ | **factsales** | **SaleId** |
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image62.png)
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image63.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image63.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image64.png)
 
@@ -350,25 +350,25 @@ Siga estos pasos para cargar el archivo de datos de streaming de dispositivos en
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image74.png)
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image75.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image76.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image77.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image78.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image79.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image80.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image81.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image82.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image83.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image84.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image75.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image76.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image77.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image78.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image79.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image80.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image81.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image82.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image83.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image84.png)
 
 1. Cuando termine, verá estos tipos de entidad enumerados en el panel **Entity Types**.
 
@@ -383,11 +383,11 @@ A continuación, cree tipos de relación entre los tipos de entidad para represe
 
 1. En el Explorer, seleccione el tipo de entidad **SaleEvent**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image86.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image86.png)
 
 1. En la cinta de opciones, seleccione **Add relationship**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image87.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image87.png)
 
 1. Escriba los siguientes detalles del tipo de relación y seleccione **Add relationship type**.
 
@@ -395,9 +395,9 @@ A continuación, cree tipos de relación entre los tipos de entidad para represe
     - **Source entity type**: **SaleEvent**
     - **Target entity type**: **Store**
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image88.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image89.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image88.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image89.png)
 
 
 1. La relación se agregará al lienzo semántico. Selecciónela para abrir la configuración de los detalles de la relación. Observe las siguientes secciones de la página de configuración:
@@ -411,36 +411,36 @@ A continuación, cree tipos de relación entre los tipos de entidad para represe
     - **Target entity type:** Muestra los detalles de la entidad de destino
     **(Store** en este caso**)**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image90.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image91.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image90.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image91.png)
 
 
 1. En la sección central, especifique los siguientes detalles:
 
 1. **Mapping table**: **Examine los orígenes disponibles** y seleccione la tabla **factsales.** Esta tabla de los datos de origen puede vincular las entidades Store y SaleEvent, ya que contiene información de identificación para ambos tipos de entidad. Cada fila de esta tabla hace referencia a un almacén y a un evento de venta mediante su ID.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image92.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image92.png)
 
 1. **Matched SaleEvent: SaleId**: Seleccione **SaleId**. Esta configuración especifica la columna de la tabla de datos de origen de la relación cuyos valores coinciden con la propiedad de clave definida en la entidad *SaleEvent*. En este caso, el origen de datos de la relación y el origen de datos de la entidad utilizan la misma tabla, *factsales*, por lo que se selecciona la misma columna (SaleId).
 
-1. **Matched Store: StoreId**: Seleccione **StoreId**. Esta configuración especifica la columna de la tabla de datos de origen de la relación (*factsales \>* StoreId) cuyos valores coinciden con la propiedad de clave definida en la entidad *Store* (*dimstore* \> StoreId). En los datos de este tutorial, el nombre de la columna es el mismo (StoreId) en ambas tablas.
+1. **Matched Store: StoreId**: Seleccione **StoreId**. Esta configuración especifica la columna de la tabla de datos de origen de la relación (*factsales \* StoreId) cuyos valores coinciden con la propiedad de clave definida en la entidad *Store* (*dimstore* \ StoreId). En los datos de este tutorial, el nombre de la columna es el mismo (StoreId) en ambas tablas.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image93.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image93.png)
 
     ** Importante:** Asegúrese de seleccionar las columnas **Matched** correctas que correspondan a las propiedades de clave de los tipos de entidad.
 
 1. **Guarde** el tipo de relación. Confirme que el tipo de relación se haya actualizado correctamente y, a continuación, seleccione **Cancel** para cerrar las opciones de configuración.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image94.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image95.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image96.png)
-    >
-    > Ahora se ha creado la primera relación y se ha vinculado a los datos
-    > de la tabla de origen. Continúe con la siguiente sección para crear
-    > otro tipo de relación.
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image94.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image95.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image96.png)
+    
+     Ahora se ha creado la primera relación y se ha vinculado a los datos
+     de la tabla de origen. Continúe con la siguiente sección para crear
+     otro tipo de relación.
 
 
 ### **SaleEvent sold Products**
@@ -486,13 +486,13 @@ Siga estos pasos para crear el tipo de entidad *Freezer* y agregarle propiedades
 
 1. Seleccione **Add entity type** en la cinta de opciones superior. Escriba +++Freezer*+++* como nombre del tipo de entidad y seleccione **Add Entity Type.**
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image105.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image106.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image105.png)
+    
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image106.png)
 
 1. Con el tipo de entidad **Freezer** seleccionado en el **Explorer**, seleccione **View entity type details** en la cinta de opciones superior.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image107.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image107.png)
 
 1. Se abrirá la página **Configure** con los detalles del tipo de entidad. En esta página se muestra información importante sobre el tipo de entidad, incluidas sus propiedades y los vínculos con los datos.
 
@@ -517,7 +517,7 @@ Siga estos pasos para crear el tipo de entidad *Freezer* y agregarle propiedades
 
 1. Las propiedades se agregan a la página **Configure**, sin estar vinculadas a ningún origen de datos.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image111.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image111.png)
 
 
 ## Tarea 2: Vincular datos estáticos a las propiedades
@@ -526,11 +526,11 @@ A continuación, vincule datos estáticos a las propiedades que creó para el ti
 
 1. Expanda **Manage property bindings** y seleccione **Add binding and properties**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image112.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image112.png)
 
-1. Seleccione **Add data binding \> Lakehouse table**.
+1. Seleccione **Add data binding \ Lakehouse table**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image113.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image113.png)
 
 1. Elija el origen de datos.
 
@@ -539,9 +539,9 @@ A continuación, vincule datos estáticos a las propiedades que creó para el ti
 
     - Seleccione la tabla **freezer** y seleccione **Select**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image114.png)
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image115.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image114.png)
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image115.png)
 
 
 1. Los campos de la tabla de origen se incorporan a la configuración del vínculo de datos. Observe las secciones de la página de configuración:
@@ -657,7 +657,7 @@ Por último, cree un nuevo tipo de relación para representar la conexión entre
     las entidades *Store* y *Freezer*, ya que contiene información de identificación para ambos tipos de entidad. Cada fila de esta tabla hace referencia a una **Store** y a un Freezer mediante su ID.
 
     - **Matched Store:** **StoreId:** Seleccione **StoreId.** Esta
-    configuración especifica la columna de la tabla de datos de origen de la relación (*freezer* \> StoreId) cuyos valores coinciden con la propiedad clave definida en la entidad Store (*dimstore* \> StoreId). En los datos del tutorial, el nombre de la columna es el mismo (StoreId) en ambas tablas.
+    configuración especifica la columna de la tabla de datos de origen de la relación (*freezer* \ StoreId) cuyos valores coinciden con la propiedad clave definida en la entidad Store (*dimstore* \ StoreId). En los datos del tutorial, el nombre de la columna es el mismo (StoreId) en ambas tablas.
 
     - **Matched Freezer: FreezerId:** Seleccione **FreezerId**. Esta
     configuración especifica la columna de la tabla de datos de origen de la relación cuyos valores coinciden con la propiedad clave definida en la entidad *Freezer*. En este caso, el origen de datos de la relación y el origen de datos de la entidad utilizan la misma tabla (*freezer*), por lo que se selecciona la misma columna (*FreezerId*).
@@ -720,7 +720,7 @@ La pestaña **Overview** también contiene un gráfico **Relationship graph**, q
 
 1. Utilice el selector de tipo de entidad para cambiar al tipo de entidad **SaleEvent**. En el mosaico **Relationship graph**, seleccione **Expand**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image144.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image144.png)
 
 1. Se abre la vista expandida del gráfico. Observe los detalles de las relaciones desde el tipo de entidad **SaleEvent** hacia **Products** y **Store**.
 
@@ -747,13 +747,13 @@ En la vista del gráfico de relaciones, puede consultar Ontology para buscar ins
 
 Primero, cree esta consulta: *Show all freezers that are operated in the Paris store.*
 
-1. En el gráfico de relaciones de la entidad *Store*, seleccione **Add filter** \> **Store** \> **StoreId** en la cinta de **Query builder**. Configure el filtro con **StoreId = S-PAR-01**. Este valor corresponde al identificador de la tienda de *París*.
+1. En el gráfico de relaciones de la entidad *Store*, seleccione **Add filter** \ **Store** \ **StoreId** en la cinta de **Query builder**. Configure el filtro con **StoreId = S-PAR-01**. Este valor corresponde al identificador de la tienda de *París*.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image151.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image152.png)
 
-1. En la sección **Components**, desactive *SaleEvent* para que los únicos campos seleccionados sean **Nodes** \> **Store**, **Nodes** \> **Freezer** y **Edges** \> **operates**.
+1. En la sección **Components**, desactive *SaleEvent* para que los únicos campos seleccionados sean **Nodes** \ **Store**, **Nodes** \ **Freezer** y **Edges** \ **operates**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image153.png)
 
@@ -771,13 +771,13 @@ Primero, cree esta consulta: *Show all freezers that are operated in the Paris s
 
 1. Seleccione **Add a node** y agregue un nodo para **SaleEvent.**
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image157.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image157.png)
 
-1. En la sección **Components**, seleccione las casillas situadas junto a **Nodes** \> **Store** y **Edges** \> **from** para agregarlos al gráfico.
+1. En la sección **Components**, seleccione las casillas situadas junto a **Nodes** \ **Store** y **Edges** \ **from** para agregarlos al gráfico.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image158.png)
 
-1. En la cinta de **Query builder**, seleccione **Add filter** \> **SaleEvent** \> **RevenueUSD**. Configure el filtro con +++RevenueUSD \> 150+++.
+1. En la cinta de **Query builder**, seleccione **Add filter** \ **SaleEvent** \ **RevenueUSD**. Configure el filtro con +++RevenueUSD \ 150+++.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image159.png)
 
@@ -806,54 +806,54 @@ Siga estos pasos para crear un nuevo data agent que se conecte al elemento Ontol
 
 1. En la página principal de **Fabric**, seleccione **+New item**. En el cuadro de búsqueda **Filter by item type**, escriba +++data agent+++ y seleccione **Data agent**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image164.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image164.png)
 
 1. Escriba +++RetailOntologyAgent+++ como nombre del **Data agent** y seleccione **Create**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image165.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image165.png)
 
 1. En la página de **RetailOntologyAgent**, seleccione **Add a data source**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image166.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image166.png)
 
 1. En la pestaña **OneLake catalog,** seleccione la ontología **RetailSalesOntology** y, a continuación, seleccione **Add**.
 
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image167.png)
-    >
-    > Cuando el agente esté listo, se abrirá.
-    >
-    > ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image168.png)
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image167.png)
+    
+     Cuando el agente esté listo, se abrirá.
+    
+     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image168.png)
 
 
 ## Tarea 2: Proporcionar instrucciones al agente
 
 ** Nota:** Este paso se agrega como respuesta a un problema conocido que afecta a la agregación en las consultas**.**
 
-> A continuación, agregue una instrucción personalizada al agente.
+ A continuación, agregue una instrucción personalizada al agente.
 
 1. Seleccione **Agent instructions** en la cinta.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image169.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image169.png)
 
 1. En la parte inferior del cuadro de entrada, agregue +++Support group by in GQL+++. Esta instrucción permite una mejor agregación de los datos de **Ontology.**
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image170.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image170.png)
 
 1. La instrucción se aplica automáticamente. Si lo desea, cierre la pestaña **Agent instructions**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image171.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image171.png)
 
 
 ## Tarea 3: Consultar el agente mediante lenguaje natural
 
-> A continuación, explore Ontology mediante preguntas en lenguaje
-> natural.
+ A continuación, explore Ontology mediante preguntas en lenguaje
+ natural.
 
 1. Escriba el siguiente texto y seleccione el **icono Submit**, como se muestra en la siguiente imagen.
 
     +++For each store, show any freezers operated by that store that ever had a humidity lower than 46 percent.+++
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image172.png)
+    
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image172.png)
 
     ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image173.png)
 
@@ -865,35 +865,35 @@ Siga estos pasos para crear un nuevo data agent que se conecte al elemento Ontol
 
     ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image175.png)
 
-    > Observe que las respuestas hacen referencia a los tipos de entidad
-    > (*Store, Products, Freezer*) y a las relaciones entre ellos, no solo a
-    > las tablas sin procesar.
-    >
-    > ![Screenshot of the result of a query.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image176.png)
-    >
-    > ** Sugerencia:** Si al ejecutar las consultas de ejemplo aparecen
-    > errores que indican que no hay datos, espere unos minutos para dar más
-    > tiempo al agente para inicializarse. Después, vuelva a ejecutar las
-    > consultas.
-    >
-    > Continúe explorando el data agent probando algunas consultas propias.
+     Observe que las respuestas hacen referencia a los tipos de entidad
+     (*Store, Products, Freezer*) y a las relaciones entre ellos, no solo a
+     las tablas sin procesar.
+    
+     ![Screenshot of the result of a query.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image176.png)
+    
+     ** Sugerencia:** Si al ejecutar las consultas de ejemplo aparecen
+     errores que indican que no hay datos, espere unos minutos para dar más
+     tiempo al agente para inicializarse. Después, vuelva a ejecutar las
+     consultas.
+    
+     Continúe explorando el data agent probando algunas consultas propias.
 
 
 ## Tarea 4: Eliminar recursos
 
 1. En el menú de navegación izquierdo, seleccione su espacio de trabajo, **Fabric IQ OntologyXX**. Se abrirá la vista de elementos del espacio de trabajo.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image177.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image177.png)
 
 1. Seleccione el botón de los tres puntos (...) situado debajo del nombre del espacio de trabajo y, a continuación, seleccione **Workspace settings**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image178.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image178.png)
 
 1. Desplácese hasta la parte inferior de la pestaña **General** y seleccione **Remove this workspace**.
 
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image179.png)
-    >
-    > ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image180.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image179.png)
+    
+     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image180.png)
 
 
 ### Resumen
