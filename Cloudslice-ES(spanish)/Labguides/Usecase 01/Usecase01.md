@@ -122,7 +122,7 @@ En esta tarea, creará un espacio de trabajo de Fabric. El espacio de trabajo co
 
 1. Seleccione la tabla **DimProducts** para obtener una vista previa de los datos.
 
-    >[!Note] **Nota**: Es posible que deba seleccionar el botón **Refresh** más de una vez para obtener una vista previa de los datos.
+    [!Note] **Nota**: Es posible que deba seleccionar el botón **Refresh** más de una vez para obtener una vista previa de los datos.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntrio/refs/heads/main/Cloudslice-ES(spanish)/Labguides/Usecase%2001/media/image20.png)
 
