@@ -377,7 +377,7 @@ Here, you will enrich the Data Agent by adding natural language questions and th
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image60.png)
 
 
-## Task 5: Use the Data agent programmatically
+## Task 5: Publish the Data agent
 
 Both instructions and examples were added to the Data agent. As testing proceeds, more examples and instructions can improve the AI skill even further. Work with your colleagues to see if you provided examples and instructions that cover the kinds of questions they want to ask.
 
@@ -401,125 +401,7 @@ You can use the AI skill programmatically within a Fabric notebook. To determine
 
 1. Click on the **View publishing details**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image65.png)
-
-1. The published URL for the AI agent appears, as shown in this screenshot.
-
-1. Copy the URL and paste that in a notepad and then Save the notepad to use the information in the upcoming steps.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image66.png)
-
-1. Select **Notebook1** in the left navigation pane.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image67.png)
-
-1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, enter the following code in it and replace the +++URL+++. Click on **▷ Run** button and review the output
-
-    +++%pip install "openai==1.70.0"+++
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image68.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image69.png)
-
-1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, enter the following code in it and replace the +++URL+++. Click on **▷ Run** button and review the output
-
-    +++%pip install httpx==0.27.2+++
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image70.png)
-
-1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, enter the following code in it and replace the +++URL+++. Click on **▷ Run** button and review the output
-  
-    ```
-    import requests
-    import json
-    import pprint
-    import typing as t
-    import time
-    import uuid
-    
-    from openai import OpenAI
-    from openai._exceptions import APIStatusError
-    from openai._models import FinalRequestOptions
-    from openai._types import Omit
-    from openai._utils import is_given
-    from synapse.ml.mlflow import get_mlflow_env_config
-    from sempy.fabric._token_provider import SynapseTokenProvider
-     
-    base_url = "https://<generic published base URL value>"
-    question = "What datasources do you have access to?"
-    
-    configs = get_mlflow_env_config()
-    
-    # Create OpenAI Client
-    class FabricOpenAI(OpenAI):
-        def __init__(
-            self,
-            api_version: str ="2024-05-01-preview",
-            **kwargs: t.Any,
-        ) -> None:
-            self.api_version = api_version
-            default_query = kwargs.pop("default_query", {})
-            default_query["api-version"] = self.api_version
-            super().__init__(
-                api_key="",
-                base_url=base_url,
-                default_query=default_query,
-                **kwargs,
-            )
-        
-        def _prepare_options(self, options: FinalRequestOptions) -> None:
-            headers: dict[str, str | Omit] = (
-                {**options.headers} if is_given(options.headers) else {}
-            )
-            options.headers = headers
-            headers["Authorization"] = f"Bearer {configs.driver_aad_token}"
-            if "Accept" not in headers:
-                headers["Accept"] = "application/json"
-            if "ActivityId" not in headers:
-                correlation_id = str(uuid.uuid4())
-                headers["ActivityId"] = correlation_id
-    
-            return super()._prepare_options(options)
-    
-    # Pretty printing helper
-    def pretty_print(messages):
-        print("---Conversation---")
-        for m in messages:
-            print(f"{m.role}: {m.content[0].text.value}")
-        print()
-    
-    fabric_client = FabricOpenAI()
-    # Create assistant
-    assistant = fabric_client.beta.assistants.create(model="not used")
-    # Create thread
-    thread = fabric_client.beta.threads.create()
-    # Create message on thread
-    message = fabric_client.beta.threads.messages.create(thread_id=thread.id, role="user", content=question)
-    # Create run
-    run = fabric_client.beta.threads.runs.create(thread_id=thread.id, assistant_id=assistant.id)
-    
-    # Wait for run to complete
-    while run.status == "queued" or run.status == "in_progress":
-        run = fabric_client.beta.threads.runs.retrieve(
-            thread_id=thread.id,
-            run_id=run.id,
-        )
-        print(run.status)
-        time.sleep(2)
-    
-    # Print messages
-    response = fabric_client.beta.threads.messages.list(thread_id=thread.id, order="asc")
-    pretty_print(response)
-    
-    # Delete thread
-    fabric_client.beta.threads.delete(thread_id=thread.id)
-    ```
-  
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image71.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrciqdtagntsfrntr/refs/heads/main/Cloudslice/Labguide/Usecase%2002/media/image72.png)
-
-
+   
 ## **Task 6: Delete the resources**
 
 1. Select your workspace, the **AI-Fabric-@lab.LabInstance.Id** from the left-hand navigation menu. It opens the workspace item view.
